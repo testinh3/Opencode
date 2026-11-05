@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>13</key>
+	<dict>
+		<key>name</key>
+		<string>Goblin</string>
+		<key>intro</key>
+		<string>Greedy little monster with a little lust</string>
+		<key>trait</key>
+		<string>Good at melee with medium speed</string>
+	</dict>
+	<key>15</key>
+	<dict>
+		<key>name</key>
+		<string>Samurai</string>
+		<key>intro</key>
+		<string>Too lazy, even no time to take care of his hair</string>
+		<key>trait</key>
+		<string>Bladestorm skill to attack serval enemies, fast speed , resistant to magic attacks</string>
+	</dict>
+	<key>17</key>
+	<dict>
+		<key>name</key>
+		<string>Marauder</string>
+		<key>intro</key>
+		<string>Used to be a chef, addicted to human meat!</string>
+		<key>trait</key>
+		<string>Tough savages with high phyisical armor, but vulnerable to magic attack</string>
+	</dict>
+	<key>26</key>
+	<dict>
+		<key>name</key>
+		<string>Dark Marauder</string>
+		<key>intro</key>
+		<string>Fond of using pan to attack and defense</string>
+		<key>trait</key>
+		<string>High physical attack and armor with slow speed</string>
+	</dict>
+	<key>18</key>
+	<dict>
+		<key>name</key>
+		<string>Pig Rider</string>
+		<key>intro</key>
+		<string>Stole a pig from human as his mount</string>
+		<key>trait</key>
+		<string>Brutal dash skill to knock the front soldiers back serval yards</string>
+	</dict>
+	<key>20</key>
+	<dict>
+		<key>name</key>
+		<string>Orc Boxer</string>
+		<key>intro</key>
+		<string>Almost invincible with his devastating right uppercut</string>
+		<key>trait</key>
+		<string>Uppercut skill to knock the soldier, high HP and attack</string>
+	</dict>
+	<key>22</key>
+	<dict>
+		<key>name</key>
+		<string>Stealth Assassin</string>
+		<key>intro</key>
+		<string>Special forces to kill people silently and stealthy</string>
+		<key>trait</key>
+		<string>Stealth skill to go past serval soldiers, dangerous to ranged soldiers</string>
+	</dict>
+	<key>25</key>
+	<dict>
+		<key>name</key>
+		<string>Dark Samurai</string>
+		<key>intro</key>
+		<string>Disciple of Blademaster, arrogant and deceitful</string>
+		<key>trait</key>
+		<string>Dark bladestorm skill with more damage than Samurai</string>
+	</dict>
+	<key>23</key>
+	<dict>
+		<key>name</key>
+		<string>Blademaster</string>
+		<key>intro</key>
+		<string>Best swordsman in the world, the teacher of Samurai</string>
+		<key>trait</key>
+		<string>Danse macabre skill to splash triple damages at once</string>
+	</dict>
+	<key>30</key>
+	<dict>
+		<key>name</key>
+		<string>Boar Rider</string>
+		<key>intro</key>
+		<string>A mindless unstoppable machine of destruction</string>
+		<key>trait</key>
+		<string>Knocks the front soldiers back farther than Pig Rider</string>
+	</dict>
+	<key>28</key>
+	<dict>
+		<key>name</key>
+		<string>Pit Lord</string>
+		<key>intro</key>
+		<string>The most feared and respected chieftain!</string>
+		<key>trait</key>
+		<string>Do your best to defend him</string>
+	</dict>
+	<key>14</key>
+	<dict>
+		<key>name</key>
+		<string>Goblin Shooter</string>
+		<key>intro</key>
+		<string>Collects all kinds of beautiful stones to attack</string>
+		<key>trait</key>
+		<string>Medium range attack</string>
+	</dict>
+	<key>24</key>
+	<dict>
+		<key>name</key>
+		<string>Shadow Archer</string>
+		<key>intro</key>
+		<string>Crack shot with night vision goggles</string>
+		<key>trait</key>
+		<string>Long range and high attack</string>
+	</dict>
+	<key>19</key>
+	<dict>
+		<key>name</key>
+		<string>Bane Archer</string>
+		<key>intro</key>
+		<string>One eyed archer with poison arrows</string>
+		<key>trait</key>
+		<string>Long range with poison attack</string>
+	</dict>
+	<key>27</key>
+	<dict>
+		<key>name</key>
+		<string>Dark Archer</string>
+		<key>intro</key>
+		<string>Best archer in Orc world, his arrow is better than bullet sometimes!</string>
+		<key>trait</key>
+		<string>Super long range with poison attack</string>
+	</dict>
+	<key>21</key>
+	<dict>
+		<key>name</key>
+		<string>Demon Boomer</string>
+		<key>intro</key>
+		<string>Real Ruler of Orc world, eager to rule all of the worlds</string>
+		<key>trait</key>
+		<string>Hide behind other units to throw bomb</string>
+	</dict>
+	<key>29</key>
+	<dict>
+		<key>name</key>
+		<string>Stealth Bane</string>
+		<key>intro</key>
+		<string>Speical forces to kill people with poison silently</string>
+		<key>trait</key>
+		<string>Stealth Assasin with poison knife</string>
+	</dict>
+	<key>31</key>
+	<dict>
+		<key>name</key>
+		<string>Suicide Bomber</string>
+		<key>intro</key>
+		<string>Crazy extremists who want to win at all costs</string>
+		<key>trait</key>
+		<string>Suicide attack affects multiple targets within a specified area</string>
+	</dict>
+	<key>32</key>
+	<dict>
+		<key>name</key>
+		<string>Spear Demon</string>
+		<key>intro</key>
+		<string>Famous Orc Hunter, fighted to a draw with Blademaster</string>
+		<key>trait</key>
+		<string>Long range attack affects multiple targets. The nearer, the higher damage.</string>
+	</dict>
+</dict>
+</plist>

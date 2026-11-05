@@ -1,0 +1,67 @@
+{
+  "_note": "Target: Tribe Kingdom Clash 4.0.0 (com.hainanair.clan), Cocos2d-x, lib/armeabi/libgame.so. Symbol + RVA diverifikasi dari symtab ELF yang tidak di-strip. Jalankan `make features` setelah mengedit. Tipe: patch_int, patch_bool, patch_long, patch_float, patch_double, patch_void, hook_mul_int, hook_mul_long, hook_mul_float, hook_mul_double, hook_mul_int1, hook_set_int, hook_struct_int.",
+
+  "module": "libgame.so",
+
+  "features": [
+    {
+      "id": "infinite_currency",
+      "label": "Gold & Diamond Tanpa Batas",
+      "category": "Mata Uang",
+      "type": "hook_struct_int",
+      "symbol": "_ZN9Configure17getRecordTinyInfoEv",
+      "rva": 1127849,
+      "member": true,
+      "fields": [
+        {"offset": 12, "value": 999999999},
+        {"offset": 16, "value": 999999999}
+      ],
+      "slider": false,
+      "default": 0,
+      "min": 0,
+      "max": 0,
+      "step": 0
+    },
+    {
+      "id": "unlock_soldiers",
+      "label": "Buka Semua Soldier",
+      "category": "Progres",
+      "type": "patch_bool",
+      "symbol": "_Z16checkSoldierLocki",
+      "rva": 1284573,
+      "member": false,
+      "default": 1,
+      "min": 0,
+      "max": 1,
+      "step": 0
+    },
+    {
+      "id": "gold_reward_x",
+      "label": "Gold Kemenangan x",
+      "category": "Hadiah",
+      "type": "hook_mul_int1",
+      "symbol": "_Z14getGameWinGoldi",
+      "rva": 1231413,
+      "member": false,
+      "slider": true,
+      "default": 10,
+      "min": 1,
+      "max": 1000,
+      "step": 1
+    },
+    {
+      "id": "kill_gold_x",
+      "label": "Gold per Kill x",
+      "category": "Hadiah",
+      "type": "hook_mul_int",
+      "symbol": "_Z16getKillEnemyGoldv",
+      "rva": 1231253,
+      "member": false,
+      "slider": true,
+      "default": 10,
+      "min": 1,
+      "max": 1000,
+      "step": 1
+    }
+  ]
+}

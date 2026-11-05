@@ -1,0 +1,1389 @@
+Manifest-Version: 1.0
+Created-By: 1.7.0_71 (Oracle Corporation)
+
+Name: assets/atombomb.spx
+SHA1-Digest: qO31DfppQbvx0A7bWV/X1Teq+VA=
+
+Name: res/drawable-xhdpi-v4/common_signin_btn_text_focus_light.9.png
+SHA1-Digest: LqymU4pfjSPqB62EwhAc/4/RMH8=
+
+Name: res/drawable-mdpi-v4/common_signin_btn_text_disabled_focus_light
+ .9.png
+SHA1-Digest: bO5g/+La159pxGxauPWouknkQSM=
+
+Name: assets/hammer_attack.ogg
+SHA1-Digest: kCpR+lTm2lSIrNuPAD3yUK72vDE=
+
+Name: res/drawable-mdpi-v4/common_signin_btn_icon_focus_light.9.png
+SHA1-Digest: vgMfd96mLdxgPcirDPRQDqIcAvQ=
+
+Name: assets/knight123.png
+SHA1-Digest: 90btT81ASqTvdjsl26g7XhQM3bo=
+
+Name: assets/bomberman.spx
+SHA1-Digest: UaOXZuWYnyfSvyaE1gavrwSNLoQ=
+
+Name: res/drawable-hdpi-v4/common_signin_btn_icon_disabled_dark.9.png
+SHA1-Digest: d61b6mlChnxVImu1TzKWQV9xNk0=
+
+Name: res/drawable-xhdpi-v4/common_signin_btn_icon_normal_dark.9.png
+SHA1-Digest: jsakiFImv3uDay8ojtPWMe2mN9c=
+
+Name: res/drawable-xxhdpi-v4/common_signin_btn_text_disabled_focus_lig
+ ht.9.png
+SHA1-Digest: sF0dQxVNmJMKvqTxKlJbebwL1s8=
+
+Name: res/drawable-xxhdpi-v4/common_signin_btn_text_pressed_dark.9.png
+SHA1-Digest: BHTx0Rg5+HUdvzPo7QqQvIX16j4=
+
+Name: assets/hackbuteer.png
+SHA1-Digest: lBSc4+G/AhPRNKSdDLrBnAmZ6yM=
+
+Name: assets/mech_die.ogg
+SHA1-Digest: Naz9Ot6zeNw+cx5UGsPsKD8dsvQ=
+
+Name: assets/ui_record.png
+SHA1-Digest: 9PrkbcAOPEUGs83jP6vtMDyFaUA=
+
+Name: assets/cloud.png
+SHA1-Digest: Ku/e60+3OoK+PR1iYTJMIA6zk2I=
+
+Name: res/drawable-mdpi-v4/common_signin_btn_icon_normal_light.9.png
+SHA1-Digest: hFHBrLq+vmS1wIf+GPFeF44ZKoM=
+
+Name: assets/lose.ogg
+SHA1-Digest: 1ikpC8BR4PV3TFm+h+to3dZPdKE=
+
+Name: assets/long.nose.png
+SHA1-Digest: ygW+ucKmhEwHzYs8amYL6Qys/Fo=
+
+Name: assets/doctor_die.ogg
+SHA1-Digest: m5ixBt2o+1rZpYqcu2Ab4tP+qZI=
+
+Name: assets/moto_die.ogg
+SHA1-Digest: 26c2dJkacNkONOmeiqjLL9izWw8=
+
+Name: assets/castle.plist
+SHA1-Digest: uzMzSNYjEwihoEwosSAELYsUfAY=
+
+Name: assets/slingshot.png
+SHA1-Digest: /Usqr9VhpP1p7P4cSdqbWL5d+EM=
+
+Name: assets/stars.png
+SHA1-Digest: 4cqcIPG1NdQGcofMWBxdYQ+H4mU=
+
+Name: assets/light.arrow.spx
+SHA1-Digest: IrfLrbfWg3Hb612rv6PmI9/dNy8=
+
+Name: assets/cow_king_attack.ogg
+SHA1-Digest: aNy4ZjRSwmb64675OA3nzJ2dIEY=
+
+Name: assets/mage_attack.ogg
+SHA1-Digest: NtAYTLxcDSSjHHW8zGF/ui3oD5w=
+
+Name: assets/firebomb.png
+SHA1-Digest: j8l++5NfhFh6im6BKy54KwBvagA=
+
+Name: assets/equip.box.png
+SHA1-Digest: o0qnM5E4FsLM5m20dxO4hmkI3VU=
+
+Name: assets/doctor123.spx
+SHA1-Digest: 9SzddzbBeVpE7pJawjNSfXjXCkc=
+
+Name: assets/battle2.ogg
+SHA1-Digest: d5HsqcGkUsHzfpsoz9bop8+q3Z4=
+
+Name: res/drawable-hdpi-v4/common_signin_btn_icon_normal_dark.9.png
+SHA1-Digest: h6PJh4uqjYL/ErVn+emzUyPQMrA=
+
+Name: res/drawable-xxhdpi-v4/common_signin_btn_text_disabled_focus_dar
+ k.9.png
+SHA1-Digest: sF0dQxVNmJMKvqTxKlJbebwL1s8=
+
+Name: assets/equip.box.spx
+SHA1-Digest: igf/PenViJqrmS50R59GihcnNK0=
+
+Name: res/drawable/common_signin_btn_text_light.xml
+SHA1-Digest: nhdJpLpS66oIUCe2eTfXQ0NhwiQ=
+
+Name: assets/long_nose_die.ogg
+SHA1-Digest: S0DfSldktvj2zsaLFcOcJKdbS04=
+
+Name: assets/tutor.png
+SHA1-Digest: sUhJdFSMGjiiABDf3z/n5bN6RO4=
+
+Name: assets/blue_attack.ogg
+SHA1-Digest: u6kbYaBcA4VCT9eddvOfJQTqe28=
+
+Name: assets/luckywheel.ogg
+SHA1-Digest: DzM8VEkvW6Z43ik0jydXkez3BhE=
+
+Name: assets/tutor.hand.png
+SHA1-Digest: pLvCEr3beh37+mx2gV+1reB4c6k=
+
+Name: assets/dual.weapon.spx
+SHA1-Digest: MADAdUUWu5MxALBsr58cxDJQIz0=
+
+Name: assets/vg_cta_disabled.png
+SHA1-Digest: v8Iim7wfMOn1YX3/+LR4zkG/hUY=
+
+Name: res/drawable-hdpi-v4/common_signin_btn_text_pressed_light.9.png
+SHA1-Digest: wFoXy8GCZNSWm92BM16CPnxfv4s=
+
+Name: res/drawable-mdpi-v4/common_signin_btn_icon_normal_dark.9.png
+SHA1-Digest: HhJ9z+DYpPFo3UaqItrN+RNUlbo=
+
+Name: res/drawable-hdpi-v4/common_signin_btn_text_normal_light.9.png
+SHA1-Digest: st4NJ2IOsfBHP5STAwEqvYTsB4I=
+
+Name: res/drawable-xhdpi-v4/common_signin_btn_icon_pressed_light.9.png
+SHA1-Digest: CXX2E5tGOviUvDKEMiyU/8zIzI8=
+
+Name: assets/pig_attack.ogg
+SHA1-Digest: Jbx/tc6nv8cjNfGlN3GhPufnQjA=
+
+Name: assets/missile.png
+SHA1-Digest: BZ2ObovQplbl1XcbMjvK+39KwNs=
+
+Name: assets/music.spx
+SHA1-Digest: J1rnL9WylRqVE/URPatzPKJmvi0=
+
+Name: assets/upgrade.plist
+SHA1-Digest: WwJjbc4uSpgAEwVBdx9AQFM2jh4=
+
+Name: res/drawable-xxhdpi-v4/common_signin_btn_text_normal_light.9.png
+SHA1-Digest: +1DoyMznNUpsC/b6P+34wodpVXs=
+
+Name: assets/armor3.spx
+SHA1-Digest: hOCbfz+Bzv632X6xj/jObPs/SYw=
+
+Name: assets/ui_record.plist
+SHA1-Digest: BaNVn9YumXLIce7Sdb7IzS546Wc=
+
+Name: assets/sling_attack.ogg
+SHA1-Digest: 63yYa3Gm2zCx01dsBsJe24E5TVM=
+
+Name: assets/berlin_0.png
+SHA1-Digest: 4/MVvtiWzfJ3LTZT5HH/inHnW+w=
+
+Name: assets/jump.arrowhead.png
+SHA1-Digest: 20Ow80wWKBaxVV/PUyngEgw0iN4=
+
+Name: res/drawable-hdpi-v4/ic_plusone_small_off_client.png
+SHA1-Digest: MDqgTVve/ECWdg1RF1Xo/IJ49zo=
+
+Name: assets/green.fire.spx
+SHA1-Digest: Th4UaDCIsF3aGpCswgjTz4OUPWQ=
+
+Name: assets/sound.box.png
+SHA1-Digest: hJ7urA9NhGpNQEo2aWadA1hvpx4=
+
+Name: res/drawable-xhdpi-v4/common_signin_btn_text_disabled_focus_ligh
+ t.9.png
+SHA1-Digest: guCYmdhfDLUURq65iF8G0INx3Zc=
+
+Name: assets/vg_mute_on.png
+SHA1-Digest: 4JDaX13RiPW/OBOTIEOVqWs5S+Q=
+
+Name: assets/cards.clown123.png
+SHA1-Digest: QvS+g183mXOqlrPazXSmJG2rDYg=
+
+Name: res/drawable-hdpi-v4/common_signin_btn_icon_disabled_focus_dark.
+ 9.png
+SHA1-Digest: Y8kNejuCEOueURKFKNzlmzl8VkI=
+
+Name: assets/dizzy.png
+SHA1-Digest: MyrQGEGICQzRZbZKnqk6MSprmFk=
+
+Name: assets/explosion.ogg
+SHA1-Digest: ZmUakRsqEpaMJcNeFbt94A+P0vg=
+
+Name: assets/blast.spx
+SHA1-Digest: iVM4cSS8ifjut288ouiXyY23BXw=
+
+Name: res/drawable-xxhdpi-v4/ic_plusone_tall_off_client.png
+SHA1-Digest: nnQrYOSge8+DJ/aZ1dVTUztprv8=
+
+Name: assets/super.slingshot.spx
+SHA1-Digest: 9FHLe/dZ6r/S1sbiLmUE6nE4wDs=
+
+Name: assets/super.green.monster.png
+SHA1-Digest: j+T5aWvuOSfwXin4qePIUig5eL4=
+
+Name: assets/thunder.ogg
+SHA1-Digest: 4iSIniIANu6UOivdTZmdBfeDZYo=
+
+Name: res/drawable-xhdpi-v4/common_signin_btn_icon_disabled_focus_dark
+ .9.png
+SHA1-Digest: xKWFKQf1Pgik6Ufh9Ou2AI1x82Q=
+
+Name: assets/switch_tab.ogg
+SHA1-Digest: xtYVuL5ZAWbP+IRqSIYMXG3PMV0=
+
+Name: res/drawable-mdpi-v4/common_signin_btn_text_normal_dark.9.png
+SHA1-Digest: qb2cuZBfQoTCUXVxSiQijF/jptY=
+
+Name: assets/bird.spx
+SHA1-Digest: sgULGhIBZ5dWN1jLX8j92ViDXXw=
+
+Name: res/drawable-mdpi-v4/common_signin_btn_icon_pressed_light.9.png
+SHA1-Digest: i0+ZDHiBO29XUZSz9CqihDODOUg=
+
+Name: assets/knight_attack.ogg
+SHA1-Digest: CVwwupOAxEzIq4a8ABkl7NJN6bA=
+
+Name: assets/orcassasion.png
+SHA1-Digest: yYMQzwiokSlBYoCUSpe5ki/hEVY=
+
+Name: assets/UIBackground.png
+SHA1-Digest: SrbdlTzXrbtkVVHacuaelkZrOu4=
+
+Name: assets/drummer.spx
+SHA1-Digest: rDYV/LcVO8naASvT7lCuxLLcqBA=
+
+Name: assets/roamwizard123.spx
+SHA1-Digest: UykcWtB/fabPu3RzLJ4w21pl6vM=
+
+Name: assets/assassin_die.ogg
+SHA1-Digest: YS86z/Ht+jEzB5XnQDgtotDMxlU=
+
+Name: assets/ui_market_hero.png
+SHA1-Digest: 6YCsEsSaOQaLNXpzgDrrRUmlcOA=
+
+Name: res/drawable/common_signin_btn_icon_dark.xml
+SHA1-Digest: Es+BrUj/3iO3PavER7kzspqepwc=
+
+Name: assets/food_up_ready.ogg
+SHA1-Digest: b9ejpC6+6rbGnKo37nmnH+w/9Lc=
+
+Name: assets/taurenpig.spx
+SHA1-Digest: lhVaNUDKJAkS2yy/n3yHNqua8WY=
+
+Name: assets/vg_privacy.png
+SHA1-Digest: FjnLt0wFlvZh4nhH25tMJFPPBRg=
+
+Name: res/drawable-xhdpi-v4/common_signin_btn_icon_pressed_dark.9.png
+SHA1-Digest: wfOoKURR8pgVTlXpj8gmQNVDWbY=
+
+Name: assets/super.poison.blue.monster.png
+SHA1-Digest: yd9a7u7HRRgpQ+06A8SRU/XWqo0=
+
+Name: assets/lightning.png
+SHA1-Digest: AZFutVfWGnjDHaxi4XJbooU/Cco=
+
+Name: assets/motorsoldier123.png
+SHA1-Digest: d9D0to8VDg3+ZApA3ITODxIuet8=
+
+Name: res/drawable-mdpi-v4/common_signin_btn_text_focus_dark.9.png
+SHA1-Digest: ByiOauEkjNwB7SImgL9u/CrPWKs=
+
+Name: assets/archmage_attack2.ogg
+SHA1-Digest: vdhuXkc969B3Akul3NpDoTJCvyE=
+
+Name: res/drawable-xxhdpi-v4/common_signin_btn_text_disabled_dark.9.pn
+ g
+SHA1-Digest: FzDJD2iWEqwPmHqfNPIbbpVuxUs=
+
+Name: res/drawable-xxhdpi-v4/ic_plusone_small_off_client.png
+SHA1-Digest: QITJ8CHL6O6NtaNSW5zIXy1Z3PY=
+
+Name: assets/blast.png
+SHA1-Digest: 2MmNgh96TvVUfX/QCNCt/mOveD8=
+
+Name: res/drawable-xhdpi-v4/common_signin_btn_icon_focus_dark.9.png
+SHA1-Digest: 78TcJz6spW0Xj1uhqYp51sJ+ZW4=
+
+Name: assets/super.dual.weapon.spx
+SHA1-Digest: 6aJ8oHKNQ+fXpZ7rrVv85gqQGDI=
+
+Name: res/drawable-xxhdpi-v4/common_signin_btn_icon_focus_light.9.png
+SHA1-Digest: G6buKYJ4Qlb1Pvo2IC95/wODhKI=
+
+Name: assets/game.plist
+SHA1-Digest: ORrrqaKViHAycnMikL6ccXtmebE=
+
+Name: assets/fire.armor.spx
+SHA1-Digest: Qg8dKuVoaiS5rQvbnbma1Ybs08w=
+
+Name: assets/select.ogg
+SHA1-Digest: 1qwBrZH7fjHR52meFRMuqFetpPA=
+
+Name: assets/soldier_head_level1.plist
+SHA1-Digest: vPt6Cz7Z/2on22h6i2ahhD0ARSI=
+
+Name: res/drawable-xhdpi-v4/common_signin_btn_icon_focus_light.9.png
+SHA1-Digest: V5CfWOf/lvOSOkeQ2tqNfB53eRI=
+
+Name: assets/menu.ogg
+SHA1-Digest: SvsImzskibwMb60utKAsfVjwPOE=
+
+Name: assets/ui_market_equip.png
+SHA1-Digest: UTY1zgTV2sc3xAdDK4GeeHOzuz0=
+
+Name: res/drawable-hdpi-v4/ic_plusone_tall_off_client.png
+SHA1-Digest: mKmFlpzPqO2eN1UQWWTrY/HvgmA=
+
+Name: assets/super_orc_attack.ogg
+SHA1-Digest: 3Gwjl981c9x5NjcuCGt8W1HIRvY=
+
+Name: res/drawable-hdpi-v4/common_signin_btn_icon_focus_light.9.png
+SHA1-Digest: Kot3BVTmny2Pj+Q13svU8DIZH/o=
+
+Name: assets/guitarist.png
+SHA1-Digest: zqfaOmef/2uDBaOrtqAOy4wxyrI=
+
+Name: assets/super_orc_attack2.ogg
+SHA1-Digest: 24eHRnmR89WXgmc0v/kNA9oaoE8=
+
+Name: assets/cowboy.on.pig.spx
+SHA1-Digest: YseWkJkaSMyfE5wK2UdTMwcoa60=
+
+Name: assets/mage_die.ogg
+SHA1-Digest: m4+4d3YAhTkvaMinefrHawhYrNk=
+
+Name: assets/soldier_head_level2.plist
+SHA1-Digest: xeDLuMiJEcA7+pLUZG2i+vXQzoM=
+
+Name: assets/equipment_detail.png
+SHA1-Digest: 4fmDhVK0GOtB1pBH4owbxEpFCOQ=
+
+Name: assets/ui_market_soldier.plist
+SHA1-Digest: /Sn7TJQLDU4RQODKejcLpMaybiQ=
+
+Name: assets/equipment_logo.plist
+SHA1-Digest: mS6psoN61xxrwijBtmb3ON1U2K0=
+
+Name: assets/doctor_attack.ogg
+SHA1-Digest: S9YO0FUYDaTMY1DKnYFjV6lvl4Y=
+
+Name: assets/cloud.spx
+SHA1-Digest: rkK7UAFqe5jLncbxfzjgAczOLU0=
+
+Name: assets/motorsoldier123.spx
+SHA1-Digest: Sh6pJnaNn4iDkwMotk3JcmF3sDU=
+
+Name: assets/soldier_head_level0.plist
+SHA1-Digest: 38PPZ4ZJ/v8/P52nkaRaMwLLg0A=
+
+Name: assets/hero.head_00.png
+SHA1-Digest: 5hZSN+pIXCtcPrn2jqnj0w3eQsY=
+
+Name: assets/poison.assasion.spx
+SHA1-Digest: xGib78181WaRw9Aa/R/WB9H15To=
+
+Name: res/drawable-xhdpi-v4/common_signin_btn_text_disabled_light.9.pn
+ g
+SHA1-Digest: VxYo54DpO8gLZZlccAgua4rEmUI=
+
+Name: assets/dunu.plist
+SHA1-Digest: +eH5In7lCiIbce4ellcOrqKfXmM=
+
+Name: assets/tutor.plist
+SHA1-Digest: HmHnx2J+falbjpuelVJvn4mMiac=
+
+Name: assets/ui_iab.plist
+SHA1-Digest: Y6l7Lr6qYuFsJvFZ8TDM+RL+QhQ=
+
+Name: res/drawable-hdpi-v4/common_signin_btn_icon_disabled_focus_light
+ .9.png
+SHA1-Digest: Y8kNejuCEOueURKFKNzlmzl8VkI=
+
+Name: assets/ui_market_share.plist
+SHA1-Digest: stLeqhcl0aZrYceCHctXxFTOzd8=
+
+Name: assets/berlin_bold_outline_0.png
+SHA1-Digest: ioPcbvZ0sEBry2qQ7Ga+t+Mnqwc=
+
+Name: res/drawable-xhdpi-v4/common_signin_btn_text_disabled_dark.9.png
+SHA1-Digest: VxYo54DpO8gLZZlccAgua4rEmUI=
+
+Name: assets/boxer_attack.ogg
+SHA1-Digest: eLet3vv4ba+VEqKJWAI70QBkyU0=
+
+Name: assets/soldier_head_level1.png
+SHA1-Digest: 9vJXTS0vHPwN2x/c/+Upc5ZS2Wg=
+
+Name: assets/blue.monster.png
+SHA1-Digest: ZBZ7Ek+U8q4rQJXjn+t6lbRs1I8=
+
+Name: assets/mech_attack4.ogg
+SHA1-Digest: iDNJCMeD1Uj25BnyiZ1jZi0w6bI=
+
+Name: assets/heroskill.add.attckspeed.spx
+SHA1-Digest: oCtXxjg3/Q4Hx0tI7eflWc0huRE=
+
+Name: assets/equipment_detail.plist
+SHA1-Digest: dynLs3g9iNp3QoXfoLuoNaD5pp0=
+
+Name: assets/mech_attack.ogg
+SHA1-Digest: NLdmGoDJYPHvU9sr/5wmxd1iMRI=
+
+Name: assets/poison.blue.monster.spx
+SHA1-Digest: YIxzifwHvHE5HjVqlPJznok+hW8=
+
+Name: assets/taurenpig.png
+SHA1-Digest: JlMlm4iy74oMPFCTV+bRTBQLND0=
+
+Name: assets/hero0.spx
+SHA1-Digest: VTSPW503xIy/Fpy6vmXmn5O2g0Y=
+
+Name: assets/super.poison.blue.monster.spx
+SHA1-Digest: cyHMCwOI1Pg5Z5z9ZBjGRbRuQjY=
+
+Name: assets/heroskill.fire.spx
+SHA1-Digest: q3EeBp2r6pO+JIyAoVidS8NP7x4=
+
+Name: assets/draw3.ogg
+SHA1-Digest: XHHXTuJY06gayYDqv6IopdcFHjc=
+
+Name: assets/warrior123.png
+SHA1-Digest: WvhDfKPuPAmPYRNMc/21zKO8Ywg=
+
+Name: assets/bird.png
+SHA1-Digest: VDm3QHKmopIFC21c8SNV5VkGtBs=
+
+Name: assets/cow_king_die.ogg
+SHA1-Digest: VtaHPeCUd8IM4OvaCeaG58dIiu4=
+
+Name: assets/castle.boom.spx
+SHA1-Digest: I3Z3Ga+BD3sWj0lLKlC4kQvMjwI=
+
+Name: assets/ui_market_equip.plist
+SHA1-Digest: RjKUU/0vowC89Wk9iWXoXTcLOgs=
+
+Name: AndroidManifest.xml
+SHA1-Digest: Y19jS3pLrEzq0BbFCSW9uz/c0wM=
+
+Name: res/color/common_signin_btn_text_light.xml
+SHA1-Digest: HTty+neeaP+7ZrnZ3UHrLHT2IHk=
+
+Name: assets/crossbowman123.spx
+SHA1-Digest: JzybXrYjnC19YCneO/rAn15N6pQ=
+
+Name: assets/stars2.png
+SHA1-Digest: 2sD9URikeWC/wEr1egy5Qp0w5Ww=
+
+Name: res/drawable-xhdpi-v4/common_signin_btn_icon_normal_light.9.png
+SHA1-Digest: NtMWCSQ4d2rJGiPYXdtQtva5ELo=
+
+Name: assets/cow_king_attack2.ogg
+SHA1-Digest: gyXdy40ZqWK3kMuJLYTwlC9ILiM=
+
+Name: assets/final.win.image.png
+SHA1-Digest: BJljpL0OKyMVKVsvr4wgz8+p6OI=
+
+Name: res/drawable-xhdpi-v4/icon_old.png
+SHA1-Digest: fayoObw81sLdXK+mbW7mSF90REY=
+
+Name: assets/hackbuteer_02.png
+SHA1-Digest: vjot6aauuzgFYBrnf8pzAkv2AGE=
+
+Name: res/drawable-hdpi-v4/common_signin_btn_icon_pressed_dark.9.png
+SHA1-Digest: X8KQ7oOkOcNPEDfiMGryuZi3fRU=
+
+Name: classes.dex
+SHA1-Digest: UM+JuRJjOOA30lCacb4Z+a2Mgwg=
+
+Name: res/drawable-xxhdpi-v4/powered_by_google_light.png
+SHA1-Digest: i1ZTqep+pgKdIhB18Xwu3c7KrFI=
+
+Name: assets/super.blue.monster.spx
+SHA1-Digest: Wkm09G6M6KDAYcOrhM6liMqBQYA=
+
+Name: assets/super.blue.monster.png
+SHA1-Digest: E+H4fUvF951TO4ocUWzo4HXMUA8=
+
+Name: assets/light.arrow.png
+SHA1-Digest: FgfGmJS7jZKHkbAxLvKNWsP9aQM=
+
+Name: assets/wizard.png
+SHA1-Digest: 1hDaO1GkBWYs4PXa+moOcBZrx38=
+
+Name: res/drawable-mdpi-v4/common_signin_btn_text_disabled_light.9.png
+SHA1-Digest: zFWwRs1UzDvgfpDCd1RJAgLJ1r0=
+
+Name: assets/gull.png
+SHA1-Digest: afj7+LTEbBibVmTO/1+Q5wy6GMY=
+
+Name: assets/poison.spx
+SHA1-Digest: N97Dpbq2ARR9gc2cq9ENKEl9J8g=
+
+Name: assets/armor12.spx
+SHA1-Digest: 5t9qGaJ0u3JJ+fi+0fq/g7LVQ8Q=
+
+Name: assets/clothesline.spx
+SHA1-Digest: 65/iC7hM9xAvcCMp7jSqNSM9yqc=
+
+Name: assets/spell_snow.ogg
+SHA1-Digest: 31FM0hPPMfgntQK1/ZgUP3x77Es=
+
+Name: res/drawable-hdpi-v4/common_signin_btn_icon_normal_light.9.png
+SHA1-Digest: iYrEoFlRN9JnUYNnZaGgDox9B2s=
+
+Name: assets/knight123.spx
+SHA1-Digest: Yne1rYl+W8jW6yqUh3/xBl2A36o=
+
+Name: assets/drummer.png
+SHA1-Digest: Xp74rEmWYsad1hGkVhv0VVjkwqM=
+
+Name: assets/arrow_hit.ogg
+SHA1-Digest: +XujbqMRTgsTbz3CHh9z+jgafcg=
+
+Name: assets/bomber_die.ogg
+SHA1-Digest: fiiitYsr+iNm1ltFalFYS6YEJuQ=
+
+Name: assets/blue.monster.spx
+SHA1-Digest: n8Hgvwwfz25lV+L3zPZTs2EarYM=
+
+Name: assets/jump.arrowhead.spx
+SHA1-Digest: sImItzofPyFah9FxKD04SBeCHJs=
+
+Name: res/drawable-mdpi-v4/common_signin_btn_text_normal_light.9.png
+SHA1-Digest: +S7K5XreSnOZZzgl+tY/ws+WB98=
+
+Name: assets/clothesline.png
+SHA1-Digest: Uz8kJRDhwUP5dEzIUELYQpOPRlI=
+
+Name: res/drawable-xhdpi-v4/common_signin_btn_icon_disabled_dark.9.png
+SHA1-Digest: oF+13HnsmAk7j7d8YWA6FrzOMEM=
+
+Name: assets/atombomb.png
+SHA1-Digest: QLD1Z0BKy+wYEXMLFK31C3rYE8w=
+
+Name: assets/bruise.effect.spx
+SHA1-Digest: IPyl6QSu7poQRaVgdNjUr/5kb6o=
+
+Name: assets/fireball.png
+SHA1-Digest: QQWIIQXZwMTaMsAZ1bq+eX6UQeU=
+
+Name: res/drawable-hdpi-v4/common_signin_btn_text_disabled_focus_light
+ .9.png
+SHA1-Digest: RhSKzVt62w+QYn/2cc6ZABP8U2g=
+
+Name: assets/fps_images.png
+SHA1-Digest: zxS+KLAFHENXUqrqIqsBBZYklec=
+
+Name: assets/gamble.plist
+SHA1-Digest: GhqNWyB2NKldy1JOgVUHcxZA0oc=
+
+Name: assets/spell_attack.ogg
+SHA1-Digest: Bk3VGm8DHOh2AxgBIo0JER4cVlA=
+
+Name: res/drawable-xhdpi-v4/common_signin_btn_text_pressed_light.9.png
+SHA1-Digest: LOnYRXZ7AMar5faphkv8oE5u2Ts=
+
+Name: assets/footman_die.ogg
+SHA1-Digest: kMpzfv8VFbbWD9iPJJ3zcVENnq8=
+
+Name: assets/gull.spx
+SHA1-Digest: LCSC3EgCLUab92G4OLYKWR9zmTU=
+
+Name: assets/spend.ogg
+SHA1-Digest: eHp3Jv990TIZ5HFwW4GFXKdg8NM=
+
+Name: res/drawable-xxhdpi-v4/ic_plusone_medium_off_client.png
+SHA1-Digest: 5jta9QUYJ9k9tMHwzhYqoefVy+o=
+
+Name: assets/doctor123.png
+SHA1-Digest: y3fmLRc+olBhiylu8yaoatzDc98=
+
+Name: assets/CloseSelected.png
+SHA1-Digest: ELNiOJGR4ml0lXM1TAhH6rAU7lE=
+
+Name: assets/archer123.png
+SHA1-Digest: Vl41BvVJY1HJsQlgoxLtm/9XYIk=
+
+Name: assets/lightning.spx
+SHA1-Digest: 9IlzNLh0hS0DgkL3qWvdqW6EizA=
+
+Name: assets/gun_attack2.ogg
+SHA1-Digest: 7dkh0eJhluBW56bvQD8hNuMkem0=
+
+Name: res/drawable-xxhdpi-v4/common_signin_btn_text_normal_dark.9.png
+SHA1-Digest: u55QGnsgneT2NmeGeumwleQa6f4=
+
+Name: assets/wizard_00.spx
+SHA1-Digest: rGqvXmUh29JWOO2kA18iwglpXgQ=
+
+Name: res/drawable-mdpi-v4/ic_plusone_small_off_client.png
+SHA1-Digest: lOwgiwPxI8R2+0EZBBOzp3VD+bg=
+
+Name: assets/snow.plist
+SHA1-Digest: UQRdJ4ZLTvniOhKnxmQA9XvS/0w=
+
+Name: assets/yellow.star.plist
+SHA1-Digest: km61PY7LXbOhM5J/Rq+w2iSiFvQ=
+
+Name: assets/gamble.bg.png
+SHA1-Digest: 2I9vU5SOoTovnM/S2DO6GvmdEDM=
+
+Name: assets/hackbuteer_02.spx
+SHA1-Digest: UolNu65nyrZShs7pA7oFe0o6JLI=
+
+Name: assets/guitarist.spx
+SHA1-Digest: uQGfM/f/qNxyAL0AdTaNoCTZL2M=
+
+Name: assets/button.ogg
+SHA1-Digest: tfWYHu3EUrS5fo6hBX9Lzrm7h/U=
+
+Name: assets/slingshot.spx
+SHA1-Digest: Bo63KiJ6+ivjhn5OXRXP2AM9QDg=
+
+Name: assets/add.blood.effect.png
+SHA1-Digest: OVi0EEDTcjLrOuGLkP+QXbfWM50=
+
+Name: res/drawable-hdpi-v4/powered_by_google_dark.png
+SHA1-Digest: I/G/mu9XuPJTzwp/WdZLjQ6xTfg=
+
+Name: res/drawable-xxhdpi-v4/common_signin_btn_icon_disabled_light.9.p
+ ng
+SHA1-Digest: 02LmsKBdlW1KM3T8AECzhzSpF7s=
+
+Name: assets/spell_fire.ogg
+SHA1-Digest: v6iggyn/q5LqT6nPp4rZQ2nKEXc=
+
+Name: assets/super.slingshot.png
+SHA1-Digest: zoIex/GqX0GUEevPCgGmpjU04TM=
+
+Name: res/drawable-mdpi-v4/ic_plusone_tall_off_client.png
+SHA1-Digest: AD2aFw6TcqHuDE1AdYky7h+et9s=
+
+Name: res/drawable-xxhdpi-v4/common_signin_btn_icon_disabled_dark.9.pn
+ g
+SHA1-Digest: 02LmsKBdlW1KM3T8AECzhzSpF7s=
+
+Name: assets/yanwu.png
+SHA1-Digest: fbChfGKAm6S/8JlYAeaUbbabMkk=
+
+Name: res/drawable-xhdpi-v4/common_signin_btn_text_normal_light.9.png
+SHA1-Digest: Maz4nEIPM8sf2EbwFqBLWBzpedY=
+
+Name: assets/boxer.png
+SHA1-Digest: Jjr9S/bga3lxR2gDu7MTnvRFk2Q=
+
+Name: res/drawable-mdpi-v4/common_signin_btn_icon_disabled_light.9.png
+SHA1-Digest: Kg64y21REkVRf7NvFXGxL2bKUhg=
+
+Name: assets/hero0.png
+SHA1-Digest: auAz5XtNElcRVOAbIeTw2IdJv4I=
+
+Name: assets/draw2.ogg
+SHA1-Digest: uoXFcUhIyzUlY9uQnqGcPDM2Z5E=
+
+Name: assets/berlin_bold.fnt
+SHA1-Digest: ucWHjtkJRqhUOp4TtzIvsJnUnjQ=
+
+Name: assets/ui_loading_effect.png
+SHA1-Digest: cg0d6fle+mly/Lge/5e1aQMrGqg=
+
+Name: res/drawable-mdpi-v4/common_signin_btn_text_disabled_dark.9.png
+SHA1-Digest: zFWwRs1UzDvgfpDCd1RJAgLJ1r0=
+
+Name: res/drawable-xhdpi-v4/common_signin_btn_icon_disabled_light.9.pn
+ g
+SHA1-Digest: oF+13HnsmAk7j7d8YWA6FrzOMEM=
+
+Name: assets/ui_market_soldier.png
+SHA1-Digest: DadSuOEskYtwWmsAt3GQ0HthGsA=
+
+Name: res/drawable-xxhdpi-v4/common_signin_btn_icon_disabled_focus_lig
+ ht.9.png
+SHA1-Digest: SXOyej7IXnI0/smJ5mymTBXKSQY=
+
+Name: assets/win.ogg
+SHA1-Digest: DJtGiwsHO8boKKM71zQVuUNuhk0=
+
+Name: assets/mech_attack2.ogg
+SHA1-Digest: 4eKm4xY/rGbJor+CAyhrMPqxWhI=
+
+Name: assets/green.fire.png
+SHA1-Digest: igkPN85G9Bx8cbYpejO4Bjaimn4=
+
+Name: assets/bg.plist
+SHA1-Digest: du1fOkaS5G8VJ+wpxTz7LuaXX9Y=
+
+Name: assets/moto_attack.ogg
+SHA1-Digest: BXIVgqOmsIfxz0bK81Uh0YYASWM=
+
+Name: assets/berlin_outline_0.png
+SHA1-Digest: 6r9SFwQz+FsDLCvAE699eBXn4Gc=
+
+Name: assets/long_nose_attack.ogg
+SHA1-Digest: JCTNHLuRaIITcF7y7eRR2m69XbA=
+
+Name: assets/evilflag.png
+SHA1-Digest: W6sj6957V9gyc5bItvd8QjVI+N0=
+
+Name: assets/equip.ogg
+SHA1-Digest: tbBmGOMfSsWCDGpsgc5xByHiaUo=
+
+Name: assets/soldier.describe.plist
+SHA1-Digest: xb1GDAD3IFU0jdaU0ewcjaojWbM=
+
+Name: assets/super.green.monster.spx
+SHA1-Digest: puf0cdV8yQLqZDyjNTFl8WUDvsg=
+
+Name: assets/ui_loading_soldier.png
+SHA1-Digest: SluXR7B/qVMY+hevkihHEmNT134=
+
+Name: assets/blood.feeding.spx
+SHA1-Digest: g1G50p7rZ8H464aOkIMDov4A6l4=
+
+Name: assets/ui_iab.png
+SHA1-Digest: 4B3Z5EfpviCn6nQdhgRAs1x/wjA=
+
+Name: res/drawable-mdpi-v4/ic_plusone_standard_off_client.png
+SHA1-Digest: xWYT0qzRVNaGybBaBeMKbeGgkgE=
+
+Name: assets/soldier_head_level2.png
+SHA1-Digest: zIgGnByYjpP0+nfQ2XcASVQJlxg=
+
+Name: res/drawable-xhdpi-v4/ic_plusone_small_off_client.png
+SHA1-Digest: LtV8CfoAmgWuTGWNZXeWeNDR1hY=
+
+Name: assets/clown_attack.ogg
+SHA1-Digest: 2neHogabd5VCNtGOnxPqLHvl9l8=
+
+Name: res/drawable-xxhdpi-v4/ic_plusone_standard_off_client.png
+SHA1-Digest: GsuPJv1dNcolfrnKEL4GX2NHRmk=
+
+Name: assets/blue_die.ogg
+SHA1-Digest: kVR/QfJ+tHySZZskhyBYl03Vcxw=
+
+Name: res/drawable-hdpi-v4/common_signin_btn_text_disabled_focus_dark.
+ 9.png
+SHA1-Digest: RhSKzVt62w+QYn/2cc6ZABP8U2g=
+
+Name: assets/battle1.ogg
+SHA1-Digest: QUVByV340UZo8tp/qyCbc3KJR2w=
+
+Name: assets/fire.png
+SHA1-Digest: NM9bEA4AwUsdBHwB78Fsp6u7VzI=
+
+Name: assets/hero1.spx
+SHA1-Digest: dN+3DfaPxcYJfgAGQzdHrpeF+sg=
+
+Name: assets/door.ogg
+SHA1-Digest: iANl9A4wHa3g30pVn20o8xxAHcA=
+
+Name: assets/fly.star.plist
+SHA1-Digest: uwTlqxz/8mv1xf/H3z8dPWBz8FM=
+
+Name: assets/blood.spx
+SHA1-Digest: yqfNb83kdBbxXobiCEwjyfevgak=
+
+Name: res/drawable-xxhdpi-v4/common_signin_btn_text_focus_light.9.png
+SHA1-Digest: oLYE8ZkspI8WUxqfg1VNeFJiRGY=
+
+Name: assets/poison.blue.monster.png
+SHA1-Digest: KWRqofKk13jt0g2VglsH+FNaL6c=
+
+Name: assets/fireball.spx
+SHA1-Digest: roEDNYzIb8556SA4nHSviXQaRzQ=
+
+Name: assets/heroskill.fire.png
+SHA1-Digest: Rk9FDPgtgKdWgjcSi2+hN4JRr0g=
+
+Name: assets/bruise.effect.png
+SHA1-Digest: SyxwBF/7z7sAUTh4Ew2X/fixoII=
+
+Name: assets/spell_cd_ready.ogg
+SHA1-Digest: vJPd8yFNby8QriYJ1ddIUv/SWCY=
+
+Name: res/color/common_signin_btn_text_dark.xml
+SHA1-Digest: ZKss7dZxocx8e396OMOfdA9s6wY=
+
+Name: res/drawable-hdpi-v4/common_signin_btn_text_disabled_light.9.png
+SHA1-Digest: l0371EbzDdE1t8SSbQ8tUELjjBE=
+
+Name: assets/boxer_die.ogg
+SHA1-Digest: yv5/M4fE9nH9nyU13Ke7xDmfRyI=
+
+Name: res/drawable-hdpi-v4/common_signin_btn_icon_disabled_light.9.png
+SHA1-Digest: d61b6mlChnxVImu1TzKWQV9xNk0=
+
+Name: assets/bomber_attack.ogg
+SHA1-Digest: NP9afyqE0ttiVowzkksp/Ru0ckE=
+
+Name: res/drawable-xxhdpi-v4/common_signin_btn_text_pressed_light.9.pn
+ g
+SHA1-Digest: Fwd86vNvpMnTL2d2bAaehuQ4m50=
+
+Name: res/drawable-mdpi-v4/ic_plusone_medium_off_client.png
+SHA1-Digest: HHc+sqWu5XtWgMQhN1F5cAwzeew=
+
+Name: res/layout/activity_main.xml
+SHA1-Digest: XIrEFFqCwQARL2tGyVPA0cb8eLQ=
+
+Name: assets/ninjafire.spx
+SHA1-Digest: eoIy9/1weexhdFNXVUtD7FU1ZYM=
+
+Name: assets/hackbuteer_00.spx
+SHA1-Digest: bndEk3oC62mx53xt2IsGc/Nx3QQ=
+
+Name: assets/vg_close.png
+SHA1-Digest: 3Xnnqi2hsqwT1lI7P/bPDCT6Ito=
+
+Name: assets/poison.png
+SHA1-Digest: 5Ru2FlLkczWZGF++FiwVyHq786g=
+
+Name: assets/songstress.spx
+SHA1-Digest: 0LVgQPZnBAC/QPx2XLqj8st1nlc=
+
+Name: assets/hero.head_00.spx
+SHA1-Digest: 4lBvBf4e8KuI6mIVR2JvllVQ2eg=
+
+Name: assets/super.dual.weapon.png
+SHA1-Digest: 6h5ewNPycT/v43/2tqYjq8PKwmU=
+
+Name: assets/vg_cta.png
+SHA1-Digest: D+8nNDJRsuOj79Uf2hm2FVscQas=
+
+Name: assets/ui_loading_effect.spx
+SHA1-Digest: sSM7lcnyrON0fSG9G+4FH9v3coU=
+
+Name: assets/super_orc_die.ogg
+SHA1-Digest: 3B+Za4CqHKdrfhPD2CmmvZBL8ps=
+
+Name: assets/face.cloud.png
+SHA1-Digest: YGLQCeyAiukvPOpq2InizDczi6k=
+
+Name: assets/suicide.attacker.spx
+SHA1-Digest: spIbNtIvzVFMvhym+0euNbOOw6M=
+
+Name: assets/xing.png
+SHA1-Digest: iXgWqWirFYggSZWMaA7Yqs0sc1c=
+
+Name: res/drawable-xhdpi-v4/common_signin_btn_icon_disabled_focus_ligh
+ t.9.png
+SHA1-Digest: xKWFKQf1Pgik6Ufh9Ou2AI1x82Q=
+
+Name: res/drawable-hdpi-v4/common_signin_btn_text_pressed_dark.9.png
+SHA1-Digest: zRbHLmdKBevJSr+o02FaZQNfDEI=
+
+Name: assets/hack_die.ogg
+SHA1-Digest: C0LCmgUr5R7hLmStGAjal9HEkxk=
+
+Name: assets/berlin_bold_outline.fnt
+SHA1-Digest: 92+BunIIUATIJNrz5/3nLEQTOo0=
+
+Name: assets/gamble.png
+SHA1-Digest: w/DobFuPnBKphfUp+TVxnJDnYo4=
+
+Name: res/drawable-mdpi-v4/powered_by_google_light.png
+SHA1-Digest: ZTHLPZe63ATwVGAlXju4hnecsME=
+
+Name: assets/draw1.ogg
+SHA1-Digest: /Y7EvsiirekifUhOvKhoW7U8CG0=
+
+Name: assets/bigsky.png
+SHA1-Digest: /QObQDIB274BZ4Md2Q/ULJGhU7I=
+
+Name: assets/cow.king.spx
+SHA1-Digest: K+VTD6H7Fa+SHA7oCE1v+AlugrE=
+
+Name: assets/archmage_die.ogg
+SHA1-Digest: u5jvlnn6JwvbXKIbZSPsVjR7y8g=
+
+Name: assets/gold.fly.spx
+SHA1-Digest: n6QQ92LER1/eSNSvOoY7QYnC/hM=
+
+Name: assets/ui_market_share.png
+SHA1-Digest: 7sThdehI45yeSHzB5dBbiXqS8Yw=
+
+Name: res/drawable-xxhdpi-v4/common_signin_btn_icon_pressed_dark.9.png
+SHA1-Digest: CPCAnvzwScZmgSh0Is7KfMsQc/E=
+
+Name: res/drawable-hdpi-v4/common_signin_btn_icon_pressed_light.9.png
+SHA1-Digest: QZQVORrrI4SY+UeN1/1Dw7lPzXg=
+
+Name: res/drawable-xhdpi-v4/common_signin_btn_text_disabled_focus_dark
+ .9.png
+SHA1-Digest: guCYmdhfDLUURq65iF8G0INx3Zc=
+
+Name: assets/poison.ogg
+SHA1-Digest: zG9L8jee1fUDVvPRnja5bPLFbSo=
+
+Name: assets/assassin_attack.ogg
+SHA1-Digest: aBjSWHsN2zAQkY9PX6vUckLXRiE=
+
+Name: assets/ui_market_castle.plist
+SHA1-Digest: 1qvRdFB1tl4AZmlHuKW1DtekQ6E=
+
+Name: res/drawable-hdpi-v4/powered_by_google_light.png
+SHA1-Digest: 1p8HkYSQc6asTjUOCQeAiFfr8oU=
+
+Name: assets/menu_lighting.ogg
+SHA1-Digest: XuOXO7o7FCVNoyzX4QHyUylunko=
+
+Name: assets/sound.box.spx
+SHA1-Digest: Qn6nq9gnQHaLe/ndv73DL5tcAhY=
+
+Name: assets/wizard_01.spx
+SHA1-Digest: SGeunGF4ARipqsLi0cYNdqF3aOg=
+
+Name: assets/ninja123.spx
+SHA1-Digest: MF6OdDOFrhjpRA8d8LvjUsa8gJI=
+
+Name: assets/archmage_attack.ogg
+SHA1-Digest: Y3u6YwqEZouqcDM2TfDG/kL5nWs=
+
+Name: assets/turting.png
+SHA1-Digest: BHNkk/vv/iBTBOa/5vpzdjz6OkU=
+
+Name: assets/archer_attack2.ogg
+SHA1-Digest: 0XHnPn2/jMHgeZQqqvxCnWxMYfw=
+
+Name: res/color/wallet_secondary_text_holo_dark.xml
+SHA1-Digest: TQSnfZXHxpOfN953Su80h6dYfHc=
+
+Name: assets/ninjafire.png
+SHA1-Digest: /E4gH0cmUErVIH5ISR2U6GJEpDo=
+
+Name: assets/soldier_head_level0.png
+SHA1-Digest: 2/mq7YBUeXE/9sIepTCWn/aSdQk=
+
+Name: assets/ui_loading.png
+SHA1-Digest: z/WkuppMb7PcNinouu6vaDgDyh8=
+
+Name: assets/CloseNormal.png
+SHA1-Digest: lK3YP08iS3o4cJED6BTeWOjtVRY=
+
+Name: assets/armor12.png
+SHA1-Digest: NBIUeZ0sGDTLe83/mCvpDuWSH70=
+
+Name: assets/cards.clown123.spx
+SHA1-Digest: 5G2YtcCSpXBC4PhBu3KkhJQe6R4=
+
+Name: assets/wizard_02.spx
+SHA1-Digest: Ebk68PcFMi3qs57EEvPgSywRwqc=
+
+Name: assets/ninja_die.ogg
+SHA1-Digest: 58lgqGNl4B1wPsDFBkTnullN2FE=
+
+Name: assets/moto_attack2.ogg
+SHA1-Digest: FBs2h/j8ta9mA1CTSC5S8Tn7kj0=
+
+Name: assets/ninja_wave.ogg
+SHA1-Digest: +AA0rHYzInkMev9QVi1d1gj1G44=
+
+Name: res/drawable-hdpi-v4/ic_plusone_standard_off_client.png
+SHA1-Digest: 3M2Hwey0trjQpX8kpVoQgSeehjY=
+
+Name: assets/ui_loading.plist
+SHA1-Digest: l/68pIT1S1m9/vo+Xy6jqElG41A=
+
+Name: assets/evilflag.spx
+SHA1-Digest: iPmJc+LjFSuqcukliS0U9Ked8AQ=
+
+Name: assets/berlin_outline.fnt
+SHA1-Digest: mwDmLnDu/dBe2qwn4wNN49hdMaw=
+
+Name: assets/ninja_attack2.ogg
+SHA1-Digest: eKyn1VaMaYP1r2p5Zj/Z59Ukqnc=
+
+Name: assets/doctor_heal.ogg
+SHA1-Digest: a2rpnFKCsNxtNT+OrVHePGl8pdo=
+
+Name: assets/castle_explosion.ogg
+SHA1-Digest: xoKJyjWXwrD40LLlD5yQnKcztQA=
+
+Name: res/drawable-hdpi-v4/common_signin_btn_text_focus_dark.9.png
+SHA1-Digest: tIuYafbt330Ib34PFlT0n/vuCIY=
+
+Name: assets/cow_king_attack3.ogg
+SHA1-Digest: 8bM2a6V4LSbgBmRInvcbUYgIXEg=
+
+Name: assets/crossbowman123.png
+SHA1-Digest: k4AqcXQmUYH8Nyn3OogDiwASSFg=
+
+Name: assets/switch_tab2.ogg
+SHA1-Digest: 37GDMY9HtBY2UgpVW/8QsukFtSY=
+
+Name: assets/gold.fly.png
+SHA1-Digest: bIJMfNxHeTwO7Chy/d7DCvkJKR0=
+
+Name: assets/music.png
+SHA1-Digest: A2bUU9A6OnUlVIZ6iJJ2KU4vwqw=
+
+Name: res/drawable-xhdpi-v4/common_signin_btn_text_normal_dark.9.png
+SHA1-Digest: fX7/75QQIBFfw7pVp70ucqf5U5s=
+
+Name: assets/green_die.ogg
+SHA1-Digest: EWJU9mtbD5xeEHmS+Cq5V3Ho8Yk=
+
+Name: assets/berlin.fnt
+SHA1-Digest: YPYrDanhq+QmpquiuyLicnMoyCs=
+
+Name: assets/huoguang.plist
+SHA1-Digest: bxNyTijEb6XnKeVahpcWzdFW714=
+
+Name: res/drawable-xhdpi-v4/ic_plusone_medium_off_client.png
+SHA1-Digest: pxNZ8SkEfPjyfAiSKNlW4SZk60Q=
+
+Name: assets/warrior123.spx
+SHA1-Digest: 7bMlRVlegPla5IdT72tF+/GJwKI=
+
+Name: assets/archer123.spx
+SHA1-Digest: HnwLShmygNZUYJawhwq/cl4lhB8=
+
+Name: assets/orcassasion.spx
+SHA1-Digest: kcD/xiuwDO1j9eNktR5Gy45aOpU=
+
+Name: assets/dual_attack.ogg
+SHA1-Digest: /KZSzY5JB4b13OJs++so1qJHlQk=
+
+Name: res/drawable-xxhdpi-v4/common_signin_btn_icon_normal_light.9.png
+SHA1-Digest: 4PBl0z3tj5j2O6AoZ5NjnM41uy4=
+
+Name: assets/gameover.plist
+SHA1-Digest: NVqkBbkSCMCde31pPGW2V3VMofw=
+
+Name: assets/blood.feeding.png
+SHA1-Digest: wAzPMNK69mdZXtaR/fSW4GOqQMA=
+
+Name: assets/super_orc_attack3.ogg
+SHA1-Digest: 4LY4CtmR++Ud4nozAdd65NoVGzM=
+
+Name: assets/ui_war_prepare.png
+SHA1-Digest: vWLtKUR4tlocpFMUgLX88wFDXeM=
+
+Name: res/drawable-mdpi-v4/powered_by_google_dark.png
+SHA1-Digest: SYwxuihJgUaoyjHCQQvZHUzSvgw=
+
+Name: res/drawable-hdpi-v4/ic_plusone_medium_off_client.png
+SHA1-Digest: NHqkBfIL0tvXQGsGHO91mUCAPyI=
+
+Name: assets/boxer_attack2.ogg
+SHA1-Digest: uHcy0vaF0GxBBtZYVySy0eIMW9w=
+
+Name: assets/dual.weapon.png
+SHA1-Digest: tDYdFE0RBArFfw0+C/UFD1BJRfA=
+
+Name: assets/archer_attack.ogg
+SHA1-Digest: hz1zLUg3C73stFqkLsTwR3F6gj0=
+
+Name: res/drawable-hdpi-v4/common_signin_btn_icon_focus_dark.9.png
+SHA1-Digest: 9o1/u8DTKmUFtJbWw07PWOC8+eE=
+
+Name: res/drawable-xxhdpi-v4/common_signin_btn_icon_pressed_light.9.pn
+ g
+SHA1-Digest: QpYPMLLJQuaZ/ZhVx0OtZ59cTMU=
+
+Name: assets/ui_market_hero.plist
+SHA1-Digest: TlraiFhBLjK1tOVcNgjUqO/+w+8=
+
+Name: assets/cow.king.png
+SHA1-Digest: tGdMLYDe9A7+yuzhOydUyHHfa/s=
+
+Name: assets/add.blood.red.effect.spx
+SHA1-Digest: NzBE7AukEZOPRrnIvBJ2mJEAJBs=
+
+Name: assets/knight_attack2.ogg
+SHA1-Digest: zz/u5orjBMpwZ/8w3MWet7ATrG8=
+
+Name: assets/add.blood.effect.spx
+SHA1-Digest: m0ZNlE6dubQcimqxWJ3GwSy4QHg=
+
+Name: assets/clown_die.ogg
+SHA1-Digest: 4giUSSd1GQYkgYvxWuiwEnndOnE=
+
+Name: res/drawable-xhdpi-v4/common_signin_btn_text_focus_dark.9.png
+SHA1-Digest: wy2gI6JBcKql3vfGj5m7Xvu9y1M=
+
+Name: lib/armeabi/libgame.so
+SHA1-Digest: tlRYTabwPq6TxpyEIduiymbe3ps=
+
+Name: assets/firebomb.spx
+SHA1-Digest: OXohXpNwdfsi2sePxQwQe2efJaI=
+
+Name: assets/guang.png
+SHA1-Digest: Bgvgijs4mHjavwD6VVUv8nO3k9E=
+
+Name: assets/mage_attack2.ogg
+SHA1-Digest: ko6VldCvyOuT9wGGLGOm9fq0SYQ=
+
+Name: assets/heroskill.add.attckspeed.png
+SHA1-Digest: WjANe4k0OCdOZKlx0WTk+CC5oR0=
+
+Name: assets/spell_upgrade.ogg
+SHA1-Digest: KKv/+sdugOJjSHquaLjQFD/2sNU=
+
+Name: assets/ui_war_prepare.plist
+SHA1-Digest: CRx8uq22Wj5dQ+21f7Jz8XCdZk0=
+
+Name: assets/blue_archer_die.ogg
+SHA1-Digest: SMMyKJW1o4do/EYQczpRw/gPAa0=
+
+Name: assets/archer_die.ogg
+SHA1-Digest: HhMRgc84Gx6wI53pkLH0bDKtwF4=
+
+Name: assets/ui_loading_soldier.plist
+SHA1-Digest: P+19zV7aJxjUYq6LWRo6zCAx1MI=
+
+Name: assets/game.png
+SHA1-Digest: BEfLAMsNJZ8ADMM3+rnF7zYVDv4=
+
+Name: res/drawable-mdpi-v4/common_signin_btn_icon_disabled_dark.9.png
+SHA1-Digest: Kg64y21REkVRf7NvFXGxL2bKUhg=
+
+Name: assets/ui_market_castle.png
+SHA1-Digest: C3M/Brro2JWuke2/ENCoMfrNl0o=
+
+Name: assets/mech_attack3.ogg
+SHA1-Digest: dEObMx2JvurHzqCZ7twIzwR9Ms0=
+
+Name: assets/oven.fire.spx
+SHA1-Digest: D3cB91y2UBVOMp846eciWwmj77s=
+
+Name: res/drawable-xhdpi-v4/ic_plusone_tall_off_client.png
+SHA1-Digest: znT4P8AI3xcWsBof3ElTFY2hDrk=
+
+Name: assets/armor3.png
+SHA1-Digest: ZEqjtD8DtGbnsWPXqBmcKMTL0mg=
+
+Name: assets/castle.png
+SHA1-Digest: aST+uLs/ysLEWWBvYeJ6DJg3RY0=
+
+Name: assets/ninja123.png
+SHA1-Digest: 6mocKOIyUXGZ9eVJ9yhG6RN1wnA=
+
+Name: resources.arsc
+SHA1-Digest: 3DJeF71Xdp7Mg8t/70qb071qmHo=
+
+Name: assets/pigboy_die.ogg
+SHA1-Digest: +ZH1K80EkqjN30mvmDycsrYjO2g=
+
+Name: assets/soldier_upgrade.ogg
+SHA1-Digest: lngxV7tdKFBtrdNbTJEtdlcs/tM=
+
+Name: assets/bg.png
+SHA1-Digest: QI42nK+01jw2ysAgyidLszyZ6YQ=
+
+Name: assets/gameover.png
+SHA1-Digest: tgps8wX9DcuDaWhzzCqluZLkxw8=
+
+Name: assets/dual_die.ogg
+SHA1-Digest: a6x8YPW3hFP2CFAVTx2RQtgNgTw=
+
+Name: res/drawable-xxhdpi-v4/common_signin_btn_icon_focus_dark.9.png
+SHA1-Digest: p6BYRi7rkJkXlH3GWHNa5Uvxv5A=
+
+Name: assets/guang.spx
+SHA1-Digest: ZjhnfHtbW8BUNaKpRyJB3EcFH60=
+
+Name: assets/boxer.spx
+SHA1-Digest: 22tqlWW2/KPA4KnrulcFEmwdknY=
+
+Name: assets/Lucida_Console_0.png
+SHA1-Digest: t7SrWPh1J+3OraLry1PSsxvHqxA=
+
+Name: assets/green.monster.spx
+SHA1-Digest: r2tm+xB8Trkkk9PfDDQ5b1Vj3dI=
+
+Name: res/drawable-xxhdpi-v4/powered_by_google_dark.png
+SHA1-Digest: gfHaH8EPI7tPXVeskcJGZH2tiRQ=
+
+Name: res/drawable-mdpi-v4/common_signin_btn_icon_focus_dark.9.png
+SHA1-Digest: F8bPf6HX6pzlgTaMtYLM0Xx7C3I=
+
+Name: assets/cowboy.on.pig.png
+SHA1-Digest: Hj9sNKC6Z/40dXdrHDWC2FlTzRg=
+
+Name: res/drawable-mdpi-v4/common_signin_btn_text_focus_light.9.png
+SHA1-Digest: Sbkx7bYtTjipugYBYrWPsOTHxpc=
+
+Name: assets/vg_mute_off.png
+SHA1-Digest: vhPpQ+iPN7V3M45TmpZ6JV8R01c=
+
+Name: res/drawable/common_signin_btn_icon_light.xml
+SHA1-Digest: 6sckvy5Jwoon3rBDDscCMxUXIvE=
+
+Name: assets/long.nose.spx
+SHA1-Digest: HJNJQU/8cRFR+19TJZ7O79mbq3k=
+
+Name: assets/dual_attack2.ogg
+SHA1-Digest: ta6LDt53fVTMMOgjwaiKUVzC6K0=
+
+Name: assets/pig_rush.ogg
+SHA1-Digest: Ykt7NVybZn7aoUi7ZMmN5K71uE8=
+
+Name: assets/assassin_invisible.ogg
+SHA1-Digest: SCACob6HVg7T/XhsE/4zGIsVn14=
+
+Name: res/drawable/common_signin_btn_text_dark.xml
+SHA1-Digest: +dGVOOgtGrsuUQ7q8tguxU/EHEc=
+
+Name: assets/Lucida_Console.fnt
+SHA1-Digest: QsNWHcmks3VgcmeINZcxiYvZjh4=
+
+Name: res/drawable/icon.png
+SHA1-Digest: wn9iJPC9P5r+15aLD68cLWZg9CI=
+
+Name: assets/knight_die.ogg
+SHA1-Digest: kdk24PX3w1lyTRUh0bxTAnjjKkI=
+
+Name: assets/missile.spx
+SHA1-Digest: 5maMSUmoTkO1moDhpJuaKUmG9Zw=
+
+Name: assets/tutor.hand.spx
+SHA1-Digest: aqEERAdvFyLe5obH+j0KuUpUGPk=
+
+Name: assets/hammer_attack2.ogg
+SHA1-Digest: 6rgjasK3VRUotYW/7y0a1frVomI=
+
+Name: assets/blade_attack.ogg
+SHA1-Digest: juFemAWeVGfBzEsjbLnutHz0SpI=
+
+Name: assets/cowboy.on.boar.png
+SHA1-Digest: jbhY2WPC6uJUFXjLiG+xzBejMIk=
+
+Name: res/drawable-xxhdpi-v4/common_signin_btn_text_focus_dark.9.png
+SHA1-Digest: cyGNdaeXN9e7TByKUZATdF174b0=
+
+Name: assets/add.blood.red.effect.png
+SHA1-Digest: CZSO/Tpru5FGauSj7nniIeo/5Tg=
+
+Name: assets/suicide.attacker.png
+SHA1-Digest: 3w7RxZensHbxzQKJQSCFEOD7R9k=
+
+Name: res/drawable-mdpi-v4/common_signin_btn_text_pressed_dark.9.png
+SHA1-Digest: ZEFoK9pKz3WZBs3/Spc72HkbGZU=
+
+Name: res/drawable-hdpi-v4/common_signin_btn_text_normal_dark.9.png
+SHA1-Digest: 9tEorehzp1zOLC1EVh0jqAsRcdg=
+
+Name: assets/particle-snow.png
+SHA1-Digest: iDA3lIkCeJjUNfeADJrT5X18uws=
+
+Name: res/drawable-mdpi-v4/common_signin_btn_text_disabled_focus_dark.
+ 9.png
+SHA1-Digest: bO5g/+La159pxGxauPWouknkQSM=
+
+Name: assets/oven.fire.png
+SHA1-Digest: vXw8sdaBZ+dmR1FpegeJdbEBhng=
+
+Name: assets/gun_attack.ogg
+SHA1-Digest: BWaernFd8kVj4P8ewcwgOFTcrhI=
+
+Name: res/drawable-mdpi-v4/common_signin_btn_icon_pressed_dark.9.png
+SHA1-Digest: bm8lFIzAavLtBungqQzY8U7+2cE=
+
+Name: assets/castle.boom.png
+SHA1-Digest: W+QF0b7lb+7PVmlkuPV/HC4RLao=
+
+Name: res/drawable-xxhdpi-v4/common_signin_btn_icon_disabled_focus_dar
+ k.9.png
+SHA1-Digest: SXOyej7IXnI0/smJ5mymTBXKSQY=
+
+Name: assets/blood.png
+SHA1-Digest: ceraAvXc/iG5GfQHpmZE808soKw=
+
+Name: assets/hero1.png
+SHA1-Digest: PKnnw0Pm0xNnNImq8yeF8yQ9sQc=
+
+Name: assets/dizzy.spx
+SHA1-Digest: OpGpczVOVtoEoicvm31Rs4oeacw=
+
+Name: res/drawable-xxhdpi-v4/common_signin_btn_text_disabled_light.9.p
+ ng
+SHA1-Digest: FzDJD2iWEqwPmHqfNPIbbpVuxUs=
+
+Name: res/drawable-xhdpi-v4/ic_plusone_standard_off_client.png
+SHA1-Digest: NEAofQuoLcRt99gbmL+/kRTDnUE=
+
+Name: res/drawable-hdpi-v4/common_signin_btn_text_disabled_dark.9.png
+SHA1-Digest: l0371EbzDdE1t8SSbQ8tUELjjBE=
+
+Name: assets/win_star.ogg
+SHA1-Digest: +7bMV9T3Rx46rkCTiGmSpsNf278=
+
+Name: assets/green.monster.png
+SHA1-Digest: UG8jrWIbIbrtvenu5ZgHRjuyDqk=
+
+Name: assets/button2.ogg
+SHA1-Digest: bCM46gwCUhhC0WuNGsgB4ZnxuuE=
+
+Name: assets/hackbuteer_01.spx
+SHA1-Digest: oJvvTq/SmitHKxOhjE0KfZRYh3k=
+
+Name: assets/cross_die.ogg
+SHA1-Digest: 4pQpEUiJH5lDFDzBdlLN5NWXtEs=
+
+Name: assets/equipment_logo.png
+SHA1-Digest: E+lz9VyZZj8o+vClFmDelsU/5R0=
+
+Name: res/drawable-mdpi-v4/common_signin_btn_icon_disabled_focus_dark.
+ 9.png
+SHA1-Digest: YylM0C8EWQGZi3wMbFrcmIJlTKU=
+
+Name: assets/songstress.png
+SHA1-Digest: heJ8oqBzuDDJ5fczKWuvARw+tM0=
+
+Name: assets/poison.assasion.png
+SHA1-Digest: szgQ+96P+iIfzq86BYk6vIqlauc=
+
+Name: assets/cowboy.on.boar.spx
+SHA1-Digest: TBgTsAp27dQdVPXUnWQ6qw7naEs=
+
+Name: res/drawable-xhdpi-v4/powered_by_google_dark.png
+SHA1-Digest: psVwTFCoE8L/YbYPXiTtAelEWs8=
+
+Name: assets/snow.png
+SHA1-Digest: qQwRpM3KJBY02IkXmWKMWB73QPA=
+
+Name: assets/ninja_attack.ogg
+SHA1-Digest: ok2GecWdTVRtHGsp0zXIRGq5tsg=
+
+Name: assets/turting.spx
+SHA1-Digest: TcxoC9fWSPJ2GRZB6haT+/8R1TA=
+
+Name: res/drawable-mdpi-v4/common_signin_btn_text_pressed_light.9.png
+SHA1-Digest: Yud+v4/MhPsZm/BTsZVIeqqye2o=
+
+Name: assets/yanwu.plist
+SHA1-Digest: uDRwiECxKJo9te9kfATT205jHpI=
+
+Name: res/drawable-hdpi-v4/common_signin_btn_text_focus_light.9.png
+SHA1-Digest: rROVMNDIBKu+45byCGwWiTvrun4=
+
+Name: res/drawable-xxhdpi-v4/common_signin_btn_icon_normal_dark.9.png
+SHA1-Digest: CuM9QPAcPSkb+sHZA73df4q9/Nk=
+
+Name: res/drawable-xhdpi-v4/common_signin_btn_text_pressed_dark.9.png
+SHA1-Digest: pXneUrYdU8SrxK3mSdE1QjYafJw=
+
+Name: assets/bomberman.png
+SHA1-Digest: u5A486s8OBGF/Gp/emLILXBrmXg=
+
+Name: res/drawable-xhdpi-v4/powered_by_google_light.png
+SHA1-Digest: 1PCeD4X7eVLdr2+EB4poVTq1PZw=
+
+Name: assets/cross_attack.ogg
+SHA1-Digest: 3fMbHG/uSANyEFqzQjaOdU3MY9E=
+
+Name: assets/berlin_bold_0.png
+SHA1-Digest: rKuhaSO/oZIYNKUT2E/9uPNl888=
+
+Name: assets/face.cloud.spx
+SHA1-Digest: PCFVBj6UmLNPXphYvldRAqzqoTQ=
+
+Name: assets/roamwizard123.png
+SHA1-Digest: k8Fwk48WKwxpm0Te9ymtk+U3G5c=
+
+Name: res/color/wallet_primary_text_holo_light.xml
+SHA1-Digest: enYpX36sgh6jG3GwR77ifHgMr7c=
+
+Name: assets/yanhua.plist
+SHA1-Digest: Jr0bGpw/6RwdKt/GN7hkbn41YbE=
+
+Name: assets/long_nose_attack2.ogg
+SHA1-Digest: VrupY496409k3C6rXUlcXPiTy/E=
+
+Name: assets/gun_attack3.ogg
+SHA1-Digest: BWaernFd8kVj4P8ewcwgOFTcrhI=
+
+Name: res/drawable-mdpi-v4/common_signin_btn_icon_disabled_focus_light
+ .9.png
+SHA1-Digest: YylM0C8EWQGZi3wMbFrcmIJlTKU=
+

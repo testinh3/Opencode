@@ -1,0 +1,94 @@
+{
+  "at": "2026-11-06 02:58:44",
+  "region_tz": "WIB",
+  "display": ":99",
+  "mode": "browser/browser",
+  "headless": false,
+  "proxy_set": false,
+  "extra_args": "",
+  "net": {
+    "cf_trace": {
+      "fl": "965f62",
+      "h": "www.cloudflare.com",
+      "ip": "34.143.249.187",
+      "ts": "1793908725.000",
+      "visit_scheme": "https",
+      "uag": "python-httpx/0.28.1",
+      "colo": "SIN",
+      "sliver": "none",
+      "http": "http/1.1",
+      "loc": "SG",
+      "tls": "TLSv1.3",
+      "sni": "plaintext",
+      "warp": "off",
+      "gateway": "off",
+      "rbi": "off",
+      "kex": "X25519MLKEM768"
+    },
+    "ipinfo": {
+      "ip": "34.143.249.187",
+      "city": "Singapore",
+      "region": "Singapore",
+      "country": "SG",
+      "org": "AS396982 Google LLC",
+      "timezone": "Asia/Singapore"
+    }
+  },
+  "url": "https://1forcrkuota.com/login.html?daftar=1",
+  "executable": "/usr/bin/chromium",
+  "browser_version": "156.0.8078.79",
+  "register_tab_click": "ok",
+  "page": {
+    "turnstile": "undefined",
+    "token_input": "INPUT:0",
+    "widgets": 0,
+    "webdriver": false,
+    "ua": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/156.0.0.0 Safari/537.36",
+    "platform": "Linux x86_64",
+    "languages": "en-US,en",
+    "plugins": 5,
+    "cores": 32,
+    "memory": 32
+  },
+  "title": "Masuk - 1FORCR KUOTA",
+  "frames": [
+    {
+      "url": "https://1forcrkuota.com/login.html?daftar=1"
+    },
+    {
+      "url": "https://accounts.google.com/gsi/button?type=standard&theme=outline&size=large&shape=rectangular&text=continue_with&width=320&is_fedcm_supported=true&client_id=249265179542-khshvhis4nh5k7ng5i9oa2r8pqgi"
+    },
+    {
+      "url": "https://challenges.cloudflare.com/cdn-cgi/challenge-platform/h/b/turnstile/f/av0/rch/zd7m6/0x4AAAAAADc05hDok-Mdgmqa/light/fbE/api/normal?lang=auto",
+      "box": {
+        "x": 738,
+        "y": 633,
+        "width": 300,
+        "height": 65
+      },
+      "text": ""
+    }
+  ],
+  "token_len": 0,
+  "elapsed_s": 28.4,
+  "console": [
+    "error: Failed to load resource: the server responded with a status of 401 ()",
+    "warning: No available adapters.",
+    "error: Connecting to 'data:,' violates the following Content Security Policy directive: \"connect-src 'self' https://hagen.challenges.cloudflare.com https://brunhild.challenges.cloudflare.com https://*.alg13.dnstest.challenges.cloudflare.com https://*.mldsa44.dnstest.challenges.cloudflare.com https:/",
+    "error: Connecting to 'data:,' violates the following Content Security Policy directive: \"connect-src 'self' https://hagen.challenges.cloudflare.com https://brunhild.challenges.cloudflare.com https://*.alg13.dnstest.challenges.cloudflare.com https://*.mldsa44.dnstest.challenges.cloudflare.com https:/",
+    "error: Fetch API cannot load data:,. Refused to connect because it violates the document's Content Security Policy.",
+    "warning: OTS parsing error: Size of decompressed WOFF 2.0 is less than compressed size",
+    "warning: No available adapters.",
+    "error: Connecting to 'data:,' violates the following Content Security Policy directive: \"connect-src 'self' https://hagen.challenges.cloudflare.com https://brunhild.challenges.cloudflare.com https://*.alg13.dnstest.challenges.cloudflare.com https://*.mldsa44.dnstest.challenges.cloudflare.com https:/",
+    "error: Connecting to 'data:,' violates the following Content Security Policy directive: \"connect-src 'self' https://hagen.challenges.cloudflare.com https://brunhild.challenges.cloudflare.com https://*.alg13.dnstest.challenges.cloudflare.com https://*.mldsa44.dnstest.challenges.cloudflare.com https:/",
+    "error: Connecting to 'data:,' violates the following Content Security Policy directive: \"connect-src 'self' https://hagen.challenges.cloudflare.com https://brunhild.challenges.cloudflare.com https://*.alg13.dnstest.challenges.cloudflare.com https://*.mldsa44.dnstest.challenges.cloudflare.com https:/",
+    "error: Fetch API cannot load data:,. Refused to connect because it violates the document's Content Security Policy.",
+    "warning: OTS parsing error: Size of decompressed WOFF 2.0 is less than compressed size"
+  ],
+  "failed_requests": [
+    "https://brunhild.challenges.cloudflare.com/cdn-cgi/challenge-platform/h/b/i/a55e6f68bbd1a2f1/CqMQXbiZ8ikteUCzdkaFkGDmTsbNRc1Ed4nZAzdCRsSP893h5x2CRiGjIKYi4RdZ2A1 -> net::ERR_NAME_NOT_RESOLVED",
+    "https://challenges.cloudflare.com/cdn-cgi/challenge-platform/h/b/turnstile/f/av0/rch/zd7m6/0x4AAAAAADc05hDok-Mdgmqa/light/fbE/api/normal?lang=auto -> net::ERR_ABORTED",
+    "https://brunhild.challenges.cloudflare.com/cdn-cgi/challenge-platform/h/b/i/a55e6f756f8fa2f1/CvEZ6sqhlY_YFRAE2SUuGIHoWdFCTxi_k6nLrAA4mZN2uHW9fAa3NabcmtnLvvqijJI -> net::ERR_NAME_NOT_RESOLVED"
+  ],
+  "screenshot": "/data/diag/diag.png"
+}

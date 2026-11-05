@@ -1,0 +1,4 @@
+entrypoint: Xvfb siap di :99 (pid 7)
+2026-11-06 01:16:11,355 INFO    onefcr.bot: bot jalan | captcha=browser/browser mail=mailtm | vmess=on
+2026-11-06 01:16:11,899 INFO    onefcr.bot: auto-renew worker aktif | cek tiap 60s | lead 90s
+2026-11-06 01:16:12,046 INFO    telegram.ext.Application: Application started

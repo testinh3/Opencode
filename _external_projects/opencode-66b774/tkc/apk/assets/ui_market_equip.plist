@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>frames</key>
+	<dict>
+		<key>ui_shop_equip_detail_container.png</key>
+		<dict>
+			<key>frame</key>
+			<string>{{0,279},{199,135}}</string>
+			<key>offset</key>
+			<string>{0,0}</string>
+			<key>rotated</key>
+			<false/>
+			<key>sourceColorRect</key>
+			<string>{{0,0},{199,135}}</string>
+			<key>sourceSize</key>
+			<string>{199,135}</string>
+		</dict>
+		<key>ui_shop_equips_container.png</key>
+		<dict>
+			<key>frame</key>
+			<string>{{0,0},{362,275}}</string>
+			<key>offset</key>
+			<string>{0,0}</string>
+			<key>rotated</key>
+			<false/>
+			<key>sourceColorRect</key>
+			<string>{{0,0},{362,275}}</string>
+			<key>sourceSize</key>
+			<string>{362,275}</string>
+		</dict>
+	</dict>
+	<key>metadata</key>
+	<dict>
+		<key>format</key>
+		<integer>2</integer>
+		<key>realTextureFileName</key>
+		<string>ui_market_equip.png</string>
+		<key>size</key>
+		<string>{512,512}</string>
+		<key>textureFileName</key>
+		<string>ui_market_equip.png</string>
+	</dict>
+</dict>
+</plist>

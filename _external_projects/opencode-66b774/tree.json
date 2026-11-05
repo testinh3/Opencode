@@ -1,0 +1,1708 @@
+{
+  "sha": "9b8b4407c9b0b8fcfbb09aad77bfb32ea44bc237",
+  "url": "https://api.github.com/repos/bytedance/android-inline-hook/git/trees/9b8b4407c9b0b8fcfbb09aad77bfb32ea44bc237",
+  "tree": [
+    {
+      "path": ".clang-format",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "cff8728b3df6cd1871be61455588f82f3989739a",
+      "size": 9096,
+      "url": "https://api.github.com/repos/bytedance/android-inline-hook/git/blobs/cff8728b3df6cd1871be61455588f82f3989739a"
+    },
+    {
+      "path": ".github",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "d700dd70051477ac0e8821f1edbccb8f03842362",
+      "url": "https://api.github.com/repos/bytedance/android-inline-hook/git/trees/d700dd70051477ac0e8821f1edbccb8f03842362"
+    },
+    {
+      "path": ".github/ISSUE_TEMPLATE",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "6d03efd20d3a3f666582bf7bdc1437318b306377",
+      "url": "https://api.github.com/repos/bytedance/android-inline-hook/git/trees/6d03efd20d3a3f666582bf7bdc1437318b306377"
+    },
+    {
+      "path": ".github/ISSUE_TEMPLATE/bug_report.yml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "50f292d97f5ed7dfa05066d651bb22a19757d272",
+      "size": 2262,
+      "url": "https://api.github.com/repos/bytedance/android-inline-hook/git/blobs/50f292d97f5ed7dfa05066d651bb22a19757d272"
+    },
+    {
+      "path": ".github/ISSUE_TEMPLATE/config.yml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8bdece21da8099ec7d6fa990dd0b92c3f712bb60",
+      "size": 202,
+      "url": "https://api.github.com/repos/bytedance/android-inline-hook/git/blobs/8bdece21da8099ec7d6fa990dd0b92c3f712bb60"
+    },
+    {
+      "path": ".github/ISSUE_TEMPLATE/feature-request.yml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "314faea0af193e4544f097c085f5f8a389746dcf",
+      "size": 1528,
+      "url": "https://api.github.com/repos/bytedance/android-inline-hook/git/blobs/314faea0af193e4544f097c085f5f8a389746dcf"
+    },
+    {
+      "path": ".github/pull_request_template.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "54c30a1c1b20e548163ecdb5effe57ac4f86abf0",
+      "size": 363,
+      "url": "https://api.github.com/repos/bytedance/android-inline-hook/git/blobs/54c30a1c1b20e548163ecdb5effe57ac4f86abf0"
+    },
+    {
+      "path": ".gitignore",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "82b1a6855223b12d51454f233390fff33581df23",
+      "size": 82,
+      "url": "https://api.github.com/repos/bytedance/android-inline-hook/git/blobs/82b1a6855223b12d51454f233390fff33581df23"
+    },
+    {
+      "path": "CODE_OF_CONDUCT.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "008b9daf69d25eeaca704a97a7627bb399bc5894",
+      "size": 5476,
+      "url": "https://api.github.com/repos/bytedance/android-inline-hook/git/blobs/008b9daf69d25eeaca704a97a7627bb399bc5894"
+    },
+    {
+      "path": "CONTRIBUTING.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e31a363b4facfb2d3e97b115650bad7808c262c8",
+      "size": 1686,
+      "url": "https://api.github.com/repos/bytedance/android-inline-hook/git/blobs/e31a363b4facfb2d3e97b115650bad7808c262c8"
+    },
+    {
+      "path": "LICENSE",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "94ac6cc7ae40fd92aabf9350f5aedd0a4d46afc8",
+      "size": 1076,
+      "url": "https://api.github.com/repos/bytedance/android-inline-hook/git/blobs/94ac6cc7ae40fd92aabf9350f5aedd0a4d46afc8"
+    },
+    {
+      "path": "README.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7c6b9c082c4e3d47ce009bd871d30755bf2c170b",
+      "size": 11616,
+      "url": "https://api.github.com/repos/bytedance/android-inline-hook/git/blobs/7c6b9c082c4e3d47ce009bd871d30755bf2c170b"
+    },
+    {
+      "path": "README.zh-CN.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "407509a08c9c968709644863023e375bccda0bb9",
+      "size": 11133,
+      "url": "https://api.github.com/repos/bytedance/android-inline-hook/git/blobs/407509a08c9c968709644863023e375bccda0bb9"
+    },
+    {
+      "path": "SECURITY.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "67956eb77ab54470cc07576debd799bbc74487ff",
+      "size": 917,
+      "url": "https://api.github.com/repos/bytedance/android-inline-hook/git/blobs/67956eb77ab54470cc07576debd799bbc74487ff"
+    },
+    {
+      "path": "app",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "8a62cd685e5bf2f1502d2c12df83e1fa3a35d1ef",
+      "url": "https://api.github.com/repos/bytedance/android-inline-hook/git/trees/8a62cd685e5bf2f1502d2c12df83e1fa3a35d1ef"
+    },
+    {
+      "path": "app/.gitignore",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "42afabfd2abebf31384ca7797186a27a4b7dbee8",
+      "size": 6,
+      "url": "https://api.github.com/repos/bytedance/android-inline-hook/git/blobs/42afabfd2abebf31384ca7797186a27a4b7dbee8"
+    },
+    {
+      "path": "app/build.gradle",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b9f907e085865700340701a62ad0d7b66ec63e32",
+      "size": 2138,
+      "url": "https://api.github.com/repos/bytedance/android-inline-hook/git/blobs/b9f907e085865700340701a62ad0d7b66ec63e32"
+    },
+    {
+      "path": "app/proguard-rules.pro",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "481bb434814107eb79d7a30b676d344b0df2f8ce",
+      "size": 750,
+      "url": "https://api.github.com/repos/bytedance/android-inline-hook/git/blobs/481bb434814107eb79d7a30b676d344b0df2f8ce"
+    },
+    {
+      "path": "app/src",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "8d453569cb27fb88a4399aa3aa4f7260f679a24d",
+      "url": "https://api.github.com/repos/bytedance/android-inline-hook/git/trees/8d453569cb27fb88a4399aa3aa4f7260f679a24d"
+    },
+    {
+      "path": "app/src/main",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "5690b54efd9bc9408c1b5276208bcb855e6e147d",
+      "url": "https://api.github.com/repos/bytedance/android-inline-hook/git/trees/5690b54efd9bc9408c1b5276208bcb855e6e147d"
+    },
+    {
+      "path": "app/src/main/AndroidManifest.xml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "56b8cb36bb44186160f139cc22272e8fc28726f8",
+      "size": 759,
+      "url": "https://api.github.com/repos/bytedance/android-inline-hook/git/blobs/56b8cb36bb44186160f139cc22272e8fc28726f8"
+    },
+    {
+      "path": "app/src/main/cpp",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "80b1b042a454767025457a7798b1989431cd753a",
+      "url": "https://api.github.com/repos/bytedance/android-inline-hook/git/trees/80b1b042a454767025457a7798b1989431cd753a"
+    },
+    {
+      "path": "app/src/main/cpp/CMakeLists.txt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7e5036ae34aa1d568514dcbce9f6b7b4423a560c",
+      "size": 1671,
+      "url": "https://api.github.com/repos/bytedance/android-inline-hook/git/blobs/7e5036ae34aa1d568514dcbce9f6b7b4423a560c"
+    },
+    {
+      "path": "app/src/main/cpp/hookee",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "b34c12e76280ecec61594639fefa908988c37972",
+      "url": "https://api.github.com/repos/bytedance/android-inline-hook/git/trees/b34c12e76280ecec61594639fefa908988c37972"
+    },
+    {
+      "path": "app/src/main/cpp/hookee/arch",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "1a74b8b88a46229d66ef5ca1e562f6269f0b834a",
+      "url": "https://api.github.com/repos/bytedance/android-inline-hook/git/trees/1a74b8b88a46229d66ef5ca1e562f6269f0b834a"
+    },
+    {
+      "path": "app/src/main/cpp/hookee/arch/arm",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "d31e5f1bc8f974e1b49583009263b799d7a444b4",
+      "url": "https://api.github.com/repos/bytedance/android-inline-hook/git/trees/d31e5f1bc8f974e1b49583009263b799d7a444b4"
+    },
+    {
+      "path": "app/src/main/cpp/hookee/arch/arm/a32.S",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "48598c3814e7add320000918e7f7206badadbf1b",
+      "size": 7115,
+      "url": "https://api.github.com/repos/bytedance/android-inline-hook/git/blobs/48598c3814e7add320000918e7f7206badadbf1b"
+    },
+    {
+      "path": "app/src/main/cpp/hookee/arch/arm/t16.S",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "97d87dabe84aeca481f4a133752f05d8f2c3870c",
+      "size": 5886,
+      "url": "https://api.github.com/repos/bytedance/android-inline-hook/git/blobs/97d87dabe84aeca481f4a133752f05d8f2c3870c"
+    },
+    {
+      "path": "app/src/main/cpp/hookee/arch/arm/t32.S",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6cf7b8dbeda6976926ed4b24eceda0af64001f2d",
+      "size": 5991,
+      "url": "https://api.github.com/repos/bytedance/android-inline-hook/git/blobs/6cf7b8dbeda6976926ed4b24eceda0af64001f2d"
+    },
+    {
+      "path": "app/src/main/cpp/hookee/arch/arm64",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "13daa928461a83dff6f914658165de833d44d5f2",
+      "url": "https://api.github.com/repos/bytedance/android-inline-hook/git/trees/13daa928461a83dff6f914658165de833d44d5f2"
+    },
+    {
+      "path": "app/src/main/cpp/hookee/arch/arm64/a64.S",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2315a0ea533f31a81840a94704d8781bdfd71e9a",
+      "size": 10265,
+      "url": "https://api.github.com/repos/bytedance/android-inline-hook/git/blobs/2315a0ea533f31a81840a94704d8781bdfd71e9a"
+    },
+    {
+      "path": "app/src/main/cpp/hookee/asm.h",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "93cd85f32ff7130a91a085179e298e1fc3fea8d9",
+      "size": 3043,
+      "url": "https://api.github.com/repos/bytedance/android-inline-hook/git/blobs/93cd85f32ff7130a91a085179e298e1fc3fea8d9"
+    },
+    {
+      "path": "app/src/main/cpp/hookee/hookee.c",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "122be9dd80456b2c8482f2a84ba2bb45677d674c",
+      "size": 3789,
+      "url": "https://api.github.com/repos/bytedance/android-inline-hook/git/blobs/122be9dd80456b2c8482f2a84ba2bb45677d674c"
+    },
+    {
+      "path": "app/src/main/cpp/hookee/hookee.h",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "507e36470d39ce7e7362e52409d88fceb422dd9c",
+      "size": 5226,
+      "url": "https://api.github.com/repos/bytedance/android-inline-hook/git/blobs/507e36470d39ce7e7362e52409d88fceb422dd9c"
+    },
+    {
+      "path": "app/src/main/cpp/hookee2",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "35b6d2e4ad39323278f720625d5471b48b1b1787",
+      "url": "https://api.github.com/repos/bytedance/android-inline-hook/git/trees/35b6d2e4ad39323278f720625d5471b48b1b1787"
+    },
+    {
+      "path": "app/src/main/cpp/hookee2/hookee2.c",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8ef72d9d3ad19f76cd3d93b2232d8e3a419b7b55",
+      "size": 1678,
+      "url": "https://api.github.com/repos/bytedance/android-inline-hook/git/blobs/8ef72d9d3ad19f76cd3d93b2232d8e3a419b7b55"
+    },
+    {
+      "path": "app/src/main/cpp/hookee2/hookee2.h",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "16f25f1b2ed467acc6c6e21f165e2bdcd8c732d1",
+      "size": 1286,
+      "url": "https://api.github.com/repos/bytedance/android-inline-hook/git/blobs/16f25f1b2ed467acc6c6e21f165e2bdcd8c732d1"
+    },
+    {
+      "path": "app/src/main/cpp/unittest",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "6669557895db0943922ffd4ce4350eb52518d59d",
+      "url": "https://api.github.com/repos/bytedance/android-inline-hook/git/trees/6669557895db0943922ffd4ce4350eb52518d59d"
+    },
+    {
+      "path": "app/src/main/cpp/unittest/unittest.c",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "654f3469555834273196d1463a8d453cac92bb0f",
+      "size": 53282,
+      "url": "https://api.github.com/repos/bytedance/android-inline-hook/git/blobs/654f3469555834273196d1463a8d453cac92bb0f"
+    },
+    {
+      "path": "app/src/main/cpp/unittest/unittest.h",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "355ac56c5ba2c861ea436506e0333b9b8c8d8fc7",
+      "size": 1731,
+      "url": "https://api.github.com/repos/bytedance/android-inline-hook/git/blobs/355ac56c5ba2c861ea436506e0333b9b8c8d8fc7"
+    },
+    {
+      "path": "app/src/main/cpp/unittest/unittest_jni.c",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4262e68fe1f12b11d0fe5714ede860d7162c8f2e",
+      "size": 6190,
+      "url": "https://api.github.com/repos/bytedance/android-inline-hook/git/blobs/4262e68fe1f12b11d0fe5714ede860d7162c8f2e"
+    },
+    {
+      "path": "app/src/main/java",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "ecad610a83034dba408a1f4bb2b17af5dc7dcee8",
+      "url": "https://api.github.com/repos/bytedance/android-inline-hook/git/trees/ecad610a83034dba408a1f4bb2b17af5dc7dcee8"
+    },
+    {
+      "path": "app/src/main/java/com",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "7093bd4941eb713bf26b471b6f84868389d733ff",
+      "url": "https://api.github.com/repos/bytedance/android-inline-hook/git/trees/7093bd4941eb713bf26b471b6f84868389d733ff"
+    },
+    {
+      "path": "app/src/main/java/com/bytedance",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "9dc2bfe0407d62359e5a5caef7df7015bd9eb18c",
+      "url": "https://api.github.com/repos/bytedance/android-inline-hook/git/trees/9dc2bfe0407d62359e5a5caef7df7015bd9eb18c"
+    },
+    {
+      "path": "app/src/main/java/com/bytedance/shadowhook",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "ba0430d00292da88290b98a94c064fb7a7a8ad42",
+      "url": "https://api.github.com/repos/bytedance/android-inline-hook/git/trees/ba0430d00292da88290b98a94c064fb7a7a8ad42"
+    },
+    {
+      "path": "app/src/main/java/com/bytedance/shadowhook/sample",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "302f656414b42b31909e39856c13865e2e7e51d2",
+      "url": "https://api.github.com/repos/bytedance/android-inline-hook/git/trees/302f656414b42b31909e39856c13865e2e7e51d2"
+    },
+    {
+      "path": "app/src/main/java/com/bytedance/shadowhook/sample/MainActivity.java",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "93407a522b5d726aa1819bcdf4257faaad120917",
+      "size": 8038,
+      "url": "https://api.github.com/repos/bytedance/android-inline-hook/git/blobs/93407a522b5d726aa1819bcdf4257faaad120917"
+    },
+    {
+      "path": "app/src/main/java/com/bytedance/shadowhook/sample/MyCustomApplication.java",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1f48f31fbb1a94a7250b478a5f205f68a35400d8",
+      "size": 1694,
+      "url": "https://api.github.com/repos/bytedance/android-inline-hook/git/blobs/1f48f31fbb1a94a7250b478a5f205f68a35400d8"
+    },
+    {
+      "path": "app/src/main/java/com/bytedance/shadowhook/sample/NativeHandler.java",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "60ad380e99bef12da4162fce31ae3801626f0f8f",
+      "size": 2107,
+      "url": "https://api.github.com/repos/bytedance/android-inline-hook/git/blobs/60ad380e99bef12da4162fce31ae3801626f0f8f"
+    },
+    {
+      "path": "app/src/main/res",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "3ad40288042c411f3887cfa7f0343d421271acf9",
+      "url": "https://api.github.com/repos/bytedance/android-inline-hook/git/trees/3ad40288042c411f3887cfa7f0343d421271acf9"
+    },
+    {
+      "path": "app/src/main/res/drawable-v24",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "ee5502e6ebc8a4abdc0ee42e0846ee7e606f9016",
+      "url": "https://api.github.com/repos/bytedance/android-inline-hook/git/trees/ee5502e6ebc8a4abdc0ee42e0846ee7e606f9016"
+    },
+    {
+      "path": "app/src/main/res/drawable-v24/ic_launcher_foreground.xml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2b068d11462a4b96669193de13a711a3a36220a0",
+      "size": 1702,
+      "url": "https://api.github.com/repos/bytedance/android-inline-hook/git/blobs/2b068d11462a4b96669193de13a711a3a36220a0"
+    },
+    {
+      "path": "app/src/main/res/drawable",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "06ec266f0a03b2ca0ad156db6f995aec3d39712f",
+      "url": "https://api.github.com/repos/bytedance/android-inline-hook/git/trees/06ec266f0a03b2ca0ad156db6f995aec3d39712f"
+    },
+    {
+      "path": "app/src/main/res/drawable/ic_launcher_background.xml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "07d5da9cbf141911847041df5d7b87f0dd5ef9d4",
+      "size": 5606,
+      "url": "https://api.github.com/repos/bytedance/android-inline-hook/git/blobs/07d5da9cbf141911847041df5d7b87f0dd5ef9d4"
+    },
+    {
+      "path": "app/src/main/res/layout",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "597f46a91d7c239d568a937052ec882a2ee9f6c0",
+      "url": "https://api.github.com/repos/bytedance/android-inline-hook/git/trees/597f46a91d7c239d568a937052ec882a2ee9f6c0"
+    },
+    {
+      "path": "app/src/main/res/layout/activity_main.xml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "68cb38d164d81502f8769d3dc232cc776195bbae",
+      "size": 5074,
+      "url": "https://api.github.com/repos/bytedance/android-inline-hook/git/blobs/68cb38d164d81502f8769d3dc232cc776195bbae"
+    },
+    {
+      "path": "app/src/main/res/mipmap-anydpi-v26",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "46123c8a05f7c8ae0d069692786b4f3b1a0648d7",
+      "url": "https://api.github.com/repos/bytedance/android-inline-hook/git/trees/46123c8a05f7c8ae0d069692786b4f3b1a0648d7"
+    },
+    {
+      "path": "app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6f3b755bf50c6b03d8714a9c6184705e6a08389f",
+      "size": 343,
+      "url": "https://api.github.com/repos/bytedance/android-inline-hook/git/blobs/6f3b755bf50c6b03d8714a9c6184705e6a08389f"
+    },
+    {
+      "path": "app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6f3b755bf50c6b03d8714a9c6184705e6a08389f",
+      "size": 343,
+      "url": "https://api.github.com/repos/bytedance/android-inline-hook/git/blobs/6f3b755bf50c6b03d8714a9c6184705e6a08389f"
+    },
+    {
+      "path": "app/src/main/res/mipmap-hdpi",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "fe98dc7bf84769572a3d5c5a8cdb71142b09f64a",
+      "url": "https://api.github.com/repos/bytedance/android-inline-hook/git/trees/fe98dc7bf84769572a3d5c5a8cdb71142b09f64a"
+    },
+    {
+      "path": "app/src/main/res/mipmap-hdpi/ic_launcher.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a571e60098c92c2baca8a5df62f2929cbff01b52",
+      "size": 3593,
+      "url": "https://api.github.com/repos/bytedance/android-inline-hook/git/blobs/a571e60098c92c2baca8a5df62f2929cbff01b52"
+    },
+    {
+      "path": "app/src/main/res/mipmap-hdpi/ic_launcher_round.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "61da551c5594a1f9d26193983d2cd69189014603",
+      "size": 5339,
+      "url": "https://api.github.com/repos/bytedance/android-inline-hook/git/blobs/61da551c5594a1f9d26193983d2cd69189014603"
+    },
+    {
+      "path": "app/src/main/res/mipmap-mdpi",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "3c5f707e8f9b78712826ab8809cb0dfe41e593ab",
+      "url": "https://api.github.com/repos/bytedance/android-inline-hook/git/trees/3c5f707e8f9b78712826ab8809cb0dfe41e593ab"
+    },
+    {
+      "path": "app/src/main/res/mipmap-mdpi/ic_launcher.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c41dd28531901b2c23927768c84bb6765ebcc1db",
+      "size": 2636,
+      "url": "https://api.github.com/repos/bytedance/android-inline-hook/git/blobs/c41dd28531901b2c23927768c84bb6765ebcc1db"
+    },
+    {
+      "path": "app/src/main/res/mipmap-mdpi/ic_launcher_round.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "db5080a752731b34d38d7c634732b2cd999125d0",
+      "size": 3388,
+      "url": "https://api.github.com/repos/bytedance/android-inline-hook/git/blobs/db5080a752731b34d38d7c634732b2cd999125d0"
+    },
+    {
+      "path": "app/src/main/res/mipmap-xhdpi",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "c94a701d1e95011fed12380cbe9075b41eaeb710",
+      "url": "https://api.github.com/repos/bytedance/android-inline-hook/git/trees/c94a701d1e95011fed12380cbe9075b41eaeb710"
+    },
+    {
+      "path": "app/src/main/res/mipmap-xhdpi/ic_launcher.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6dba46dab19242bf475ddf2e0a10042de6a0be16",
+      "size": 4926,
+      "url": "https://api.github.com/repos/bytedance/android-inline-hook/git/blobs/6dba46dab19242bf475ddf2e0a10042de6a0be16"
+    },
+    {
+      "path": "app/src/main/res/mipmap-xhdpi/ic_launcher_round.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "da31a871c8dc461a1ea114510bfac640307b0a90",
+      "size": 7472,
+      "url": "https://api.github.com/repos/bytedance/android-inline-hook/git/blobs/da31a871c8dc461a1ea114510bfac640307b0a90"
+    },
+    {
+      "path": "app/src/main/res/mipmap-xxhdpi",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "48e99cd17a5218137c787d2de047e8d0a8afb0a4",
+      "url": "https://api.github.com/repos/bytedance/android-inline-hook/git/trees/48e99cd17a5218137c787d2de047e8d0a8afb0a4"
+    },
+    {
+      "path": "app/src/main/res/mipmap-xxhdpi/ic_launcher.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "15ac681720f3df43c647bf0c081f0314ee34eae1",
+      "size": 7909,
+      "url": "https://api.github.com/repos/bytedance/android-inline-hook/git/blobs/15ac681720f3df43c647bf0c081f0314ee34eae1"
+    },
+    {
+      "path": "app/src/main/res/mipmap-xxhdpi/ic_launcher_round.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b216f2d313cc673d8b8c4da591c174ebed52795c",
+      "size": 11873,
+      "url": "https://api.github.com/repos/bytedance/android-inline-hook/git/blobs/b216f2d313cc673d8b8c4da591c174ebed52795c"
+    },
+    {
+      "path": "app/src/main/res/mipmap-xxxhdpi",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "b078269ec0cdba0c7225130b7ce8dffab20ba40e",
+      "url": "https://api.github.com/repos/bytedance/android-inline-hook/git/trees/b078269ec0cdba0c7225130b7ce8dffab20ba40e"
+    },
+    {
+      "path": "app/src/main/res/mipmap-xxxhdpi/ic_launcher.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f25a419744727fb48b4b4137b6c6a3a8f2620d51",
+      "size": 10652,
+      "url": "https://api.github.com/repos/bytedance/android-inline-hook/git/blobs/f25a419744727fb48b4b4137b6c6a3a8f2620d51"
+    },
+    {
+      "path": "app/src/main/res/mipmap-xxxhdpi/ic_launcher_round.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e96783ccce844001359f968f5cd9d85b341bd3fb",
+      "size": 16570,
+      "url": "https://api.github.com/repos/bytedance/android-inline-hook/git/blobs/e96783ccce844001359f968f5cd9d85b341bd3fb"
+    },
+    {
+      "path": "app/src/main/res/values",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "4263b072ad26ae57bc7c227edaf60eb79ba45d0c",
+      "url": "https://api.github.com/repos/bytedance/android-inline-hook/git/trees/4263b072ad26ae57bc7c227edaf60eb79ba45d0c"
+    },
+    {
+      "path": "app/src/main/res/values/colors.xml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "fb512ce0f1f6b3b56c2f5b5142af8ca353e8c3d0",
+      "size": 311,
+      "url": "https://api.github.com/repos/bytedance/android-inline-hook/git/blobs/fb512ce0f1f6b3b56c2f5b5142af8ca353e8c3d0"
+    },
+    {
+      "path": "app/src/main/res/values/strings.xml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e3b1ca335d3d2464e496a87290f3c82a6446d67c",
+      "size": 72,
+      "url": "https://api.github.com/repos/bytedance/android-inline-hook/git/blobs/e3b1ca335d3d2464e496a87290f3c82a6446d67c"
+    },
+    {
+      "path": "app/src/main/res/values/themes.xml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "084ec71753b455e6084193f54205b47946fc51c2",
+      "size": 2643,
+      "url": "https://api.github.com/repos/bytedance/android-inline-hook/git/blobs/084ec71753b455e6084193f54205b47946fc51c2"
+    },
+    {
+      "path": "build.gradle",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "15d6fb544c8ec5f76b99da5d5115c9aa4f2f74f0",
+      "size": 1333,
+      "url": "https://api.github.com/repos/bytedance/android-inline-hook/git/blobs/15d6fb544c8ec5f76b99da5d5115c9aa4f2f74f0"
+    },
+    {
+      "path": "checkstyle.xml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "11157197ee79002ce57c17d01275e31f17024bea",
+      "size": 3484,
+      "url": "https://api.github.com/repos/bytedance/android-inline-hook/git/blobs/11157197ee79002ce57c17d01275e31f17024bea"
+    },
+    {
+      "path": "clang-format.py",
+      "mode": "100755",
+      "type": "blob",
+      "sha": "7102a10cf7df0c16a47b2e2a006984176a610775",
+      "size": 1429,
+      "url": "https://api.github.com/repos/bytedance/android-inline-hook/git/blobs/7102a10cf7df0c16a47b2e2a006984176a610775"
+    },
+    {
+      "path": "doc",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "f7bab2a6c895b081e7bc117c966d624ecb732410",
+      "url": "https://api.github.com/repos/bytedance/android-inline-hook/git/trees/f7bab2a6c895b081e7bc117c966d624ecb732410"
+    },
+    {
+      "path": "doc/README.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3a0b3ba041c088c6dc3057ea89691d13a7a11839",
+      "size": 133,
+      "url": "https://api.github.com/repos/bytedance/android-inline-hook/git/blobs/3a0b3ba041c088c6dc3057ea89691d13a7a11839"
+    },
+    {
+      "path": "doc/manual.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "557d50286f236ced2e585485a004288dbd7f8d97",
+      "size": 102898,
+      "url": "https://api.github.com/repos/bytedance/android-inline-hook/git/blobs/557d50286f236ced2e585485a004288dbd7f8d97"
+    },
+    {
+      "path": "doc/manual.zh-CN.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0bc61d68002de6129fe14b7343d3a4a7f835bcc7",
+      "size": 96550,
+      "url": "https://api.github.com/repos/bytedance/android-inline-hook/git/blobs/0bc61d68002de6129fe14b7343d3a4a7f835bcc7"
+    },
+    {
+      "path": "doc/shadowhook_hook_and_intercept.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6f8b6ffe6aa5b6de2e60de19cf997b134e026faa",
+      "size": 87077,
+      "url": "https://api.github.com/repos/bytedance/android-inline-hook/git/blobs/6f8b6ffe6aa5b6de2e60de19cf997b134e026faa"
+    },
+    {
+      "path": "doc/shadowhook_intercept_instr.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3eead5e071539df82bce9e9c575a329615764d1f",
+      "size": 72406,
+      "url": "https://api.github.com/repos/bytedance/android-inline-hook/git/blobs/3eead5e071539df82bce9e9c575a329615764d1f"
+    },
+    {
+      "path": "doc/shadowhook_intercept_ret.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "bb64ed1f4a6858825fe5654910ecf6fda7cbacf6",
+      "size": 70321,
+      "url": "https://api.github.com/repos/bytedance/android-inline-hook/git/blobs/bb64ed1f4a6858825fe5654910ecf6fda7cbacf6"
+    },
+    {
+      "path": "doc/shadowhook_multi_mode.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "eaab83adb39160ddc4b9dc1aa42b91e98ebfc26f",
+      "size": 37089,
+      "url": "https://api.github.com/repos/bytedance/android-inline-hook/git/blobs/eaab83adb39160ddc4b9dc1aa42b91e98ebfc26f"
+    },
+    {
+      "path": "doc/shadowhook_shared_mode.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1a5684a4bff0c305726c4ce868216412b9aaae92",
+      "size": 62081,
+      "url": "https://api.github.com/repos/bytedance/android-inline-hook/git/blobs/1a5684a4bff0c305726c4ce868216412b9aaae92"
+    },
+    {
+      "path": "gradle.properties",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "30cef6ff61933e3f564728a2def30c89275d22ed",
+      "size": 1297,
+      "url": "https://api.github.com/repos/bytedance/android-inline-hook/git/blobs/30cef6ff61933e3f564728a2def30c89275d22ed"
+    },
+    {
+      "path": "gradle",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "45c159435f99e88da48539a3d49086e8bae86480",
+      "url": "https://api.github.com/repos/bytedance/android-inline-hook/git/trees/45c159435f99e88da48539a3d49086e8bae86480"
+    },
+    {
+      "path": "gradle/check.gradle",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "fe0cb2c4229e0a3e2a42645d9c71bb8f6ebd9390",
+      "size": 325,
+      "url": "https://api.github.com/repos/bytedance/android-inline-hook/git/blobs/fe0cb2c4229e0a3e2a42645d9c71bb8f6ebd9390"
+    },
+    {
+      "path": "gradle/publish.gradle",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c558ef0a54e4fc125ca0ddf2d885e69fab09d9af",
+      "size": 2770,
+      "url": "https://api.github.com/repos/bytedance/android-inline-hook/git/blobs/c558ef0a54e4fc125ca0ddf2d885e69fab09d9af"
+    },
+    {
+      "path": "gradle/sanitizer.gradle",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2867a568eb8c307dc6c3a495a1b3dacc825fb70e",
+      "size": 2812,
+      "url": "https://api.github.com/repos/bytedance/android-inline-hook/git/blobs/2867a568eb8c307dc6c3a495a1b3dacc825fb70e"
+    },
+    {
+      "path": "gradle/wrapper",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "d4272f39266ed990df099b0cad5463dae898afcc",
+      "url": "https://api.github.com/repos/bytedance/android-inline-hook/git/trees/d4272f39266ed990df099b0cad5463dae898afcc"
+    },
+    {
+      "path": "gradle/wrapper/gradle-wrapper.jar",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e708b1c023ec8b20f512888fe07c5bd3ff77bb8f",
+      "size": 59203,
+      "url": "https://api.github.com/repos/bytedance/android-inline-hook/git/blobs/e708b1c023ec8b20f512888fe07c5bd3ff77bb8f"
+    },
+    {
+      "path": "gradle/wrapper/gradle-wrapper.properties",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2e074e0f6c7636d550013ac79250cec831675833",
+      "size": 232,
+      "url": "https://api.github.com/repos/bytedance/android-inline-hook/git/blobs/2e074e0f6c7636d550013ac79250cec831675833"
+    },
+    {
+      "path": "gradlew",
+      "mode": "100755",
+      "type": "blob",
+      "sha": "4f906e0c811fc9e230eb44819f509cd0627f2600",
+      "size": 5766,
+      "url": "https://api.github.com/repos/bytedance/android-inline-hook/git/blobs/4f906e0c811fc9e230eb44819f509cd0627f2600"
+    },
+    {
+      "path": "gradlew.bat",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ac1b06f93825db68fb0c0b5150917f340eaa5d02",
+      "size": 2763,
+      "url": "https://api.github.com/repos/bytedance/android-inline-hook/git/blobs/ac1b06f93825db68fb0c0b5150917f340eaa5d02"
+    },
+    {
+      "path": "settings.gradle",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4c3b9a0b8f6cb971d94a2041570b66b77c02ad2a",
+      "size": 368,
+      "url": "https://api.github.com/repos/bytedance/android-inline-hook/git/blobs/4c3b9a0b8f6cb971d94a2041570b66b77c02ad2a"
+    },
+    {
+      "path": "shadowhook",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "46aa893428eea5527a391d4a7656c1827316ee1f",
+      "url": "https://api.github.com/repos/bytedance/android-inline-hook/git/trees/46aa893428eea5527a391d4a7656c1827316ee1f"
+    },
+    {
+      "path": "shadowhook/.gitignore",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "42afabfd2abebf31384ca7797186a27a4b7dbee8",
+      "size": 6,
+      "url": "https://api.github.com/repos/bytedance/android-inline-hook/git/blobs/42afabfd2abebf31384ca7797186a27a4b7dbee8"
+    },
+    {
+      "path": "shadowhook/build.gradle",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6afee5c72f73fee98613655770866b006c5eff93",
+      "size": 1832,
+      "url": "https://api.github.com/repos/bytedance/android-inline-hook/git/blobs/6afee5c72f73fee98613655770866b006c5eff93"
+    },
+    {
+      "path": "shadowhook/consumer-rules.pro",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b1564d2a68bb8c95289e49c9c0cd5375ae4ed686",
+      "size": 74,
+      "url": "https://api.github.com/repos/bytedance/android-inline-hook/git/blobs/b1564d2a68bb8c95289e49c9c0cd5375ae4ed686"
+    },
+    {
+      "path": "shadowhook/local_dependency.cmake",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "41f49d81d785c720b2d6a9f86bf089ecc2be12d5",
+      "size": 1075,
+      "url": "https://api.github.com/repos/bytedance/android-inline-hook/git/blobs/41f49d81d785c720b2d6a9f86bf089ecc2be12d5"
+    },
+    {
+      "path": "shadowhook/src",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "75f2b5c1b41dc920dd689695fe0838364bc2f127",
+      "url": "https://api.github.com/repos/bytedance/android-inline-hook/git/trees/75f2b5c1b41dc920dd689695fe0838364bc2f127"
+    },
+    {
+      "path": "shadowhook/src/main",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "006ca555ae9b57625f0d99f366a47129e61371d5",
+      "url": "https://api.github.com/repos/bytedance/android-inline-hook/git/trees/006ca555ae9b57625f0d99f366a47129e61371d5"
+    },
+    {
+      "path": "shadowhook/src/main/AndroidManifest.xml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a5918e68abcdde7f61ccae4f0ad4885b764573fd",
+      "size": 121,
+      "url": "https://api.github.com/repos/bytedance/android-inline-hook/git/blobs/a5918e68abcdde7f61ccae4f0ad4885b764573fd"
+    },
+    {
+      "path": "shadowhook/src/main/cpp",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "d9fedbc3151b21dac2b41e917a1bb2cc164eb4e9",
+      "url": "https://api.github.com/repos/bytedance/android-inline-hook/git/trees/d9fedbc3151b21dac2b41e917a1bb2cc164eb4e9"
+    },
+    {
+      "path": "shadowhook/src/main/cpp/CMakeLists.txt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5e340ac21770d4786e9ffc487df695f7a648ee6a",
+      "size": 1902,
+      "url": "https://api.github.com/repos/bytedance/android-inline-hook/git/blobs/5e340ac21770d4786e9ffc487df695f7a648ee6a"
+    },
+    {
+      "path": "shadowhook/src/main/cpp/arch",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "80918c6d86f162d7eb95af76176b3dd232101a31",
+      "url": "https://api.github.com/repos/bytedance/android-inline-hook/git/trees/80918c6d86f162d7eb95af76176b3dd232101a31"
+    },
+    {
+      "path": "shadowhook/src/main/cpp/arch/arm",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "181ddc00dada78092b8f59361283f6ff19264eb6",
+      "url": "https://api.github.com/repos/bytedance/android-inline-hook/git/trees/181ddc00dada78092b8f59361283f6ff19264eb6"
+    },
+    {
+      "path": "shadowhook/src/main/cpp/arch/arm/sh_a32.c",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b4e259768dcabaf91fdd8892baf86112403fd202",
+      "size": 18011,
+      "url": "https://api.github.com/repos/bytedance/android-inline-hook/git/blobs/b4e259768dcabaf91fdd8892baf86112403fd202"
+    },
+    {
+      "path": "shadowhook/src/main/cpp/arch/arm/sh_a32.h",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5e76175c510e9ae97179857a9ef1b23ffb1651c4",
+      "size": 1765,
+      "url": "https://api.github.com/repos/bytedance/android-inline-hook/git/blobs/5e76175c510e9ae97179857a9ef1b23ffb1651c4"
+    },
+    {
+      "path": "shadowhook/src/main/cpp/arch/arm/sh_glue.S",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "eb26fb515f54a51c361cfd6f84fccf1fe9aacaa6",
+      "size": 8155,
+      "url": "https://api.github.com/repos/bytedance/android-inline-hook/git/blobs/eb26fb515f54a51c361cfd6f84fccf1fe9aacaa6"
+    },
+    {
+      "path": "shadowhook/src/main/cpp/arch/arm/sh_inst.c",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4a43182a94088c228fcb7486b683273d10678b8a",
+      "size": 30781,
+      "url": "https://api.github.com/repos/bytedance/android-inline-hook/git/blobs/4a43182a94088c228fcb7486b683273d10678b8a"
+    },
+    {
+      "path": "shadowhook/src/main/cpp/arch/arm/sh_inst.h",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e40ec48e6eb9fa2ab4a7134ed3cdf25887f66e9b",
+      "size": 2430,
+      "url": "https://api.github.com/repos/bytedance/android-inline-hook/git/blobs/e40ec48e6eb9fa2ab4a7134ed3cdf25887f66e9b"
+    },
+    {
+      "path": "shadowhook/src/main/cpp/arch/arm/sh_t16.c",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6e8bcd11107548941f9a770e61965d83975725b0",
+      "size": 9891,
+      "url": "https://api.github.com/repos/bytedance/android-inline-hook/git/blobs/6e8bcd11107548941f9a770e61965d83975725b0"
+    },
+    {
+      "path": "shadowhook/src/main/cpp/arch/arm/sh_t16.h",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "080f2c755d3d44d12fac3581a9a58e7aac6ab564",
+      "size": 1870,
+      "url": "https://api.github.com/repos/bytedance/android-inline-hook/git/blobs/080f2c755d3d44d12fac3581a9a58e7aac6ab564"
+    },
+    {
+      "path": "shadowhook/src/main/cpp/arch/arm/sh_t32.c",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b3430a07c73d39065aa294bf263c5bb894c94c99",
+      "size": 16342,
+      "url": "https://api.github.com/repos/bytedance/android-inline-hook/git/blobs/b3430a07c73d39065aa294bf263c5bb894c94c99"
+    },
+    {
+      "path": "shadowhook/src/main/cpp/arch/arm/sh_t32.h",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f7e0151074d308fa6ae945255535385253725c63",
+      "size": 1693,
+      "url": "https://api.github.com/repos/bytedance/android-inline-hook/git/blobs/f7e0151074d308fa6ae945255535385253725c63"
+    },
+    {
+      "path": "shadowhook/src/main/cpp/arch/arm/sh_txx.c",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ef22b0492252c05126f4ea9e2580d06e4324c6e3",
+      "size": 2260,
+      "url": "https://api.github.com/repos/bytedance/android-inline-hook/git/blobs/ef22b0492252c05126f4ea9e2580d06e4324c6e3"
+    },
+    {
+      "path": "shadowhook/src/main/cpp/arch/arm/sh_txx.h",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9dc476123ed9b3c697fa05c0196ba72ee999a64d",
+      "size": 1627,
+      "url": "https://api.github.com/repos/bytedance/android-inline-hook/git/blobs/9dc476123ed9b3c697fa05c0196ba72ee999a64d"
+    },
+    {
+      "path": "shadowhook/src/main/cpp/arch/arm64",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "53691458692cc5d6199688a45e61d875b8401e85",
+      "url": "https://api.github.com/repos/bytedance/android-inline-hook/git/trees/53691458692cc5d6199688a45e61d875b8401e85"
+    },
+    {
+      "path": "shadowhook/src/main/cpp/arch/arm64/sh_a64.c",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f08d6f4d956e1b7303e093fdc68c9f0a5fb77775",
+      "size": 15096,
+      "url": "https://api.github.com/repos/bytedance/android-inline-hook/git/blobs/f08d6f4d956e1b7303e093fdc68c9f0a5fb77775"
+    },
+    {
+      "path": "shadowhook/src/main/cpp/arch/arm64/sh_a64.h",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7e49efa7097b3857f56c0f4b37d06d6f0956ace5",
+      "size": 2338,
+      "url": "https://api.github.com/repos/bytedance/android-inline-hook/git/blobs/7e49efa7097b3857f56c0f4b37d06d6f0956ace5"
+    },
+    {
+      "path": "shadowhook/src/main/cpp/arch/arm64/sh_glue.S",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "930a86691eece0e417b1e819fe4683821f32d7ce",
+      "size": 8282,
+      "url": "https://api.github.com/repos/bytedance/android-inline-hook/git/blobs/930a86691eece0e417b1e819fe4683821f32d7ce"
+    },
+    {
+      "path": "shadowhook/src/main/cpp/arch/arm64/sh_inst.c",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "56d73ff4d61d272e4dd9020502ee75926d4f8c26",
+      "size": 19028,
+      "url": "https://api.github.com/repos/bytedance/android-inline-hook/git/blobs/56d73ff4d61d272e4dd9020502ee75926d4f8c26"
+    },
+    {
+      "path": "shadowhook/src/main/cpp/arch/arm64/sh_inst.h",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f71b9d4f45e096c072d3783517922b8ba32ac9d0",
+      "size": 2349,
+      "url": "https://api.github.com/repos/bytedance/android-inline-hook/git/blobs/f71b9d4f45e096c072d3783517922b8ba32ac9d0"
+    },
+    {
+      "path": "shadowhook/src/main/cpp/common",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "1d808104551d0a71f0ee3129510ae27da454b766",
+      "url": "https://api.github.com/repos/bytedance/android-inline-hook/git/trees/1d808104551d0a71f0ee3129510ae27da454b766"
+    },
+    {
+      "path": "shadowhook/src/main/cpp/common/bytesig.c",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "44887297a25992d423979f5978978c2da3ea7c4d",
+      "size": 11967,
+      "url": "https://api.github.com/repos/bytedance/android-inline-hook/git/blobs/44887297a25992d423979f5978978c2da3ea7c4d"
+    },
+    {
+      "path": "shadowhook/src/main/cpp/common/bytesig.h",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8f46987465d4194942dc3e04c8cd23810a133711",
+      "size": 6019,
+      "url": "https://api.github.com/repos/bytedance/android-inline-hook/git/blobs/8f46987465d4194942dc3e04c8cd23810a133711"
+    },
+    {
+      "path": "shadowhook/src/main/cpp/common/sh_config.h",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d50a65a269fa2174d7ba6e1c7efc927f4a149225",
+      "size": 3308,
+      "url": "https://api.github.com/repos/bytedance/android-inline-hook/git/blobs/d50a65a269fa2174d7ba6e1c7efc927f4a149225"
+    },
+    {
+      "path": "shadowhook/src/main/cpp/common/sh_errno.c",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "76dc0cfdc338515d337e5801b08362284a6278d6",
+      "size": 5605,
+      "url": "https://api.github.com/repos/bytedance/android-inline-hook/git/blobs/76dc0cfdc338515d337e5801b08362284a6278d6"
+    },
+    {
+      "path": "shadowhook/src/main/cpp/common/sh_errno.h",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f041c5e103c4f7ef9ff55a1a90c88c0668d11134",
+      "size": 1844,
+      "url": "https://api.github.com/repos/bytedance/android-inline-hook/git/blobs/f041c5e103c4f7ef9ff55a1a90c88c0668d11134"
+    },
+    {
+      "path": "shadowhook/src/main/cpp/common/sh_log.c",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b2d7dd9129dbca7631ec361af93bfd8fdd62ffc2",
+      "size": 1753,
+      "url": "https://api.github.com/repos/bytedance/android-inline-hook/git/blobs/b2d7dd9129dbca7631ec361af93bfd8fdd62ffc2"
+    },
+    {
+      "path": "shadowhook/src/main/cpp/common/sh_log.h",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "53bc42938eeb49a00886cdad857f2992eea9bee5",
+      "size": 3236,
+      "url": "https://api.github.com/repos/bytedance/android-inline-hook/git/blobs/53bc42938eeb49a00886cdad857f2992eea9bee5"
+    },
+    {
+      "path": "shadowhook/src/main/cpp/common/sh_ref.c",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d73cc73b77818ca45ad47d13c25393dde5f60683",
+      "size": 3653,
+      "url": "https://api.github.com/repos/bytedance/android-inline-hook/git/blobs/d73cc73b77818ca45ad47d13c25393dde5f60683"
+    },
+    {
+      "path": "shadowhook/src/main/cpp/common/sh_ref.h",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "de9d9f45ab64c517679c5b630fa6f927d717ed15",
+      "size": 2237,
+      "url": "https://api.github.com/repos/bytedance/android-inline-hook/git/blobs/de9d9f45ab64c517679c5b630fa6f927d717ed15"
+    },
+    {
+      "path": "shadowhook/src/main/cpp/common/sh_sig.h",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "81f4abb98091eade79c126d3286b48174e1f30fc",
+      "size": 1619,
+      "url": "https://api.github.com/repos/bytedance/android-inline-hook/git/blobs/81f4abb98091eade79c126d3286b48174e1f30fc"
+    },
+    {
+      "path": "shadowhook/src/main/cpp/common/sh_trampo.c",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1b189998416500c803b9c7184f47675e7ff757b1",
+      "size": 6017,
+      "url": "https://api.github.com/repos/bytedance/android-inline-hook/git/blobs/1b189998416500c803b9c7184f47675e7ff757b1"
+    },
+    {
+      "path": "shadowhook/src/main/cpp/common/sh_trampo.h",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "37065cfee76dc26a907428606ccf7eccb0c931de",
+      "size": 2121,
+      "url": "https://api.github.com/repos/bytedance/android-inline-hook/git/blobs/37065cfee76dc26a907428606ccf7eccb0c931de"
+    },
+    {
+      "path": "shadowhook/src/main/cpp/common/sh_util.c",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1e2bfac2977d9ba5c63c47f69d8c2c11cac0cfde",
+      "size": 20883,
+      "url": "https://api.github.com/repos/bytedance/android-inline-hook/git/blobs/1e2bfac2977d9ba5c63c47f69d8c2c11cac0cfde"
+    },
+    {
+      "path": "shadowhook/src/main/cpp/common/sh_util.h",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "23d5decb85ac0cc66aac4b2d79d01f0c1cbe395a",
+      "size": 4153,
+      "url": "https://api.github.com/repos/bytedance/android-inline-hook/git/blobs/23d5decb85ac0cc66aac4b2d79d01f0c1cbe395a"
+    },
+    {
+      "path": "shadowhook/src/main/cpp/include",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "ca28323c43ec764c18778e1c5f4849a42f3551bb",
+      "url": "https://api.github.com/repos/bytedance/android-inline-hook/git/trees/ca28323c43ec764c18778e1c5f4849a42f3551bb"
+    },
+    {
+      "path": "shadowhook/src/main/cpp/include/shadowhook.h",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2fe55c3479f674e527916a514655db2ebedd53bf",
+      "size": 12795,
+      "url": "https://api.github.com/repos/bytedance/android-inline-hook/git/blobs/2fe55c3479f674e527916a514655db2ebedd53bf"
+    },
+    {
+      "path": "shadowhook/src/main/cpp/nothing",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "74b8270ce54fe3ee87fcb3b689c9ecf6827b2ffb",
+      "url": "https://api.github.com/repos/bytedance/android-inline-hook/git/trees/74b8270ce54fe3ee87fcb3b689c9ecf6827b2ffb"
+    },
+    {
+      "path": "shadowhook/src/main/cpp/nothing/sh_nothing.c",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "dd26a8b27f473106678a297bf764d9a7d560f962",
+      "size": 126,
+      "url": "https://api.github.com/repos/bytedance/android-inline-hook/git/blobs/dd26a8b27f473106678a297bf764d9a7d560f962"
+    },
+    {
+      "path": "shadowhook/src/main/cpp/sh_elf.c",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "bbe0a62f5431363a44debd2473705b9cd47bade4",
+      "size": 21253,
+      "url": "https://api.github.com/repos/bytedance/android-inline-hook/git/blobs/bbe0a62f5431363a44debd2473705b9cd47bade4"
+    },
+    {
+      "path": "shadowhook/src/main/cpp/sh_elf.h",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ebb8e98ecd3112b62d2031c33b3b182aabbf9fe5",
+      "size": 1636,
+      "url": "https://api.github.com/repos/bytedance/android-inline-hook/git/blobs/ebb8e98ecd3112b62d2031c33b3b182aabbf9fe5"
+    },
+    {
+      "path": "shadowhook/src/main/cpp/sh_enter.c",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "53f472fb86fbae1e34b9d92051963db3eb673efc",
+      "size": 1814,
+      "url": "https://api.github.com/repos/bytedance/android-inline-hook/git/blobs/53f472fb86fbae1e34b9d92051963db3eb673efc"
+    },
+    {
+      "path": "shadowhook/src/main/cpp/sh_enter.h",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "453dde7224902753b6021bb2eefb2ba5095c40a4",
+      "size": 1316,
+      "url": "https://api.github.com/repos/bytedance/android-inline-hook/git/blobs/453dde7224902753b6021bb2eefb2ba5095c40a4"
+    },
+    {
+      "path": "shadowhook/src/main/cpp/sh_hub.c",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8a1e595a8509392d1f9ed72838e43a52f5dfba6f",
+      "size": 19761,
+      "url": "https://api.github.com/repos/bytedance/android-inline-hook/git/blobs/8a1e595a8509392d1f9ed72838e43a52f5dfba6f"
+    },
+    {
+      "path": "shadowhook/src/main/cpp/sh_hub.h",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a831194b3e8b787063f7ec6136416c5f7f2ddda5",
+      "size": 2007,
+      "url": "https://api.github.com/repos/bytedance/android-inline-hook/git/blobs/a831194b3e8b787063f7ec6136416c5f7f2ddda5"
+    },
+    {
+      "path": "shadowhook/src/main/cpp/sh_island.c",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5542fecd123b10a4604706af427dcefa61e21aa8",
+      "size": 3417,
+      "url": "https://api.github.com/repos/bytedance/android-inline-hook/git/blobs/5542fecd123b10a4604706af427dcefa61e21aa8"
+    },
+    {
+      "path": "shadowhook/src/main/cpp/sh_island.h",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "fe3428ea4b7957be19d7ecd3b87e8efe59c75d9a",
+      "size": 1794,
+      "url": "https://api.github.com/repos/bytedance/android-inline-hook/git/blobs/fe3428ea4b7957be19d7ecd3b87e8efe59c75d9a"
+    },
+    {
+      "path": "shadowhook/src/main/cpp/sh_jni.c",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2928f0a771e1cc0c38d276ce87bd4a03908caa39",
+      "size": 5642,
+      "url": "https://api.github.com/repos/bytedance/android-inline-hook/git/blobs/2928f0a771e1cc0c38d276ce87bd4a03908caa39"
+    },
+    {
+      "path": "shadowhook/src/main/cpp/sh_linker.c",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8f07b43919cbc3c1068e0ced2abfeed60f4e23c7",
+      "size": 36322,
+      "url": "https://api.github.com/repos/bytedance/android-inline-hook/git/blobs/8f07b43919cbc3c1068e0ced2abfeed60f4e23c7"
+    },
+    {
+      "path": "shadowhook/src/main/cpp/sh_linker.h",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "11f193bca6ea31254dc0310c6a30e6588008c7f0",
+      "size": 3484,
+      "url": "https://api.github.com/repos/bytedance/android-inline-hook/git/blobs/11f193bca6ea31254dc0310c6a30e6588008c7f0"
+    },
+    {
+      "path": "shadowhook/src/main/cpp/sh_recorder.c",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5393b4b2976f73e7c6e6a7d83a971a8613621c34",
+      "size": 21115,
+      "url": "https://api.github.com/repos/bytedance/android-inline-hook/git/blobs/5393b4b2976f73e7c6e6a7d83a971a8613621c34"
+    },
+    {
+      "path": "shadowhook/src/main/cpp/sh_recorder.h",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8bb5834897e90d093d4180196ff7bceef3ff5ee4",
+      "size": 2786,
+      "url": "https://api.github.com/repos/bytedance/android-inline-hook/git/blobs/8bb5834897e90d093d4180196ff7bceef3ff5ee4"
+    },
+    {
+      "path": "shadowhook/src/main/cpp/sh_safe.c",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "fd797790f88f09a7a9efc217f995307ed9ac1d24",
+      "size": 6235,
+      "url": "https://api.github.com/repos/bytedance/android-inline-hook/git/blobs/fd797790f88f09a7a9efc217f995307ed9ac1d24"
+    },
+    {
+      "path": "shadowhook/src/main/cpp/sh_safe.h",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1af8d67a26fd77d7cfd7f797687c0a824a4dfa24",
+      "size": 2240,
+      "url": "https://api.github.com/repos/bytedance/android-inline-hook/git/blobs/1af8d67a26fd77d7cfd7f797687c0a824a4dfa24"
+    },
+    {
+      "path": "shadowhook/src/main/cpp/sh_switch.c",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a283a7684c92845b104f6f6da005513e608914d7",
+      "size": 35114,
+      "url": "https://api.github.com/repos/bytedance/android-inline-hook/git/blobs/a283a7684c92845b104f6f6da005513e608914d7"
+    },
+    {
+      "path": "shadowhook/src/main/cpp/sh_switch.h",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "419ebd11a291a9e429708fe07051b64b05de037c",
+      "size": 2299,
+      "url": "https://api.github.com/repos/bytedance/android-inline-hook/git/blobs/419ebd11a291a9e429708fe07051b64b05de037c"
+    },
+    {
+      "path": "shadowhook/src/main/cpp/sh_task.c",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "55bb6c5843b9e9e570c07e954adf8fa6809ee5a9",
+      "size": 19366,
+      "url": "https://api.github.com/repos/bytedance/android-inline-hook/git/blobs/55bb6c5843b9e9e570c07e954adf8fa6809ee5a9"
+    },
+    {
+      "path": "shadowhook/src/main/cpp/sh_task.h",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a16d5d960c8325362e77a73d1510e111c9cde8bb",
+      "size": 2917,
+      "url": "https://api.github.com/repos/bytedance/android-inline-hook/git/blobs/a16d5d960c8325362e77a73d1510e111c9cde8bb"
+    },
+    {
+      "path": "shadowhook/src/main/cpp/sh_xdl.c",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e1136ba9609fb86131457e7e10c52e4c3e2d2fd3",
+      "size": 6408,
+      "url": "https://api.github.com/repos/bytedance/android-inline-hook/git/blobs/e1136ba9609fb86131457e7e10c52e4c3e2d2fd3"
+    },
+    {
+      "path": "shadowhook/src/main/cpp/sh_xdl.h",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "39fdfae14cec07a83335add35b40f14984d2ce13",
+      "size": 1585,
+      "url": "https://api.github.com/repos/bytedance/android-inline-hook/git/blobs/39fdfae14cec07a83335add35b40f14984d2ce13"
+    },
+    {
+      "path": "shadowhook/src/main/cpp/shadowhook.c",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0258ac7965ef9f27917c8ffac6c9c3ca84ee3f1e",
+      "size": 25343,
+      "url": "https://api.github.com/repos/bytedance/android-inline-hook/git/blobs/0258ac7965ef9f27917c8ffac6c9c3ca84ee3f1e"
+    },
+    {
+      "path": "shadowhook/src/main/cpp/shadowhook.map.txt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5a6d7fb46f1622572cee04dc4826f4111f62d059",
+      "size": 2192,
+      "url": "https://api.github.com/repos/bytedance/android-inline-hook/git/blobs/5a6d7fb46f1622572cee04dc4826f4111f62d059"
+    },
+    {
+      "path": "shadowhook/src/main/cpp/third_party",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "4bd95c33711c0f17d7eac53c54239d42381a0a9c",
+      "url": "https://api.github.com/repos/bytedance/android-inline-hook/git/trees/4bd95c33711c0f17d7eac53c54239d42381a0a9c"
+    },
+    {
+      "path": "shadowhook/src/main/cpp/third_party/bsd",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "f976012334aa5ebd9b9d9d1f38f18bb39ba6670f",
+      "url": "https://api.github.com/repos/bytedance/android-inline-hook/git/trees/f976012334aa5ebd9b9d9d1f38f18bb39ba6670f"
+    },
+    {
+      "path": "shadowhook/src/main/cpp/third_party/bsd/queue.h",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f550f6c26561849097ef3597e6c0171ad7b6c365",
+      "size": 27903,
+      "url": "https://api.github.com/repos/bytedance/android-inline-hook/git/blobs/f550f6c26561849097ef3597e6c0171ad7b6c365"
+    },
+    {
+      "path": "shadowhook/src/main/cpp/third_party/bsd/tree.h",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e6db6a908df40a9e8874e99342b87e75108a8cad",
+      "size": 49254,
+      "url": "https://api.github.com/repos/bytedance/android-inline-hook/git/blobs/e6db6a908df40a9e8874e99342b87e75108a8cad"
+    },
+    {
+      "path": "shadowhook/src/main/cpp/third_party/lss",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "ce6ae302c2b8f67f321adb74e38a42e2b7e9159c",
+      "url": "https://api.github.com/repos/bytedance/android-inline-hook/git/trees/ce6ae302c2b8f67f321adb74e38a42e2b7e9159c"
+    },
+    {
+      "path": "shadowhook/src/main/cpp/third_party/lss/LICENSE",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "58ab3fba9d4c3318ea545f451bb3ecbfdd5d8f6f",
+      "size": 1475,
+      "url": "https://api.github.com/repos/bytedance/android-inline-hook/git/blobs/58ab3fba9d4c3318ea545f451bb3ecbfdd5d8f6f"
+    },
+    {
+      "path": "shadowhook/src/main/cpp/third_party/lss/linux_syscall_support.h",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d3791cd4e9c802c157dd8ddfb6d0d9803a9b3d22",
+      "size": 197187,
+      "url": "https://api.github.com/repos/bytedance/android-inline-hook/git/blobs/d3791cd4e9c802c157dd8ddfb6d0d9803a9b3d22"
+    },
+    {
+      "path": "shadowhook/src/main/cpp/third_party/lss/linux_syscall_support_android_ext.h",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "387ba5a622d4995120fb7cab44a8f54479a31e2c",
+      "size": 1880,
+      "url": "https://api.github.com/repos/bytedance/android-inline-hook/git/blobs/387ba5a622d4995120fb7cab44a8f54479a31e2c"
+    },
+    {
+      "path": "shadowhook/src/main/cpp/third_party/xdl",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "5b7aa9ddc18052722cf5904b6652be8d7f3f9adc",
+      "url": "https://api.github.com/repos/bytedance/android-inline-hook/git/trees/5b7aa9ddc18052722cf5904b6652be8d7f3f9adc"
+    },
+    {
+      "path": "shadowhook/src/main/cpp/third_party/xdl/LICENSE",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "96802385394c3fd3d76741d337f030d69a1ff37f",
+      "size": 1077,
+      "url": "https://api.github.com/repos/bytedance/android-inline-hook/git/blobs/96802385394c3fd3d76741d337f030d69a1ff37f"
+    },
+    {
+      "path": "shadowhook/src/main/cpp/third_party/xdl/xdl.c",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e47a0a94068e86abcd6c435dffd196c3298cd0a4",
+      "size": 35191,
+      "url": "https://api.github.com/repos/bytedance/android-inline-hook/git/blobs/e47a0a94068e86abcd6c435dffd196c3298cd0a4"
+    },
+    {
+      "path": "shadowhook/src/main/cpp/third_party/xdl/xdl.h",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e52d2ae67debcaeeaaf83b1e03c9b3a3c4d0ea36",
+      "size": 3227,
+      "url": "https://api.github.com/repos/bytedance/android-inline-hook/git/blobs/e52d2ae67debcaeeaaf83b1e03c9b3a3c4d0ea36"
+    },
+    {
+      "path": "shadowhook/src/main/cpp/third_party/xdl/xdl_iterate.c",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d9216a4684fac8933b902d5ab45958bdbc524251",
+      "size": 11972,
+      "url": "https://api.github.com/repos/bytedance/android-inline-hook/git/blobs/d9216a4684fac8933b902d5ab45958bdbc524251"
+    },
+    {
+      "path": "shadowhook/src/main/cpp/third_party/xdl/xdl_iterate.h",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a4f5bf744a3a45ebb04b44f4ee0c381a8446666b",
+      "size": 1606,
+      "url": "https://api.github.com/repos/bytedance/android-inline-hook/git/blobs/a4f5bf744a3a45ebb04b44f4ee0c381a8446666b"
+    },
+    {
+      "path": "shadowhook/src/main/cpp/third_party/xdl/xdl_linker.c",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9b43425acf7d21611bc4ca1fd920c90990d57882",
+      "size": 9040,
+      "url": "https://api.github.com/repos/bytedance/android-inline-hook/git/blobs/9b43425acf7d21611bc4ca1fd920c90990d57882"
+    },
+    {
+      "path": "shadowhook/src/main/cpp/third_party/xdl/xdl_linker.h",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ce2c8a8d935c66435f0b3f6a784f2939eedaac91",
+      "size": 1431,
+      "url": "https://api.github.com/repos/bytedance/android-inline-hook/git/blobs/ce2c8a8d935c66435f0b3f6a784f2939eedaac91"
+    },
+    {
+      "path": "shadowhook/src/main/cpp/third_party/xdl/xdl_lzma.c",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "66743739c7ec3a53873f09324f454649eae22ed1",
+      "size": 6839,
+      "url": "https://api.github.com/repos/bytedance/android-inline-hook/git/blobs/66743739c7ec3a53873f09324f454649eae22ed1"
+    },
+    {
+      "path": "shadowhook/src/main/cpp/third_party/xdl/xdl_lzma.h",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d282de19865a2e51f4edaa0bd9571ab2dba83acb",
+      "size": 1445,
+      "url": "https://api.github.com/repos/bytedance/android-inline-hook/git/blobs/d282de19865a2e51f4edaa0bd9571ab2dba83acb"
+    },
+    {
+      "path": "shadowhook/src/main/cpp/third_party/xdl/xdl_util.c",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4635e08d32578d6765e0dde390ae5c6e2cf990a0",
+      "size": 3456,
+      "url": "https://api.github.com/repos/bytedance/android-inline-hook/git/blobs/4635e08d32578d6765e0dde390ae5c6e2cf990a0"
+    },
+    {
+      "path": "shadowhook/src/main/cpp/third_party/xdl/xdl_util.h",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8896f8ae875b03424e300f957018f02795c78bd4",
+      "size": 2884,
+      "url": "https://api.github.com/repos/bytedance/android-inline-hook/git/blobs/8896f8ae875b03424e300f957018f02795c78bd4"
+    },
+    {
+      "path": "shadowhook/src/main/java",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "188cd797a26fecb2b858fbe0212c009dcb02cacf",
+      "url": "https://api.github.com/repos/bytedance/android-inline-hook/git/trees/188cd797a26fecb2b858fbe0212c009dcb02cacf"
+    },
+    {
+      "path": "shadowhook/src/main/java/com",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "47c286eb778c90898b2dcf6c10190931f8b49dd7",
+      "url": "https://api.github.com/repos/bytedance/android-inline-hook/git/trees/47c286eb778c90898b2dcf6c10190931f8b49dd7"
+    },
+    {
+      "path": "shadowhook/src/main/java/com/bytedance",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "ca9589da293b1bd6480ab7230ff5d74b6c0a5fad",
+      "url": "https://api.github.com/repos/bytedance/android-inline-hook/git/trees/ca9589da293b1bd6480ab7230ff5d74b6c0a5fad"
+    },
+    {
+      "path": "shadowhook/src/main/java/com/bytedance/shadowhook",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "0f93353d1467ed9b758f4749d74e43f62de875ab",
+      "url": "https://api.github.com/repos/bytedance/android-inline-hook/git/trees/0f93353d1467ed9b758f4749d74e43f62de875ab"
+    },
+    {
+      "path": "shadowhook/src/main/java/com/bytedance/shadowhook/ShadowHook.java",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4c34cbff6057b18f8d9d3605f06ddc212e586ecd",
+      "size": 12453,
+      "url": "https://api.github.com/repos/bytedance/android-inline-hook/git/blobs/4c34cbff6057b18f8d9d3605f06ddc212e586ecd"
+    },
+    {
+      "path": "systest",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "5e3769e78b32243025b7c0649dbe182f5e17c3b9",
+      "url": "https://api.github.com/repos/bytedance/android-inline-hook/git/trees/5e3769e78b32243025b7c0649dbe182f5e17c3b9"
+    },
+    {
+      "path": "systest/.gitignore",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "42afabfd2abebf31384ca7797186a27a4b7dbee8",
+      "size": 6,
+      "url": "https://api.github.com/repos/bytedance/android-inline-hook/git/blobs/42afabfd2abebf31384ca7797186a27a4b7dbee8"
+    },
+    {
+      "path": "systest/build.gradle",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4ba07bd683e48ca8520fe9f4e29f7398b4760f8c",
+      "size": 1937,
+      "url": "https://api.github.com/repos/bytedance/android-inline-hook/git/blobs/4ba07bd683e48ca8520fe9f4e29f7398b4760f8c"
+    },
+    {
+      "path": "systest/consumer-rules.pro",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5b171bbc332835f02f5cf306c0a7b00cc6223dbe",
+      "size": 79,
+      "url": "https://api.github.com/repos/bytedance/android-inline-hook/git/blobs/5b171bbc332835f02f5cf306c0a7b00cc6223dbe"
+    },
+    {
+      "path": "systest/src",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "c4f261b36d3324af7fe17de8aeac6f63e876e1a5",
+      "url": "https://api.github.com/repos/bytedance/android-inline-hook/git/trees/c4f261b36d3324af7fe17de8aeac6f63e876e1a5"
+    },
+    {
+      "path": "systest/src/main",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "79c24822d7e6c1b3ee693e69842af050a46e5851",
+      "url": "https://api.github.com/repos/bytedance/android-inline-hook/git/trees/79c24822d7e6c1b3ee693e69842af050a46e5851"
+    },
+    {
+      "path": "systest/src/main/AndroidManifest.xml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a5918e68abcdde7f61ccae4f0ad4885b764573fd",
+      "size": 121,
+      "url": "https://api.github.com/repos/bytedance/android-inline-hook/git/blobs/a5918e68abcdde7f61ccae4f0ad4885b764573fd"
+    },
+    {
+      "path": "systest/src/main/cpp",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "e60f3210d2e2b076d1df8908cf20ff7e619d8539",
+      "url": "https://api.github.com/repos/bytedance/android-inline-hook/git/trees/e60f3210d2e2b076d1df8908cf20ff7e619d8539"
+    },
+    {
+      "path": "systest/src/main/cpp/CMakeLists.txt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a8fc0dab24c560d32e3f8d96dfd8608bb65730d4",
+      "size": 1361,
+      "url": "https://api.github.com/repos/bytedance/android-inline-hook/git/blobs/a8fc0dab24c560d32e3f8d96dfd8608bb65730d4"
+    },
+    {
+      "path": "systest/src/main/cpp/systest.c",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "48c7b0469cb00a9b6d11d2246a39a044e795f1be",
+      "size": 54943,
+      "url": "https://api.github.com/repos/bytedance/android-inline-hook/git/blobs/48c7b0469cb00a9b6d11d2246a39a044e795f1be"
+    },
+    {
+      "path": "systest/src/main/cpp/systest.h",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8f6d9c63f551a5514d647346ec0af5aa87a748a9",
+      "size": 1333,
+      "url": "https://api.github.com/repos/bytedance/android-inline-hook/git/blobs/8f6d9c63f551a5514d647346ec0af5aa87a748a9"
+    },
+    {
+      "path": "systest/src/main/cpp/systest.map.txt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d0f0e10610972a2db48db5c89a77372aac209590",
+      "size": 60,
+      "url": "https://api.github.com/repos/bytedance/android-inline-hook/git/blobs/d0f0e10610972a2db48db5c89a77372aac209590"
+    },
+    {
+      "path": "systest/src/main/cpp/systest_jni.c",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c151cad07c7f6e19eb148e4cc43ff9745ad07e0d",
+      "size": 2914,
+      "url": "https://api.github.com/repos/bytedance/android-inline-hook/git/blobs/c151cad07c7f6e19eb148e4cc43ff9745ad07e0d"
+    },
+    {
+      "path": "systest/src/main/cpp/systest_util.c",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0c8f4ec96e99e81987fea9dd8105335179cd9f21",
+      "size": 2680,
+      "url": "https://api.github.com/repos/bytedance/android-inline-hook/git/blobs/0c8f4ec96e99e81987fea9dd8105335179cd9f21"
+    },
+    {
+      "path": "systest/src/main/cpp/systest_util.h",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "293bbd450ad8a6fa198dab4f1418cb07a3ec01db",
+      "size": 1269,
+      "url": "https://api.github.com/repos/bytedance/android-inline-hook/git/blobs/293bbd450ad8a6fa198dab4f1418cb07a3ec01db"
+    },
+    {
+      "path": "systest/src/main/java",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "640b094f980086af68cf595ef57041ec02ed6925",
+      "url": "https://api.github.com/repos/bytedance/android-inline-hook/git/trees/640b094f980086af68cf595ef57041ec02ed6925"
+    },
+    {
+      "path": "systest/src/main/java/com",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "a73b64025f013396327c486b4bd8a8c1715f4c63",
+      "url": "https://api.github.com/repos/bytedance/android-inline-hook/git/trees/a73b64025f013396327c486b4bd8a8c1715f4c63"
+    },
+    {
+      "path": "systest/src/main/java/com/bytedance",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "cc56ecaf726e1e3facbe85ff693ca3071e938848",
+      "url": "https://api.github.com/repos/bytedance/android-inline-hook/git/trees/cc56ecaf726e1e3facbe85ff693ca3071e938848"
+    },
+    {
+      "path": "systest/src/main/java/com/bytedance/shadowhook",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "35668ca391c864bcdf13256d982aa2e4966ff8de",
+      "url": "https://api.github.com/repos/bytedance/android-inline-hook/git/trees/35668ca391c864bcdf13256d982aa2e4966ff8de"
+    },
+    {
+      "path": "systest/src/main/java/com/bytedance/shadowhook/systest",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "3677672238e4ef15e7f3c9860d11e1f02efea957",
+      "url": "https://api.github.com/repos/bytedance/android-inline-hook/git/trees/3677672238e4ef15e7f3c9860d11e1f02efea957"
+    },
+    {
+      "path": "systest/src/main/java/com/bytedance/shadowhook/systest/SysTest.java",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "52b64fcbf3f2ad5eb47e50333c3c17375fe4ef38",
+      "size": 3145,
+      "url": "https://api.github.com/repos/bytedance/android-inline-hook/git/blobs/52b64fcbf3f2ad5eb47e50333c3c17375fe4ef38"
+    },
+    {
+      "path": "tools",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "021c9ebd2cb12111c641bfc1071aadce7e50e126",
+      "url": "https://api.github.com/repos/bytedance/android-inline-hook/git/trees/021c9ebd2cb12111c641bfc1071aadce7e50e126"
+    },
+    {
+      "path": "tools/record_parser.py",
+      "mode": "100755",
+      "type": "blob",
+      "sha": "199c90fea4762b38243e5af9ece72d85a2151762",
+      "size": 16599,
+      "url": "https://api.github.com/repos/bytedance/android-inline-hook/git/blobs/199c90fea4762b38243e5af9ece72d85a2151762"
+    }
+  ],
+  "truncated": false
+}

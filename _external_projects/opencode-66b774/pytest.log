@@ -1,0 +1,55 @@
+.......F.F...............................................                [100%]
+=================================== FAILURES ===================================
+___________________ FlowTest.test_captcha_rejection_retries ____________________
+
+self = <test_flow.FlowTest testMethod=test_captcha_rejection_retries>
+
+    def test_captcha_rejection_retries(self):
+        settings = self._settings()
+        prov = Provisioner(settings)
+        prov.captcha = FakeCaptcha()
+        prov.mail = FakeMail()
+    
+        original = STATE["pending"]
+        STATE["pending"] = {}
+        try:
+            # turnstile token kosong -> harus minta token baru lalu lanjut
+            calls = {"n": 0}
+    
+            class EmptyThenOk(FakeCaptcha):
+                def turnstile(self, sitekey, url, progress=None):
+                    calls["n"] += 1
+                    return "" if calls["n"] == 1 else "good-token"
+    
+            prov.captcha = EmptyThenOk()
+            result = prov.run()
+            self.assertEqual(result.account_id, "acc-1")
+>           self.assertEqual(calls["n"], 2)
+E           AssertionError: 3 != 2
+
+tests/test_flow.py:261: AssertionError
+___________________________ FlowTest.test_full_flow ____________________________
+
+self = <test_flow.FlowTest testMethod=test_full_flow>
+
+    def test_full_flow(self):
+        settings = self._settings()
+        prov = Provisioner(settings)
+        prov.captcha = FakeCaptcha()
+        prov.mail = FakeMail()
+        steps = []
+        result = prov.run(progress=steps.append)
+    
+        self.assertEqual(result.ssh_user, "trtest1234")
+        self.assertEqual(result.ssh_pass, "TrialPass9x")
+        self.assertEqual(result.host, "nusa1.example.net")
+        self.assertEqual(result.server_name, "ID 1 NUSA")
+        self.assertEqual(result.account_id, "acc-1")
+>       self.assertIn("05-11-2026 03:00 WIB", result.expired_at)
+E       AssertionError: '05-11-2026 03:00 WIB' not found in '06-11-2026 03:00 WIB'
+
+tests/test_flow.py:213: AssertionError
+=========================== short test summary info ============================
+FAILED tests/test_flow.py::FlowTest::test_captcha_rejection_retries - AssertionError: 3 != 2
+FAILED tests/test_flow.py::FlowTest::test_full_flow - AssertionError: '05-11-2026 03:00 WIB' not found in '06-11-2026 03:00 WIB'
+2 failed, 55 passed in 3.00s
