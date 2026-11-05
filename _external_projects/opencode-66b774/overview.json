@@ -1,0 +1,86 @@
+{
+ "profile": {
+  "vpnUsername": "trndwr1628",
+  "role": "USER",
+  "balance": 0,
+  "isActive": true
+ },
+ "servers": [
+  {
+   "id": "cmucfk43n03oh8ndg8foflv79",
+   "name": "🇮🇩ID 1 NUSA",
+   "domain": "id1-1forcr.zivpn.site",
+   "quota": 0,
+   "isUdpZivpnOnly": false,
+   "isResellerOnly": false,
+   "isFull": false,
+   "slotLeft": 2,
+   "pricePerDay": {
+    "onePackage": 265,
+    "twoPackage": 432
+   },
+   "ipLimit": {
+    "onePackage": 2,
+    "twoPackage": 3
+   }
+  },
+  {
+   "id": "cmucfk43w03oi8ndg0n2b1nq2",
+   "name": "🇮🇩ID 3 BIZNET",
+   "domain": "id3-1forcr.zivpn.site",
+   "quota": 0,
+   "isUdpZivpnOnly": false,
+   "isResellerOnly": false,
+   "isFull": false,
+   "slotLeft": 12,
+   "pricePerDay": {
+    "onePackage": 265,
+    "twoPackage": 432
+   },
+   "ipLimit": {
+    "onePackage": 2,
+    "twoPackage": 3
+   }
+  },
+  {
+   "id": "cmucfk44103oj8ndgkf9otr2h",
+   "name": "🇸🇬SG 4 LEASEWEB ZIV",
+   "domain": "sg4-1forcr.zivpn.site",
+   "quota": 300,
+   "isUdpZivpnOnly": true,
+   "isResellerOnly": false,
+   "isFull": false,
+   "slotLeft": 32,
+   "pricePerDay": {
+    "onePackage": 333,
+    "twoPackage": 500
+   },
+   "ipLimit": {
+    "onePackage": 4,
+    "twoPackage": 6
+   }
+  },
+  {
+   "id": "cmucfk44503ok8ndgcizq0vyv",
+   "name": "🇸🇬SG 4 LEASEWEB",
+   "domain": "sg4-1forcr.zivpn.site",
+   "quota": 300,
+   "isUdpZivpnOnly": false,
+   "isResellerOnly": false,
+   "isFull": false,
+   "slotLeft": 32,
+   "pricePerDay": {
+    "onePackage": 300,
+    "twoPackage": 466
+   },
+   "ipLimit": {
+    "onePackage": 2,
+    "twoPackage": 3
+   }
+  }
+ ],
+ "accounts": [],
+ "activeAccounts": 0,
+ "hiddenAccounts": 0,
+ "expiredVisibleDays": 3
+}

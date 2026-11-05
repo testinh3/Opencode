@@ -1,0 +1,40 @@
+{
+  "username": "useru76wcr",
+  "email": "u76wcr709g4@fldubai.com",
+  "password": "TempPass123!",
+  "mail_password": "TempMailPass123!",
+  "otp": "848169",
+  "final_url": "https://1forcrkuota.com/user.html",
+  "cookies": [
+    {
+      "name": "g_state",
+      "value": "{\"i_l\":0,\"i_ll\":1793891922122,\"i_b\":\"KbkkJTZV2xK4DRIqMxNRpSsUzYF7y0vE6y1AbgVqFLg\",\"i_e\":{\"enable_itp_optimization\":24},\"i_et\":1793891922122}",
+      "domain": "1forcrkuota.com",
+      "path": "/",
+      "expires": 1809443922,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "ppob_csrf",
+      "value": "MV2wtIhq3F-4m_Tw3ZqJrT68QVaDGxFx8H0PaAMGN30.F-RjP8cX5DKj_bKizxTz63QKOWqe3pFwjZG6C2qxAyA",
+      "domain": "1forcrkuota.com",
+      "path": "/",
+      "expires": 1794496762.523194,
+      "httpOnly": false,
+      "secure": true,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "ppob_session",
+      "value": "eyJzdWIiOiJjbXczb3licmgwMDFjOG5tNHdoZnJ6N2syIiwiZW1haWwiOiJ1NzZ3Y3I3MDlnNEBmbGR1YmFpLmNvbSIsInJvbGUiOiJVU0VSIiwiaWF0IjoxNzkzODkxOTU4OTA5LCJleHAiOjE3OTQ0OTY3NTg5MDl9.BrbMLtQlxyOYJi7nz2c60-G15ZiXGOGBuw5umXBCdKA",
+      "domain": "1forcrkuota.com",
+      "path": "/",
+      "expires": 1794496759.018882,
+      "httpOnly": true,
+      "secure": true,
+      "sameSite": "Lax"
+    }
+  ]
+}

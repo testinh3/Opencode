@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Masuk - 1FORCR KUOTA</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon-32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicon-16.png">
+    <link rel="shortcut icon" href="/favicon.ico">
+    <link rel="apple-touch-icon" href="assets/images/apple-touch-icon.png">
+    <link rel="stylesheet" href="css/style.css?v=20261005-1">
+    <!-- Tampilan login memakai warna, font, dan bentuk yang sama dengan
+         dashboard pembeli. style.css tetap dimuat karena dipakai bersama
+         halaman admin. -->
+    <link rel="stylesheet" href="css/login-refresh.css?v=20261027-2">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body class="login-page">
+    <div class="login-container">
+        <!-- Hanya tampil di layar lebar. Di HP form langsung terlihat. -->
+        <aside class="login-brand-panel" aria-label="Tentang 1FORCR KUOTA">
+            <a class="login-brand" href="index.html" aria-label="Kembali ke beranda 1FORCR KUOTA">
+                <span class="brand-mark brand-mark-logo">
+                    <img src="assets/images/1forcr-logo.svg?v=20260626-9" alt="">
+                </span>
+                <span class="brand-copy">
+                    <strong>1FORCR KUOTA</strong>
+                </span>
+            </a>
+            <div class="login-brand-copy">
+                <p class="login-hero-title">Pulsa, kuota, dan top up dalam satu akun.</p>
+                <p>Bayar pakai QRIS atau saldo akun. Setiap pesanan tercatat di Riwayat, lengkap dengan nomor serinya.</p>
+            </div>
+            <ul class="login-category-list" aria-label="Yang bisa dibeli">
+                <li>Pulsa</li>
+                <li>Kuota internet</li>
+                <li>Token PLN</li>
+                <li>Top up game</li>
+                <li>E-wallet</li>
+                <li>Akun VPN</li>
+            </ul>
+        </aside>
+
+        <main class="login-card">
+            <div class="login-header">
+                <a class="login-card-brand" href="index.html" aria-label="Kembali ke beranda">
+                    <span class="brand-mark brand-mark-logo">
+                        <img src="assets/images/1forcr-logo.svg?v=20260626-9" alt="">
+                    </span>
+                    <span>1FORCR KUOTA</span>
+                </a>
+                <!-- Judulnya diganti js/auth.js sesuai tampilan yang aktif. -->
+                <h1 id="authSubtitle">Masuk ke akun kamu</h1>
+            </div>
+
+            <div class="auth-tabs">
+                <button class="auth-tab active" type="button" data-auth-view="loginView">Masuk</button>
+                <button class="auth-tab" type="button" data-auth-view="registerView">Daftar</button>
+            </div>
+
+            <p class="auth-message" id="authMessage" role="status" aria-live="polite"></p>
+            <div class="auth-dev-banner" id="authDevelopmentBanner" hidden>
+                <i class="fas fa-code" aria-hidden="true"></i>
+                <span>Website masih dalam development. Login hanya dibuka untuk akun tertentu.</span>
+            </div>
+            <!-- Hanya tampil saat dibuka dari bot Telegram (Mini App). -->
+            <div class="auth-telegram-box" id="telegramAuthBox" hidden>
+                <p id="telegramAuthText">Menghubungkan akun Telegram...</p>
+                <button class="btn-telegram-login" id="telegramLoginButton" type="button" hidden>
+                    <i class="fab fa-telegram" aria-hidden="true"></i>
+                    <span>Masuk dengan Telegram</span>
+                </button>
+            </div>
+
+            <form class="auth-view active" id="loginView">
+                <div class="form-group">
+                    <label for="loginEmail">Email</label>
+                    <input type="email" id="loginEmail" name="email" placeholder="contoh@gmail.com" autocomplete="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="loginPassword">Password</label>
+                    <div class="password-field">
+                        <input type="password" id="loginPassword" name="password" placeholder="Minimal 8 karakter" autocomplete="current-password" required>
+                        <button class="password-toggle" type="button" data-toggle-password="loginPassword" aria-label="Tampilkan password">
+                            <i class="fas fa-eye" aria-hidden="true"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="form-group" id="loginTurnstileGroup" hidden>
+                    <label>Verifikasi keamanan</label>
+                    <div class="turnstile-box" id="loginTurnstileWidget"></div>
+                    <input type="hidden" id="loginTurnstileToken" name="turnstileToken">
+                </div>
+                <button type="button" class="auth-link-btn" id="openForgotPassword">Lupa password?</button>
+                <button type="submit" class="btn-login-submit">Masuk</button>
+                <div class="google-auth-section" id="googleAuthSection" hidden>
+                    <div class="auth-divider" aria-hidden="true">
+                        <span>atau</span>
+                    </div>
+                    <div class="google-web-button" id="googleWebButton" hidden></div>
+                    <button class="btn-google-native" id="googleNativeButton" type="button" hidden>
+                        <i class="fab fa-google" aria-hidden="true"></i>
+                        <span>Masuk dengan Google</span>
+                    </button>
+                </div>
+            </form>
+
+            <form class="auth-view" id="registerView">
+                <p class="auth-view-note">Kode OTP dikirim ke email kamu untuk memastikan email itu benar milikmu.</p>
+                <div class="form-group">
+                    <label for="registerUsername">Username</label>
+                    <input type="text" id="registerUsername" name="username" placeholder="Minimal 3 karakter" minlength="3" maxlength="30" autocomplete="username" required>
+                </div>
+                <div class="form-group">
+                    <label for="registerEmail">Email</label>
+                    <input type="email" id="registerEmail" name="email" placeholder="contoh@gmail.com" autocomplete="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="registerPassword">Password</label>
+                    <div class="password-field">
+                        <input type="password" id="registerPassword" name="password" placeholder="Minimal 8 karakter" minlength="8" autocomplete="new-password" required>
+                        <button class="password-toggle" type="button" data-toggle-password="registerPassword" aria-label="Tampilkan password">
+                            <i class="fas fa-eye" aria-hidden="true"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="confirmPassword">Ulangi password</label>
+                    <div class="password-field">
+                        <input type="password" id="confirmPassword" name="confirmPassword" placeholder="Ketik password yang sama" minlength="8" autocomplete="new-password" required>
+                        <button class="password-toggle" type="button" data-toggle-password="confirmPassword" aria-label="Tampilkan password">
+                            <i class="fas fa-eye" aria-hidden="true"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="form-group" id="turnstileGroup" hidden>
+                    <label>Verifikasi keamanan</label>
+                    <div class="turnstile-box" id="turnstileWidget"></div>
+                    <input type="hidden" id="turnstileToken" name="turnstileToken">
+                </div>
+                <div class="form-group" id="localCaptchaGroup">
+                    <label for="captchaAnswer">Captcha</label>
+                    <div class="captcha-box">
+                        <strong class="captcha-code" id="captchaQuestion">Memuat...</strong>
+                        <button class="icon-button captcha-refresh" id="refreshCaptcha" type="button" aria-label="Ganti kode captcha">
+                            <i class="fas fa-sync-alt" aria-hidden="true"></i>
+                        </button>
+                    </div>
+                    <input type="text" id="captchaAnswer" name="captchaAnswer" maxlength="6" autocomplete="off" placeholder="Ketik kode di atas" required>
+                </div>
+                <label class="consent-check">
+                    <input type="checkbox" id="registerTerms" name="registerTerms" required>
+                    <span>Saya setuju dengan <a href="kebijakan-privasi.html" target="_blank" rel="noopener noreferrer">Kebijakan Privasi</a> dan <a href="syarat-ketentuan.html" target="_blank" rel="noopener noreferrer">Syarat &amp; Ketentuan</a>.</span>
+                </label>
+                <button type="submit" class="btn-login-submit">Kirim kode OTP</button>
+            </form>
+
+            <form class="auth-view" id="otpView">
+                <div class="otp-target">
+                    <span>Kode OTP dikirim ke</span>
+                    <strong id="otpEmailText">-</strong>
+                </div>
+                <div class="form-group">
+                    <label for="otpCode">Kode OTP</label>
+                    <input type="text" id="otpCode" name="otp" inputmode="numeric" maxlength="6" placeholder="6 digit dari email" autocomplete="one-time-code" required>
+                </div>
+                <button type="submit" class="btn-login-submit">Verifikasi dan buat akun</button>
+                <button type="button" class="btn-auth-secondary" id="backToRegister">Ubah data pendaftaran</button>
+            </form>
+
+            <form class="auth-view" id="forgotPasswordView">
+                <p class="auth-view-note">Isi email akunmu dan password baru. Kode untuk menyimpannya dikirim ke email.</p>
+                <div class="form-group">
+                    <label for="forgotEmail">Email terdaftar</label>
+                    <input type="email" id="forgotEmail" name="email" placeholder="contoh@gmail.com" autocomplete="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="forgotNewPassword">Password baru</label>
+                    <div class="password-field">
+                        <input type="password" id="forgotNewPassword" name="newPassword" placeholder="Minimal 8 karakter" minlength="8" autocomplete="new-password" required>
+                        <button class="password-toggle" type="button" data-toggle-password="forgotNewPassword" aria-label="Tampilkan password">
+                            <i class="fas fa-eye" aria-hidden="true"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="forgotConfirmPassword">Ulangi password baru</label>
+                    <div class="password-field">
+                        <input type="password" id="forgotConfirmPassword" name="confirmNewPassword" placeholder="Ketik password yang sama" minlength="8" autocomplete="new-password" required>
+                        <button class="password-toggle" type="button" data-toggle-password="forgotConfirmPassword" aria-label="Tampilkan password">
+                            <i class="fas fa-eye" aria-hidden="true"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="form-group" id="forgotTurnstileGroup" hidden>
+                    <label>Verifikasi keamanan</label>
+                    <div class="turnstile-box" id="forgotTurnstileWidget"></div>
+                    <input type="hidden" id="forgotTurnstileToken" name="turnstileToken">
+                </div>
+                <button type="submit" class="btn-login-submit">Kirim kode reset</button>
+                <button type="button" class="btn-auth-secondary" id="backToLogin">Kembali ke halaman masuk</button>
+            </form>
+
+            <form class="auth-view" id="forgotOtpView">
+                <div class="otp-target">
+                    <span>Kode reset dikirim ke</span>
+                    <strong id="forgotOtpEmailText">-</strong>
+                </div>
+                <div class="form-group">
+                    <label for="forgotOtpCode">Kode reset</label>
+                    <input type="text" id="forgotOtpCode" name="otp" inputmode="numeric" maxlength="6" placeholder="6 digit dari email" autocomplete="one-time-code" required>
+                </div>
+                <button type="submit" class="btn-login-submit">Simpan password baru</button>
+                <button type="button" class="btn-auth-secondary" id="backToForgot">Ubah password baru</button>
+            </form>
+        </main>
+    </div>
+
+    <script src="https://challenges.cloudflare.com/turnstile/v0/api.js?render=explicit" async defer></script>
+    <!-- Skrip resmi Telegram Mini App. Di luar Telegram, initData-nya kosong
+         dan halaman berjalan seperti biasa. -->
+    <script src="https://telegram.org/js/telegram-web-app.js"></script>
+    <script src="js/security.js?v=20260607-1"></script>
+    <script src="js/auth.js?v=20261027-2"></script>
+</body>
+</html>

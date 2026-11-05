@@ -1,0 +1,18 @@
+HTTP/2 200 
+server: nginx/1.22.1
+date: Thu, 05 Nov 2026 12:13:25 GMT
+content-type: text/html; charset=utf-8
+content-length: 13681
+vary: Origin
+access-control-allow-credentials: true
+x-content-type-options: nosniff
+referrer-policy: strict-origin-when-cross-origin
+permissions-policy: camera=(), microphone=(), geolocation=(), payment=()
+cross-origin-opener-policy: same-origin-allow-popups
+strict-transport-security: max-age=15552000; includeSubDomains
+content-security-policy: default-src 'self'; base-uri 'self'; object-src 'none'; frame-ancestors 'self' https://web.telegram.org; img-src 'self' data: blob: https:; font-src 'self' https://cdnjs.cloudflare.com data:; style-src 'self' 'unsafe-inline' https://cdnjs.cloudflare.com https://accounts.google.com; script-src 'self' https://cdnjs.cloudflare.com https://accounts.google.com https://challenges.cloudflare.com https://telegram.org https://app.midtrans.com https://app.sandbox.midtrans.com https://*.midtrans.com; frame-src https://accounts.google.com https://challenges.cloudflare.com https://app.midtrans.com https://app.sandbox.midtrans.com https://*.midtrans.com; child-src https://accounts.google.com https://challenges.cloudflare.com https://app.midtrans.com https://app.sandbox.midtrans.com https://*.midtrans.com; connect-src 'self' https://accounts.google.com https://oauth2.googleapis.com https://cdnjs.cloudflare.com https://challenges.cloudflare.com https://app.midtrans.com https://app.sandbox.midtrans.com https://api.midtrans.com https://api.sandbox.midtrans.com https://*.midtrans.com; form-action 'self'; upgrade-insecure-requests
+cache-control: no-store
+accept-ranges: bytes
+last-modified: Tue, 27 Oct 2026 13:20:00 GMT
+etag: W/"3571-1a17d848848"
+

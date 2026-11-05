@@ -1,0 +1,1239 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <title>Dashboard User - 1FORCR KUOTA</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon-32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicon-16.png">
+    <link rel="shortcut icon" href="/favicon.ico">
+    <link rel="apple-touch-icon" href="assets/images/apple-touch-icon.png">
+    <link rel="stylesheet" href="css/style.css?v=20260920-1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="css/user-modern.css?v=20261027-5">
+    <link rel="stylesheet" href="css/user-refresh.css?v=20261104-1">
+    <script src="js/route-guard.js?v=20260610-1" data-required-role="USER" data-redirect="login.html" data-admin-redirect="admin.html"></script>
+</head>
+<body class="dashboard user-dashboard">
+    <div class="dashboard-container">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <div class="sidebar-header">
+                <p class="sidebar-brand">
+                    <img src="assets/images/1forcr-logo.svg?v=20260626-9" alt="" class="sidebar-brand-logo">
+                    <span>1FORCR KUOTA</span>
+                </p>
+            </div>
+            <!-- Lima tujuan tetap, sama di desktop dan HP. Topup dibuka dari kartu
+                 saldo di Beranda, Hubungi CS dari Akun. -->
+            <nav class="sidebar-nav" aria-label="Menu utama">
+                <ul>
+                    <li class="active"><a href="#dashboard" data-view-target="dashboardView" aria-current="page"><i class="fas fa-home" aria-hidden="true"></i> <span>Beranda</span></a></li>
+                    <li><a href="#beli" data-view-target="buyView"><i class="fas fa-shopping-cart" aria-hidden="true"></i> <span>Beli</span></a></li>
+                    <li><a href="#vpn" data-view-target="vpnView"><i class="fas fa-shield-alt" aria-hidden="true"></i> <span>VPN</span></a></li>
+                    <li><a href="#riwayat" data-view-target="historyView"><i class="fas fa-history" aria-hidden="true"></i> <span>Riwayat</span></a></li>
+                    <li><a href="#akun" data-view-target="accountView"><i class="fas fa-user" aria-hidden="true"></i> <span>Akun</span></a></li>
+                </ul>
+            </nav>
+            <div class="sidebar-footer">
+                <a href="#" id="logoutBtn"><i class="fas fa-sign-out-alt" aria-hidden="true"></i> Keluar</a>
+            </div>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <header class="dashboard-header">
+                <div class="header-left">
+                    <img src="assets/images/1forcr-logo.svg?v=20260626-9" alt="" class="header-brand-logo">
+                    <h1 id="pageTitle">Beranda</h1>
+                </div>
+                <div class="header-right">
+                    <div class="dashboard-header-service-status" id="dashboardServiceStatusCard" data-status="online" hidden>
+                        <span class="service-status-icon" id="dashboardServiceStatusIcon" aria-hidden="true">
+                            <i class="fas fa-circle-check"></i>
+                        </span>
+                        <div class="service-status-text">
+                            <span class="dashboard-service-status-badge" id="dashboardServiceStatusBadge" aria-live="polite">
+                                <span id="dashboardServiceStatusLabel">Memuat</span>
+                            </span>
+                            <span class="dashboard-cutoff-ticker" id="dashboardCutoffTicker" hidden aria-live="polite">
+                                <span id="dashboardCutoffTickerText"></span>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </header>
+
+            <div class="dashboard-view active" id="dashboardView" data-page-title="Beranda">
+                <!-- Dua saldo selalu tampil berdampingan, masing-masing dengan
+                     keterangan pemakaiannya. Dulu perbedaannya dijelaskan lewat
+                     popup yang muncul setiap halaman dibuka. -->
+                <section class="balance-card" id="dashboardSection" aria-labelledby="balanceHeading">
+                    <h2 class="visually-hidden" id="balanceHeading">Saldo kamu</h2>
+                    <div class="balance-item balance-item-ppob">
+                        <span class="balance-label">Saldo PPOB</span>
+                        <strong class="balance-figure" id="balanceValue" aria-live="polite">Memuat...</strong>
+                        <p class="balance-note" id="balanceNote">Untuk pulsa, kuota, token PLN, dan top up game.</p>
+                        <div class="balance-actions">
+                            <button class="btn-primary" id="topupBalance" type="button">Isi saldo PPOB</button>
+                            <button class="text-button" id="balanceRetryBtn" type="button" hidden>Muat ulang saldo</button>
+                        </div>
+                        <!-- Isi cepat: Topup terbuka dengan nominal terisi, tinggal bayar. -->
+                        <div class="balance-quick" role="group" aria-label="Isi cepat saldo PPOB">
+                            <span>Isi cepat</span>
+                            <button type="button" class="balance-quick-chip" data-quick-topup="20000">Rp 20.000</button>
+                            <button type="button" class="balance-quick-chip" data-quick-topup="50000">Rp 50.000</button>
+                            <button type="button" class="balance-quick-chip" data-quick-topup="100000">Rp 100.000</button>
+                        </div>
+                    </div>
+                    <div class="balance-item balance-item-vpn">
+                        <span class="balance-label">Saldo VPN</span>
+                        <strong class="balance-figure" id="dashboardVpnBalance" aria-live="polite">Memuat...</strong>
+                        <p class="balance-note" id="dashboardVpnBalanceNote">Khusus untuk beli dan perpanjang akun VPN.</p>
+                        <div class="balance-actions">
+                            <button class="btn-secondary" id="topupVpnBalanceBtn" type="button">Isi saldo VPN</button>
+                        </div>
+                    </div>
+                </section>
+                <!-- Banner dari admin (iklan produk dan promo) langsung di bawah
+                     saldo, supaya terlihat tanpa menggulir. -->
+                <section class="banner-carousel" id="dashboardBannerSection" aria-label="Informasi dan promo" hidden>
+                    <div class="banner-track" id="dashboardBannerTrack"></div>
+                    <div class="banner-dots" id="dashboardBannerDots"></div>
+                </section>
+                <div class="announcement-list" id="dashboardAnnouncementsSection" role="status" aria-live="polite" hidden>
+                    <div id="dashboardAnnouncementList"></div>
+                </div>
+                <section class="ongoing-orders" id="ongoingOrdersSection" hidden>
+                    <div class="section-heading-row">
+                        <h2>Pesanan berjalan</h2>
+                        <button class="text-button" id="refreshOngoingOrders" type="button">
+                            <i class="fas fa-rotate" aria-hidden="true"></i> Cek status
+                        </button>
+                    </div>
+                    <div class="ongoing-order-list" id="ongoingOrderList"></div>
+                </section>
+                <section class="dashboard-menu-shortcuts" aria-labelledby="shortcutHeading">
+                    <h2 id="shortcutHeading">Mau beli apa?</h2>
+                    <!-- Nomor HP diisi lebih dulu untuk pulsa dan kuota. Operatornya
+                         dikenali dari awalan nomor, jadi langkah memilih operator
+                         dilewati dan nomornya ikut terisi di checkout. -->
+                    <div class="quick-number" id="quickNumber">
+                        <label for="quickNumberInput">Isi pulsa atau kuota</label>
+                        <input type="tel" id="quickNumberInput" inputmode="numeric" autocomplete="tel" placeholder="Ketik nomor HP, contoh 0812 3456 7890">
+                        <p class="quick-number-hint" id="quickNumberHint" aria-live="polite">Operatornya kami kenali dari nomor.</p>
+                        <div class="quick-number-actions" id="quickNumberActions" hidden></div>
+                    </div>
+                    <div class="menu-shortcut-grid" id="shortcutCategoryGrid" aria-busy="true" aria-label="Memuat kategori">
+                        <div class="menu-shortcut-card menu-shortcut-skeleton" aria-hidden="true">
+                            <span class="skeleton-block skeleton-logo"></span>
+                            <span class="skeleton-block skeleton-line"></span>
+                            <span class="skeleton-block skeleton-line skeleton-line-short"></span>
+                        </div>
+                        <div class="menu-shortcut-card menu-shortcut-skeleton" aria-hidden="true">
+                            <span class="skeleton-block skeleton-logo"></span>
+                            <span class="skeleton-block skeleton-line"></span>
+                            <span class="skeleton-block skeleton-line skeleton-line-short"></span>
+                        </div>
+                        <div class="menu-shortcut-card menu-shortcut-skeleton" aria-hidden="true">
+                            <span class="skeleton-block skeleton-logo"></span>
+                            <span class="skeleton-block skeleton-line"></span>
+                            <span class="skeleton-block skeleton-line skeleton-line-short"></span>
+                        </div>
+                        <div class="menu-shortcut-card menu-shortcut-skeleton" aria-hidden="true">
+                            <span class="skeleton-block skeleton-logo"></span>
+                            <span class="skeleton-block skeleton-line"></span>
+                            <span class="skeleton-block skeleton-line skeleton-line-short"></span>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="dashboard-recent-purchases" id="dashboardRecentPurchasesSection" hidden>
+                    <div class="dashboard-section-head">
+                        <h2>Beli lagi</h2>
+                        <button class="text-button" id="dashboardRecentHistoryBtn" type="button">Lihat riwayat</button>
+                    </div>
+                    <div class="dashboard-recent-purchases-list" id="dashboardRecentPurchasesList"></div>
+                </section>
+
+                <!-- Hanya untuk akun yang belum punya riwayat: produk yang paling
+                     sering dibeli dan pilihan admin. Setelah ada pembelian,
+                     tempatnya dipakai "Beli lagi". -->
+                <section class="dashboard-recent-purchases dashboard-popular" id="dashboardPopularSection" hidden>
+                    <div class="dashboard-section-head">
+                        <h2>Sering dibeli</h2>
+                    </div>
+                    <div class="dashboard-recent-purchases-list" id="dashboardPopularList"></div>
+                </section>
+
+                <section class="dashboard-favorites-section" id="dashboardFavoritesSection" hidden>
+                    <div class="dashboard-section-head">
+                        <h2>Produk favorit</h2>
+                        <div class="dashboard-section-actions">
+                            <span class="dashboard-section-count" id="dashboardFavoriteSectionCount">0 produk</span>
+                            <button class="text-button" id="dashboardOpenFavoritesBuyBtn" type="button">Lihat semua</button>
+                        </div>
+                    </div>
+                    <div class="dashboard-favorites-list" id="dashboardFavoritesList"></div>
+                    <p class="dashboard-empty-state" id="dashboardFavoritesEmpty" hidden>Belum ada produk favorit. Tandai bintang pada produk di menu Beli supaya muncul di sini.</p>
+                </section>
+            </div>
+
+            <!-- Produk Prabayar -->
+            <div class="dashboard-view" id="buyView" data-page-title="Beli">
+                <section class="prepaid-products" id="buySection">
+                    <div class="buy-step-nav" id="buyStepNav" hidden>
+                        <button class="buy-step-back" id="buyStepBack" type="button" aria-label="Kembali ke langkah sebelumnya">
+                            <i class="fas fa-arrow-left" aria-hidden="true"></i>
+                        </button>
+                        <strong class="buy-step-trail" id="buyStepTrail"></strong>
+                    </div>
+                    <!-- Untuk pulsa, kuota, dan masa aktif: operatornya dipilih dari
+                         awalan nomor, dan nomornya ikut terisi di checkout. -->
+                    <div class="buy-number" id="buyNumberGroup" hidden>
+                        <label for="buyNumberInput">Nomor HP tujuan</label>
+                        <input type="tel" id="buyNumberInput" inputmode="numeric" autocomplete="tel" placeholder="Contoh: 0812 3456 7890">
+                        <p class="buy-number-hint" id="buyNumberHint" aria-live="polite">Operatornya kami pilihkan dari nomor ini.</p>
+                    </div>
+                    <div class="product-filters">
+                        <div class="product-search">
+                            <i class="fas fa-search"></i>
+                            <input type="search" id="productSearch" placeholder="Cari produk, misal 10 GB" aria-label="Cari produk">
+                        </div>
+                        <div class="product-type-tools">
+                            <div class="product-type-filter" id="productTypeQuickFilter" aria-label="Filter tipe produk"></div>
+                            <div class="product-filter-assist">
+                                <div class="filter-swipe-hint" id="buyTypeSwipeHint" hidden aria-hidden="true">
+                                    <i class="fas fa-angles-left"></i>
+                                    <span>Geser untuk melihat tipe lain</span>
+                                    <i class="fas fa-angles-right"></i>
+                                </div>
+                                <button class="favorite-filter-toggle" id="buyFavoriteToggle" type="button" aria-pressed="false">
+                                    <i class="far fa-star"></i>
+                                    <span>Favorit saya</span>
+                                    <strong id="buyFavoriteCount">0</strong>
+                                </button>
+                            </div>
+                        </div>
+                        <select id="categoryFilter" class="native-filter-select" aria-label="Filter kategori produk">
+                            <option value="">Semua kategori</option>
+                        </select>
+                        <div class="fancy-filter-select" id="categoryFilterCustom"></div>
+                        <select id="brandFilter" class="native-filter-select" aria-label="Filter brand produk">
+                            <option value="">Semua brand</option>
+                        </select>
+                        <div class="fancy-filter-select" id="brandFilterCustom"></div>
+                        <select id="typeFilter" class="native-filter-select" aria-label="Filter type produk">
+                            <option value="">Semua tipe</option>
+                        </select>
+                        <div class="fancy-filter-select" id="typeFilterCustom"></div>
+                    </div>
+                    <div class="product-browser product-step-browser">
+                        <div class="browser-column browser-column-category">
+                            <div class="browser-title">
+                                <span>Pilih kategori</span>
+                                <small id="categoryCount">0</small>
+                            </div>
+                            <div class="filter-chip-list" id="categoryList"></div>
+                        </div>
+                        <div class="browser-column browser-column-brand">
+                            <div class="browser-title">
+                                <span id="brandStepTitle">Pilih operator</span>
+                                <small id="brandCount">0</small>
+                            </div>
+                            <div class="filter-chip-list" id="brandList"></div>
+                        </div>
+                        <div class="browser-column browser-column-type" hidden>
+                            <div class="browser-title">
+                                <span><i class="fas fa-tags"></i> Tipe</span>
+                                <small id="typeCount">0</small>
+                            </div>
+                            <div class="filter-chip-list" id="typeList"></div>
+                        </div>
+                    </div>
+                    <div class="product-status-row">
+                        <p class="product-status loading" id="productStatus">Memuat produk...</p>
+                        <button class="text-button" id="refreshProducts" type="button">Perbarui daftar</button>
+                    </div>
+                    <div class="prepaid-product-grid" id="prepaidProductGrid"></div>
+                    <nav class="product-pagination" id="productPagination" aria-label="Halaman produk" hidden>
+                        <button class="btn-secondary" id="productPrevPage" type="button">
+                            <i class="fas fa-chevron-left"></i> Sebelumnya
+                        </button>
+                        <span class="product-page-info" id="productPageInfo">1 / 1</span>
+                        <button class="btn-secondary" id="productNextPage" type="button">
+                            Berikutnya <i class="fas fa-chevron-right"></i>
+                        </button>
+                    </nav>
+                </section>
+
+                <section class="checkout-panel" id="checkoutPanel" hidden>
+                    <div class="checkout-header">
+                        <div>
+                            <h2 id="checkoutProductName">Produk</h2>
+                        </div>
+                        <button class="icon-button" id="closeCheckout" type="button" aria-label="Tutup dan kembali ke daftar produk">
+                            <i class="fas fa-times"></i>
+                        </button>
+                    </div>
+                    <!-- Setelah pesanan dibuat, langkah yang sudah dilewati bisa ditekan
+                         untuk melihat ringkasannya. Ringkasan itu hanya untuk dibaca. -->
+                    <div class="checkout-progress" id="checkoutProgress" aria-label="Langkah checkout">
+                        <button class="checkout-progress-item active" type="button" data-checkout-step="detail" disabled>
+                            <i class="fas fa-list-check"></i>
+                            <b>Detail</b>
+                        </button>
+                        <button class="checkout-progress-item" type="button" data-checkout-step="pay" disabled>
+                            <i class="fas fa-qrcode"></i>
+                            <b>Bayar</b>
+                        </button>
+                        <button class="checkout-progress-item" type="button" data-checkout-step="process" disabled>
+                            <i class="fas fa-rotate"></i>
+                            <b>Proses</b>
+                        </button>
+                        <button class="checkout-progress-item" type="button" data-checkout-step="done" disabled>
+                            <i class="fas fa-circle-check"></i>
+                            <b>Selesai</b>
+                        </button>
+                    </div>
+                    <div class="checkout-summary" id="checkoutSummary">
+                        <div class="checkout-summary-price">
+                            <span>Harga</span>
+                            <strong id="checkoutPrice">-</strong>
+                        </div>
+                        <div class="checkout-summary-meta">
+                            <span>Kategori</span>
+                            <strong id="checkoutCategory">-</strong>
+                        </div>
+                    </div>
+                    <form class="checkout-form" id="checkoutForm">
+                        <div class="form-group" id="customerNoGroup">
+                            <label for="customerNoInput" id="customerNoLabel">Nomor tujuan / ID pelanggan</label>
+                            <p class="id-check-reminder" id="customerNoReminder" hidden>Periksa lagi ID-nya sebelum bayar. Top up ke ID yang salah masuk ke akun orang lain.</p>
+                            <div class="checkout-destination-entry">
+                                <input type="text" id="customerNoInput" autocomplete="off" placeholder="Contoh: 08123456789" required>
+                            </div>
+                            <div class="game-username-check" id="singleGameUsernameCheck" hidden>
+                                <button class="btn-secondary" id="checkGameUsernameBtn" type="button">
+                                    <i class="fas fa-user-check" aria-hidden="true"></i> Cek nama akun
+                                </button>
+                                <p class="checkout-status" id="gameUsernameCheckStatus"></p>
+                            </div>
+                        </div>
+                        <div class="form-group game-account-fields" id="mlAccountFields" hidden>
+                            <label>Detail akun Mobile Legends</label>
+                            <p class="id-check-reminder">Periksa lagi ID-nya sebelum bayar. Top up ke ID yang salah masuk ke akun orang lain.</p>
+                            <div class="checkout-account-grid">
+                                <input type="text" id="mlUserIdInput" inputmode="numeric" autocomplete="off" placeholder="Masukkan User ID">
+                                <input type="text" id="mlZoneIdInput" inputmode="numeric" autocomplete="off" placeholder="Zone ID">
+                            </div>
+                            <small class="field-help">Format yang dikirim: UserID(ZoneID), contoh: 12345678(1234).</small>
+                            <div class="ml-username-check" id="mlUsernameCheck" hidden>
+                                <button class="btn-secondary" id="checkMlUsernameBtn" type="button">
+                                    <i class="fas fa-user-check" aria-hidden="true"></i> Cek nama akun
+                                </button>
+                                <p class="checkout-status" id="mlUsernameCheckStatus"></p>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="paymentMethodInput">Bayar pakai</label>
+                            <select id="paymentMethodInput" class="native-filter-select" required>
+                                <option value="DIRECT_QRIS">Bayar langsung (QRIS)</option>
+                                <option value="WALLET_BALANCE">Pakai saldo</option>
+                            </select>
+                            <div class="fancy-filter-select" id="paymentMethodCustom"></div>
+                        </div>
+                        <p class="checkout-status" id="checkoutStatus"></p>
+                        <div class="checkout-actions">
+                            <button class="btn-primary" id="submitCheckout" type="submit">Bayar</button>
+                            <button class="text-button" id="cancelCheckout" type="button">Batal, pilih produk lain</button>
+                        </div>
+                    </form>
+                    <div class="checkout-payment-result" id="checkoutPaymentResult" hidden>
+                        <div class="qris-card-head">
+                            <div>
+                                <h3 id="checkoutPaymentTitle">Scan QRIS untuk bayar</h3>
+                            </div>
+                        </div>
+                        <div class="payment-state-strip waiting" id="checkoutPaymentState" hidden>
+                            <i class="fas fa-clock"></i>
+                            <span>Menunggu pembayaran</span>
+                        </div>
+                        <div class="qris-frame">
+                            <img id="checkoutQrisImage" alt="QRIS pembayaran">
+                        </div>
+                        <!-- User yang membuka dari HP tidak bisa memindai layarnya sendiri.
+                             Gambarnya disimpan dulu, lalu dibayar dari galeri. -->
+                        <a class="btn-secondary qris-save-link" id="checkoutQrisSave" href="#" download="qris-pembayaran.png" target="_blank" rel="noopener" hidden>
+                            <i class="fas fa-download" aria-hidden="true"></i> Simpan gambar QRIS
+                        </a>
+                        <p class="qris-payment-info" id="checkoutPaymentInfo"></p>
+                        <dl class="checkout-result-list" id="checkoutResultList" hidden></dl>
+                        <!-- Muncul kalau pesanan sudah lebih dari satu menit diproses, misalnya
+                             karena supplier pertama gagal dan cadangannya dicoba satu per satu. -->
+                        <section class="process-tips" id="checkoutProcessTips" aria-label="Info selama pesanan diproses" hidden>
+                            <!-- Permintaan maaf selalu tampil, tidak ikut bergeser. -->
+                            <div class="process-tips-notice" id="checkoutProcessNotice">
+                                <i class="fas fa-hourglass-half" aria-hidden="true"></i>
+                                <div>
+                                    <strong>Mohon maaf, prosesnya agak lama</strong>
+                                    <p>Pesananmu sedang dicoba ke beberapa supplier satu per satu supaya tetap berhasil. Biasanya selesai dalam beberapa menit.</p>
+                                </div>
+                            </div>
+                            <div class="banner-track process-tips-track" id="checkoutProcessTipsTrack">
+                                <div class="process-tip">
+                                    <i class="fas fa-wallet" aria-hidden="true"></i>
+                                    <div>
+                                        <strong>Kalau gagal, saldo kembali otomatis</strong>
+                                        <p>Pembayaranmu langsung masuk ke saldo akun dan bisa dipakai membeli produk lain tanpa bayar ulang.</p>
+                                    </div>
+                                </div>
+                                <div class="process-tip">
+                                    <i class="fas fa-headset" aria-hidden="true"></i>
+                                    <div>
+                                        <strong>Sukses tapi produk belum masuk?</strong>
+                                        <p>Produk biasanya masuk beberapa menit setelah status sukses. Kalau belum juga masuk, hubungi admin dengan kode order ini.</p>
+                                        <button class="btn-secondary process-tip-cs" type="button" data-process-tip-cs>
+                                            <i class="fab fa-whatsapp"></i> Hubungi Admin
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="process-tip">
+                                    <i class="fas fa-history" aria-hidden="true"></i>
+                                    <div>
+                                        <strong>Boleh tinggalkan halaman ini</strong>
+                                        <p>Pesanan tetap diproses walau halaman ditutup. Hasilnya bisa dicek kapan saja di menu Riwayat.</p>
+                                    </div>
+                                </div>
+                                <div class="process-tip">
+                                    <i class="fas fa-lightbulb" aria-hidden="true"></i>
+                                    <div>
+                                        <strong>Tips: cek nomor sebelum bayar</strong>
+                                        <p>Nomor yang salah ketik membuat transaksi gagal. Nomor yang pernah berhasil tersimpan otomatis, jadi lain kali tinggal pilih.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="banner-dots" id="checkoutProcessTipsDots"></div>
+                        </section>
+                        <p class="checkout-status failed" id="checkoutPaymentNote" hidden></p>
+                        <div class="qris-hint-list" id="checkoutPaymentHints" hidden></div>
+                        <div class="checkout-payment-actions" id="checkoutPaymentActions">
+                            <button class="btn-primary" id="openSnapPayment" type="button" hidden>
+                                <i class="fas fa-wallet"></i> Buka pembayaran
+                            </button>
+                            <button class="btn-primary" id="checkoutDoneBtn" type="button" hidden>Selesai</button>
+                            <button class="btn-primary" id="checkoutRetryBtn" type="button" hidden>Coba lagi</button>
+                            <button class="btn-secondary" id="checkoutHistoryBtn" type="button" hidden>Lihat riwayat</button>
+                            <button class="btn-secondary" id="refreshPaymentStatus" type="button">Cek pembayaran</button>
+                            <button class="text-button danger-action" id="cancelPaymentOrder" type="button">Batalkan pesanan</button>
+                            <button class="btn-secondary checkout-help-btn" id="checkoutContactCs" type="button" hidden>
+                                <i class="fab fa-whatsapp"></i> Hubungi CS
+                            </button>
+                        </div>
+                    </div>
+                    <div class="checkout-review" id="checkoutReview" hidden>
+                        <h3 id="checkoutReviewTitle"></h3>
+                        <dl class="checkout-review-list" id="checkoutReviewList"></dl>
+                        <p class="checkout-review-note" id="checkoutReviewNote"></p>
+                        <button class="btn-secondary" id="checkoutReviewBack" type="button"></button>
+                    </div>
+                </section>
+            </div>
+
+            <div class="dashboard-view checkout-view" id="checkoutView" data-page-title="Pembelian">
+                <div id="checkoutViewContent"></div>
+            </div>
+
+            <!-- Riwayat Transaksi -->
+            <div class="dashboard-view" id="historyView" data-page-title="Riwayat">
+                <!-- Filter status berlaku untuk pesanan berjalan dan daftar di bawahnya.
+                     Jumlah di setiap tombol dihitung dari data yang tampil. -->
+                <div class="history-filter" id="historyFilter" role="group" aria-label="Tampilkan pesanan">
+                    <button type="button" class="history-filter-chip active" data-history-filter="all" aria-pressed="true">Semua <span data-history-count="all"></span></button>
+                    <button type="button" class="history-filter-chip" data-history-filter="process" aria-pressed="false">Diproses <span data-history-count="process"></span></button>
+                    <button type="button" class="history-filter-chip" data-history-filter="success" aria-pressed="false">Berhasil <span data-history-count="success"></span></button>
+                    <button type="button" class="history-filter-chip" data-history-filter="failed" aria-pressed="false">Gagal <span data-history-count="failed"></span></button>
+                </div>
+                <section class="ongoing-orders history-ongoing-orders" id="historyOngoingOrdersSection" hidden>
+                    <div class="section-heading-row">
+                        <h2>Sedang diproses</h2>
+                        <button class="text-button" id="refreshHistoryOngoingOrders" type="button">
+                            <i class="fas fa-rotate" aria-hidden="true"></i> Cek status
+                        </button>
+                    </div>
+                    <div class="ongoing-order-list" id="historyOngoingOrderList"></div>
+                </section>
+                <section class="recent-transactions" id="historySection" aria-labelledby="historyListTitle">
+                    <div class="section-heading-row">
+                        <h2 id="historyListTitle">Semua pesanan</h2>
+                    </div>
+                    <table class="transactions-table">
+                        <thead>
+                            <tr>
+                                <th scope="col">Produk</th>
+                                <th scope="col">Tanggal</th>
+                                <th scope="col" class="num">Jumlah</th>
+                                <th scope="col">Status</th>
+                                <th scope="col"><span class="visually-hidden">Aksi</span></th>
+                            </tr>
+                        </thead>
+                        <tbody id="transaction-list">
+                            <!-- diisi JS -->
+                        </tbody>
+                    </table>
+                    <div class="admin-pagination user-history-pagination" id="historyPagination" hidden>
+                        <button class="btn-secondary" type="button" id="historyPrevPage">Sebelumnya</button>
+                        <span id="historyPageInfo">Halaman 1 / 1</span>
+                        <button class="btn-secondary" type="button" id="historyNextPage">Berikutnya</button>
+                    </div>
+                </section>
+            </div>
+
+            <div class="dashboard-view" id="accountView" data-page-title="Akun">
+                <!-- Satu halaman pengaturan: label di kiri, isinya di kanan pada layar
+                     lebar, bertumpuk di HP. Hubungi CS pindah ke sini dari menu
+                     tersendiri; alamat #hubungi-cs membuka bagian Bantuan. -->
+                <section class="account-section account-settings" id="accountSection">
+                    <div class="settings-row">
+                        <div class="settings-label">
+                            <h2>Profil</h2>
+                            <p>Data yang kamu pakai untuk masuk.</p>
+                        </div>
+                        <div class="settings-panel">
+                            <dl class="settings-list">
+                                <div><dt>Email</dt><dd id="accountEmail">-</dd></div>
+                                <div><dt>Username</dt><dd id="accountUsername">-</dd></div>
+                                <div><dt>Bergabung</dt><dd id="accountCreatedAt">-</dd></div>
+                                <div><dt>Pembelian produk</dt><dd class="num" id="accountTransactionCount">0</dd></div>
+                                <div><dt>Pembayaran dibuat</dt><dd class="num" id="accountPaymentCount">0</dd></div>
+                            </dl>
+                        </div>
+                    </div>
+                    <div class="settings-row">
+                        <div class="settings-label">
+                            <h2>Saldo</h2>
+                            <p>Saldo PPOB dan saldo VPN terpisah, masing-masing diisi sendiri.</p>
+                        </div>
+                        <div class="settings-panel">
+                            <dl class="settings-list">
+                                <div><dt>Saldo PPOB</dt><dd class="num" id="accountBalanceInfo">Rp 0</dd></div>
+                                <div><dt>Saldo VPN</dt><dd class="num" id="accountVpnBalanceInfo">-</dd></div>
+                            </dl>
+                            <div class="settings-actions">
+                                <button class="btn-secondary compact-action" type="button" data-open-topup="ppob">Isi saldo PPOB</button>
+                                <button class="btn-secondary compact-action" type="button" data-open-topup="vpn">Isi saldo VPN</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="settings-row">
+                        <div class="settings-label">
+                            <h2>Keamanan</h2>
+                            <p>Kode OTP dikirim ke email sebelum password diganti.</p>
+                        </div>
+                        <div class="settings-panel">
+                            <div class="settings-actions">
+                                <button class="btn-secondary compact-action" id="togglePasswordChangeBtn" type="button">Ganti password</button>
+                            </div>
+                        <div class="topup-panel" id="passwordChangePanel" hidden>
+                            <form id="passwordChangeForm">
+                                <div class="form-group password-field">
+                                    <label for="currentPasswordInput">Password lama</label>
+                                    <input type="password" id="currentPasswordInput" autocomplete="current-password" required>
+                                    <button class="password-toggle" type="button" data-toggle-password="currentPasswordInput" aria-label="Tampilkan password">
+                                        <i class="fas fa-eye"></i>
+                                    </button>
+                                </div>
+                                <div class="form-group password-field">
+                                    <label for="newPasswordInput">Password baru</label>
+                                    <input type="password" id="newPasswordInput" autocomplete="new-password" required>
+                                    <button class="password-toggle" type="button" data-toggle-password="newPasswordInput" aria-label="Tampilkan password">
+                                        <i class="fas fa-eye"></i>
+                                    </button>
+                                </div>
+                                <div class="form-group password-field">
+                                    <label for="confirmNewPasswordInput">Ulangi password baru</label>
+                                    <input type="password" id="confirmNewPasswordInput" autocomplete="new-password" required>
+                                    <button class="password-toggle" type="button" data-toggle-password="confirmNewPasswordInput" aria-label="Tampilkan password">
+                                        <i class="fas fa-eye"></i>
+                                    </button>
+                                </div>
+                                <div class="checkout-actions">
+                                    <button class="btn-primary" id="requestPasswordChangeOtpBtn" type="submit">
+                                        Kirim kode OTP ke email
+                                    </button>
+                                </div>
+                            </form>
+                            <div id="passwordChangeOtpPanel" hidden>
+                                <form id="passwordChangeOtpForm">
+                                    <div class="form-group">
+                                        <label for="passwordChangeOtpInput">Kode OTP (6 digit)</label>
+                                        <input type="text" id="passwordChangeOtpInput" inputmode="numeric" pattern="[0-9]{6}" maxlength="6" placeholder="6 digit dari email" required>
+                                    </div>
+                                    <div class="checkout-actions">
+                                        <button class="btn-primary" id="verifyPasswordChangeOtpBtn" type="submit">
+                                            Verifikasi dan ganti password
+                                        </button>
+                                    </div>
+                                </form>
+                            </div>
+                            <p class="checkout-status" id="passwordChangeStatus"></p>
+                        </div>
+                        </div>
+                    </div>
+                    <div class="settings-row" id="accountHelpSection">
+                        <div class="settings-label">
+                            <h2>Bantuan</h2>
+                            <p class="cs-intro">CS aktif pukul 08.00&ndash;22.00 WIB. Sebutkan kode pesanan kalau menanyakan transaksi.</p>
+                        </div>
+                        <div class="settings-panel">
+                            <dl class="settings-list">
+                                <div><dt>WhatsApp</dt><dd class="num" id="csWhatsappNumberText">-</dd></div>
+                                <div><dt>Email</dt><dd id="csEmailText">support@1forcrkuota.com</dd></div>
+                            </dl>
+                            <div class="settings-actions">
+                                <button class="btn-primary compact-action" id="openCsWhatsappBtn" type="button" disabled>
+                                    <i class="fab fa-whatsapp" aria-hidden="true"></i> Chat CS lewat WhatsApp
+                                </button>
+                                <button class="btn-secondary compact-action" id="openCsEmailBtn" type="button">Kirim email ke CS</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="settings-row settings-row-logout">
+                        <div class="settings-label">
+                            <h2>Keluar</h2>
+                            <p>Keluar dari akun ini di perangkat ini.</p>
+                        </div>
+                        <div class="settings-panel">
+                            <button class="text-button danger-action" type="button" data-logout-btn>Keluar dari akun</button>
+                        </div>
+                    </div>
+                </section>
+            </div>
+
+            <div class="dashboard-view" id="topupView" data-page-title="Isi saldo" data-topup-type="ppob">
+                <!-- Saldo PPOB dan saldo VPN terpisah, jadi user memilih dulu
+                     saldo mana yang mau diisi. Masing-masing pilihan langsung
+                     menyebut isi saldonya. -->
+                <section class="topup-hub" aria-label="Pilih saldo yang diisi">
+                    <div class="topup-type-switch" id="topupTypeSwitch" role="tablist" aria-label="Pilih saldo yang diisi">
+                        <button type="button" class="topup-type-card is-ppob active" id="topupTypePpobTab" data-topup-type="ppob"
+                                role="tab" aria-selected="true" aria-controls="topupPpobPane">
+                            <span class="topup-type-text">
+                                <strong>Saldo PPOB</strong>
+                                <small>Pulsa, kuota, PLN, game</small>
+                            </span>
+                            <b class="topup-type-balance" id="topupPpobBalanceText">Rp 0</b>
+                        </button>
+                        <button type="button" class="topup-type-card is-vpn" id="topupTypeVpnTab" data-topup-type="vpn"
+                                role="tab" aria-selected="false" aria-controls="topupVpnPane">
+                            <span class="topup-type-text">
+                                <strong>Saldo VPN</strong>
+                                <small>Akun SSH, VMess, VLess, Trojan</small>
+                            </span>
+                            <b class="topup-type-balance" id="topupVpnBalanceText">-</b>
+                        </button>
+                    </div>
+                    <p class="topup-separate-note" role="note">Saldo PPOB dan saldo VPN terpisah. Saldo yang satu tidak bisa dipakai untuk belanja di yang lain.</p>
+                </section>
+
+                <section class="account-section topup-pane is-ppob" id="topupPpobPane" data-topup-pane="ppob" role="tabpanel" aria-labelledby="topupTypePpobTab">
+                    <div class="topup-pane-head">
+                        <h2>Isi saldo PPOB</h2>
+                        <p>Dipakai untuk beli pulsa, paket data, token PLN, voucher, dan top up game.</p>
+                    </div>
+                    <div class="topup-panel">
+                        <form id="topupForm">
+                            <div class="form-group">
+                                <label for="topupAmountInput">Nominal topup</label>
+                                <div class="vpn-topup-quick topup-amount-chips" id="topupPpobQuick">
+                                    <button type="button" class="vpn-topup-chip" data-topup-ppob-amount="20000">Rp 20.000</button>
+                                    <button type="button" class="vpn-topup-chip" data-topup-ppob-amount="50000">Rp 50.000</button>
+                                    <button type="button" class="vpn-topup-chip" data-topup-ppob-amount="100000">Rp 100.000</button>
+                                    <button type="button" class="vpn-topup-chip" data-topup-ppob-amount="200000">Rp 200.000</button>
+                                </div>
+                                <input type="number" id="topupAmountInput" min="1" step="1000" inputmode="numeric" placeholder="Atau ketik nominal lain" aria-describedby="topupMinInfo" required>
+                                <small id="topupMinInfo">Minimal topup: -</small>
+                            </div>
+                            <div class="checkout-actions">
+                                <button class="btn-primary" id="submitTopup" type="submit">Buat QRIS topup</button>
+                            </div>
+                        </form>
+                        <p class="checkout-status" id="topupStatus"></p>
+                        <div class="checkout-payment-result" id="topupPaymentResult" hidden>
+                            <div class="qris-card-head">
+                                <div>
+                                    <h3 id="topupPaymentTitle">Bayar lewat QRIS</h3>
+                                </div>
+                            </div>
+                            <div class="qris-frame">
+                                <img id="topupQrisImage" alt="QRIS topup">
+                            </div>
+                            <a class="btn-secondary qris-save-link" id="topupQrisSave" href="#" download="qris-topup.png" target="_blank" rel="noopener" hidden>
+                                <i class="fas fa-download" aria-hidden="true"></i> Simpan gambar QRIS
+                            </a>
+                            <p class="qris-payment-info" id="topupPaymentInfo"></p>
+                            <div class="qris-hint-list" id="topupPaymentHints"></div>
+                            <div class="checkout-payment-actions">
+                                <button class="btn-primary" id="openTopupSnapPayment" type="button" hidden>
+                                    <i class="fas fa-wallet" aria-hidden="true"></i> Buka pembayaran
+                                </button>
+                                <button class="btn-primary" id="topupShopBtn" type="button" hidden>Mulai belanja</button>
+                                <button class="btn-secondary" id="refreshTopupStatus" type="button">Cek pembayaran</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="topup-facts">
+                        <h3>Perlu diketahui</h3>
+                        <ul>
+                            <li>Bayar sebelum batas waktu yang tertulis di bawah QRIS.</li>
+                            <li>Saldo masuk otomatis begitu pembayaran berhasil.</li>
+                            <li>Kalau pembelian produk gagal, uangnya kembali ke saldo ini.</li>
+                        </ul>
+                    </div>
+                </section>
+
+                <!-- Formulir yang sama juga ada di menu VPN, tab Saldo. Keduanya
+                     memakai panel QRIS VPN yang sama. -->
+                <section class="account-section topup-pane is-vpn" id="topupVpnPane" data-topup-pane="vpn" role="tabpanel" aria-labelledby="topupTypeVpnTab">
+                    <div class="topup-pane-head">
+                        <h2>Isi saldo VPN</h2>
+                        <p>Khusus untuk beli dan perpanjang akun SSH, VMess, VLess, dan Trojan.</p>
+                    </div>
+                    <div class="form-group">
+                        <label for="topupVpnAmountInput">Nominal topup</label>
+                        <div class="vpn-topup-quick topup-amount-chips" id="topupVpnQuick">
+                            <button type="button" class="vpn-topup-chip" data-topup-vpn-amount="10000">Rp 10.000</button>
+                            <button type="button" class="vpn-topup-chip" data-topup-vpn-amount="25000">Rp 25.000</button>
+                            <button type="button" class="vpn-topup-chip" data-topup-vpn-amount="50000">Rp 50.000</button>
+                            <button type="button" class="vpn-topup-chip" data-topup-vpn-amount="100000">Rp 100.000</button>
+                        </div>
+                        <input type="number" id="topupVpnAmountInput" min="0" step="1000" placeholder="Atau ketik nominal lain" inputmode="numeric" aria-describedby="topupVpnHint">
+                        <small class="vpn-field-hint" id="topupVpnHint"></small>
+                    </div>
+                    <div class="checkout-actions">
+                        <button class="btn-primary" id="topupVpnBtn" type="button">Bayar lewat QRIS</button>
+                    </div>
+                    <p class="vpn-status-text" id="topupVpnStatus"></p>
+                    <div class="topup-facts">
+                        <h3>Perlu diketahui</h3>
+                        <ul>
+                            <li>Cocok buat yang sering beli, jadi tidak perlu bayar QRIS tiap kali.</li>
+                            <li>Saldo masuk otomatis begitu pembayaran berhasil.</li>
+                            <li>Sisa masa aktif akun yang dihapus juga kembali ke saldo ini.</li>
+                        </ul>
+                    </div>
+                    <button type="button" class="text-button topup-vpn-link" data-open-vpn>
+                        Buka menu VPN untuk beli akun
+                    </button>
+                </section>
+            </div>
+
+            <div class="dashboard-view" id="vpnView" data-page-title="VPN">
+                <section class="account-section vpn-summary-section">
+                    <div class="vpn-summary">
+                        <div class="vpn-summary-card vpn-summary-card-balance">
+                            <span>Saldo VPN</span>
+                            <strong id="vpnBalanceText">Rp 0</strong>
+                            <small>Terpisah dari saldo PPOB</small>
+                        </div>
+                        <div class="vpn-summary-card">
+                            <span>Akun aktif</span>
+                            <strong id="vpnActiveCountText">0</strong>
+                            <small>Dari <span id="vpnTotalCountText">0</span> akun</small>
+                        </div>
+                        <div class="vpn-summary-card">
+                            <span>Username VPN</span>
+                            <strong id="vpnUsernameText">-</strong>
+                            <small id="vpnRoleText">User</small>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Isi menu VPN dipisah per sub menu, karena kalau ditumpuk
+                     jadi satu halaman panjang, bagian bawahnya jarang terlihat.
+                     Ringkasan dan pembayaran tertunda sengaja di luar tab,
+                     supaya selalu kelihatan di sub menu mana pun. -->
+                <nav class="vpn-tabs" id="vpnTabs" aria-label="Sub menu VPN">
+                    <button type="button" class="vpn-tab active" data-vpn-tab="beli">
+                        <i class="fas fa-cart-plus" aria-hidden="true"></i> Beli Akun
+                    </button>
+                    <button type="button" class="vpn-tab" data-vpn-tab="akun">
+                        <i class="fas fa-server" aria-hidden="true"></i> Akun Saya
+                    </button>
+                    <button type="button" class="vpn-tab" data-vpn-tab="perpanjang">
+                        <i class="fas fa-calendar-plus" aria-hidden="true"></i> Perpanjang
+                    </button>
+                    <button type="button" class="vpn-tab" data-vpn-tab="pindah">
+                        <i class="fas fa-right-left" aria-hidden="true"></i> Pindah Server
+                    </button>
+                    <button type="button" class="vpn-tab" data-vpn-tab="config">
+                        <i class="fas fa-file-code" aria-hidden="true"></i> Buat Config
+                    </button>
+                    <button type="button" class="vpn-tab" data-vpn-tab="saldo">
+                        <i class="fas fa-wallet" aria-hidden="true"></i> Saldo
+                    </button>
+                    <button type="button" class="vpn-tab" data-vpn-tab="riwayat">
+                        <i class="fas fa-clock-rotate-left" aria-hidden="true"></i> Riwayat
+                    </button>
+                </nav>
+
+                <!-- Pesanan yang belum dibayar gampang terlupakan begitu panel
+                     QRIS-nya ditutup, keluar akun, atau halamannya dimuat ulang.
+                     Daftar ini memunculkannya lagi setiap kali menu VPN dibuka. -->
+                <section class="account-section vpn-pending-section" id="vpnPendingSection" hidden>
+                    <div class="vpn-section-header">
+                        <h2><i class="fas fa-hourglass-half" aria-hidden="true"></i> Pembayaran Belum Selesai</h2>
+                        <p>Lanjutkan bayar sebelum QRIS-nya kedaluwarsa, atau batalkan kalau sudah tidak jadi.</p>
+                    </div>
+                    <div class="vpn-pending-list" id="vpnPendingList"></div>
+                </section>
+
+                <section class="account-section" id="vpnBuySection" data-vpn-panel="beli">
+                    <div class="vpn-section-header">
+                        <h2><i class="fas fa-cart-plus" aria-hidden="true"></i> Beli Akun VPN</h2>
+                        <p>Harganya dihitung per hari, jadi total mengikuti jumlah hari yang kamu pilih.</p>
+                    </div>
+
+                    <div class="vpn-form-grid">
+                        <div class="form-group">
+                            <label for="vpnServerSelect">Server</label>
+                            <select id="vpnServerSelect" class="vpn-select"></select>
+                        </div>
+                        <div class="form-group">
+                            <label for="vpnTypeSelect">Jenis akun</label>
+                            <select id="vpnTypeSelect" class="vpn-select"></select>
+                        </div>
+                        <div class="form-group">
+                            <label for="vpnIpPackageSelect">Paket IP</label>
+                            <select id="vpnIpPackageSelect" class="vpn-select">
+                                <option value="1">1 IP</option>
+                                <option value="2">2 IP</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="vpnDaysInput">Jumlah hari</label>
+                            <input type="number" id="vpnDaysInput" min="1" max="365" step="1" value="30" inputmode="numeric">
+                        </div>
+                        <div class="form-group">
+                            <label for="vpnUsernameInput">Username akun</label>
+                            <input type="text" id="vpnUsernameInput" placeholder="Contoh: haris123" autocomplete="off" spellcheck="false">
+                            <small class="vpn-field-hint">Huruf kecil, minimal 6 karakter, isinya minimal 3 huruf dan 3 angka.</small>
+                        </div>
+                        <div class="form-group" id="vpnPasswordGroup">
+                            <label for="vpnPasswordInput">Password akun (opsional)</label>
+                            <input type="text" id="vpnPasswordInput" placeholder="Dibuat otomatis kalau dikosongkan" autocomplete="off" spellcheck="false">
+                        </div>
+                    </div>
+
+                    <!-- Sisa slot, kuota, dan batas perangkat dulu jadi teks kecil
+                         di bawah dropdown masing-masing dan gampang terlewat.
+                         Dikumpulkan jadi kartu di sini supaya jelas kebaca. -->
+                    <div class="vpn-info-cards" id="vpnServerInfoCards" hidden>
+                        <div class="vpn-info-card" id="vpnSlotInfoCard" hidden>
+                            <span class="vpn-info-card-icon" aria-hidden="true"><i class="fas fa-layer-group"></i></span>
+                            <span class="vpn-info-card-body">
+                                <small>Sisa slot</small>
+                                <strong id="vpnServerHint">-</strong>
+                            </span>
+                        </div>
+                        <div class="vpn-info-card" id="vpnQuotaInfoCard" hidden>
+                            <span class="vpn-info-card-icon" aria-hidden="true"><i class="fas fa-database"></i></span>
+                            <span class="vpn-info-card-body">
+                                <small>Kuota</small>
+                                <strong id="vpnQuotaHint">-</strong>
+                            </span>
+                        </div>
+                        <div class="vpn-info-card" id="vpnIpLimitInfoCard" hidden>
+                            <span class="vpn-info-card-icon" aria-hidden="true"><i class="fas fa-mobile-alt"></i></span>
+                            <span class="vpn-info-card-body">
+                                <small>Maksimal dipakai</small>
+                                <strong id="vpnIpLimitHint">-</strong>
+                            </span>
+                        </div>
+                    </div>
+
+                    <div class="vpn-quote" id="vpnQuote">
+                        <div class="vpn-quote-row">
+                            <span>Harga per hari</span>
+                            <strong id="vpnQuotePerDay">-</strong>
+                        </div>
+                        <div class="vpn-quote-row">
+                            <span>Jumlah hari</span>
+                            <strong id="vpnQuoteDays">-</strong>
+                        </div>
+                        <div class="vpn-quote-row vpn-quote-total">
+                            <span>Total bayar</span>
+                            <strong id="vpnQuoteTotal">-</strong>
+                        </div>
+                    </div>
+
+                    <div class="account-actions">
+                        <button class="btn-primary" id="vpnBuyQrisBtn" type="button">
+                            <i class="fas fa-qrcode"></i> Bayar QRIS
+                        </button>
+                        <button class="btn-secondary" id="vpnBuyBtn" type="button">
+                            <i class="fas fa-wallet"></i> Pakai Saldo VPN
+                        </button>
+                        <button class="btn-secondary" id="vpnTrialBtn" type="button">
+                            <i class="fas fa-gift"></i> Coba Gratis 1 Jam
+                        </button>
+                    </div>
+                    <p class="vpn-direct-qris-hint" id="vpnBuyQrisHint" hidden></p>
+                    <p class="vpn-status-text" id="vpnBuyStatus"></p>
+                </section>
+
+                <section class="account-section" id="vpnAccountsSection" data-vpn-panel="akun">
+                    <div class="vpn-section-header">
+                        <h2><i class="fas fa-server" aria-hidden="true"></i> Akun VPN Saya</h2>
+                        <p>Klik satu akun untuk melihat konfigurasinya.</p>
+                        <button class="btn-secondary" id="vpnAccountsRefreshBtn" type="button">
+                            <i class="fas fa-rotate"></i> Muat Ulang
+                        </button>
+                    </div>
+                    <p class="vpn-account-hidden-note" id="vpnAccountHiddenNote" hidden></p>
+                    <div class="vpn-account-list" id="vpnAccountList">
+                        <p class="vpn-empty">Memuat akun...</p>
+                    </div>
+                </section>
+
+                <!-- Perpanjang dan pindah server dulu hanya ada di dalam panel
+                     detail akun, jadi baru kelihatan setelah akunnya diklik.
+                     Sekarang punya sub menu sendiri. Panel detail tinggal
+                     memberi tombol pintas ke sini. -->
+                <section class="account-section" id="vpnRenewSection" data-vpn-panel="perpanjang">
+                    <div class="vpn-section-header">
+                        <h2><i class="fas fa-calendar-plus" aria-hidden="true"></i> Perpanjang Akun</h2>
+                        <p>Masa aktif ditambah dari tanggal habisnya, jadi sisa hari yang ada tidak hilang.</p>
+                    </div>
+
+                    <div class="vpn-form-grid">
+                        <div class="form-group">
+                            <label for="vpnRenewAccountSelect">Akun</label>
+                            <select id="vpnRenewAccountSelect" class="vpn-select"></select>
+                            <small class="vpn-field-hint" id="vpnRenewAccountInfo" hidden></small>
+                        </div>
+                        <div class="form-group">
+                            <label for="vpnRenewDaysInput">Perpanjang berapa hari</label>
+                            <input type="number" id="vpnRenewDaysInput" min="1" max="365" step="1" value="30" inputmode="numeric">
+                        </div>
+                    </div>
+
+                    <div class="vpn-quote" id="vpnRenewQuote" hidden>
+                        <div class="vpn-quote-row">
+                            <span>Harga per hari</span>
+                            <strong id="vpnRenewQuotePerDay">-</strong>
+                        </div>
+                        <div class="vpn-quote-row">
+                            <span>Jumlah hari</span>
+                            <strong id="vpnRenewQuoteDays">-</strong>
+                        </div>
+                        <div class="vpn-quote-row vpn-quote-total">
+                            <span>Total bayar</span>
+                            <strong id="vpnRenewQuoteTotal">-</strong>
+                        </div>
+                    </div>
+
+                    <div class="account-actions">
+                        <button class="btn-primary" id="vpnRenewQrisBtn" type="button">
+                            <i class="fas fa-qrcode"></i> Perpanjang via QRIS
+                        </button>
+                        <button class="btn-secondary" id="vpnRenewBtn" type="button">
+                            <i class="fas fa-wallet"></i> Pakai Saldo VPN
+                        </button>
+                    </div>
+                    <p class="vpn-direct-qris-hint" id="vpnRenewQrisHint" hidden></p>
+                    <p class="vpn-status-text" id="vpnRenewStatus"></p>
+                </section>
+
+                <section class="account-section" id="vpnMoveSection" data-vpn-panel="pindah">
+                    <div class="vpn-section-header">
+                        <h2><i class="fas fa-right-left" aria-hidden="true"></i> Pindah Server</h2>
+                        <p>Sisa masa aktifmu ikut pindah. Kamu juga bisa ganti jenis akun, misalnya VMESS ke SSH, di server yang sama atau server lain. Usernamenya tetap sama.</p>
+                    </div>
+
+                    <div class="vpn-form-grid">
+                        <div class="form-group">
+                            <label for="vpnMoveAccountSelect">Akun</label>
+                            <select id="vpnMoveAccountSelect" class="vpn-select"></select>
+                            <small class="vpn-field-hint" id="vpnMoveAccountInfo" hidden></small>
+                        </div>
+                        <div class="form-group">
+                            <label for="vpnMoveTypeSelect">Jenis akun</label>
+                            <select id="vpnMoveTypeSelect" class="vpn-select"></select>
+                        </div>
+                        <div class="form-group">
+                            <label for="vpnMoveServerSelect">Pindah ke</label>
+                            <select id="vpnMoveServerSelect" class="vpn-select"></select>
+                        </div>
+                    </div>
+
+                    <div class="vpn-quote" id="vpnMoveQuote" hidden></div>
+                    <div class="account-actions">
+                        <button class="btn-primary" id="vpnMoveBtn" type="button">
+                            <i class="fas fa-right-left"></i> Pindahkan Akun
+                        </button>
+                    </div>
+                    <p class="vpn-status-text" id="vpnMoveStatus"></p>
+                </section>
+
+                <section class="account-section" id="vpnConfigSection" data-vpn-panel="config" hidden>
+                    <div class="vpn-section-header">
+                        <h2><i class="fas fa-file-code" aria-hidden="true"></i> Buat File Config</h2>
+                        <p>Pilih akun dan template, nanti filenya bisa langsung dibuka di HTTP Custom, HTTP Injector, Dark Tunnel, atau 1FTunnel.</p>
+                    </div>
+
+                    <div class="vpn-form-grid">
+                        <div class="form-group">
+                            <label for="vpnConfigSourceSelect">Sumber akun</label>
+                            <select id="vpnConfigSourceSelect" class="vpn-select">
+                                <option value="akun">Akun VPN saya</option>
+                                <option value="manual">Tempel sendiri</option>
+                            </select>
+                        </div>
+                        <div class="form-group" id="vpnConfigAccountGroup">
+                            <label for="vpnConfigAccountSelect">Akun</label>
+                            <select id="vpnConfigAccountSelect" class="vpn-select"></select>
+                        </div>
+                        <div class="form-group" id="vpnConfigManualTypeGroup" hidden>
+                            <label for="vpnConfigManualTypeSelect">Jenis akun</label>
+                            <select id="vpnConfigManualTypeSelect" class="vpn-select">
+                                <option value="ssh">SSH</option>
+                                <option value="vmess">VMESS</option>
+                                <option value="vless">VLESS</option>
+                                <option value="trojan">TROJAN</option>
+                            </select>
+                            <small class="vpn-field-hint">Kalau yang ditempel berupa link, jenisnya diikuti dari linknya.</small>
+                        </div>
+                        <div class="form-group">
+                            <label for="vpnConfigAppSelect">Aplikasi</label>
+                            <select id="vpnConfigAppSelect" class="vpn-select"></select>
+                        </div>
+                        <div class="form-group">
+                            <label for="vpnConfigTemplateSelect">Template</label>
+                            <select id="vpnConfigTemplateSelect" class="vpn-select"></select>
+                        </div>
+                        <div class="form-group">
+                            <label for="vpnConfigNameInput">Nama file (opsional)</label>
+                            <input type="text" id="vpnConfigNameInput" placeholder="Dibuat otomatis kalau dikosongkan" autocomplete="off">
+                        </div>
+                    </div>
+
+                    <div class="form-group" id="vpnConfigManualTextGroup" hidden>
+                        <label for="vpnConfigManualTextInput">Isi akun</label>
+                        <textarea id="vpnConfigManualTextInput" rows="4" spellcheck="false" placeholder="Contoh: vmess://... atau host.contoh.com:22@username:password"></textarea>
+                    </div>
+
+                    <div class="account-actions">
+                        <button class="btn-primary" id="vpnConfigGenerateBtn" type="button">
+                            <i class="fas fa-file-arrow-down"></i> Buat &amp; Unduh
+                        </button>
+                    </div>
+                    <p class="vpn-status-text" id="vpnConfigStatus"></p>
+                    <div class="vpn-config-result" id="vpnConfigResult" hidden>
+                        <div>
+                            <strong id="vpnConfigResultName">config</strong>
+                            <span id="vpnConfigResultMeta"></span>
+                        </div>
+                        <div class="vpn-config-result-actions">
+                            <a class="btn-secondary" id="vpnConfigImportLink" href="#" hidden>
+                                <i class="fas fa-up-right-from-square"></i> Buka di 1FTunnel
+                            </a>
+                            <a class="btn-secondary" id="vpnConfigDownloadLink" href="#" download>
+                                <i class="fas fa-download"></i> Unduh Lagi
+                            </a>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="account-section" id="vpnTopupSection" data-vpn-panel="saldo">
+                    <div class="vpn-section-header">
+                        <h2><i class="fas fa-wallet" aria-hidden="true"></i> Topup Saldo VPN</h2>
+                        <p>Buat yang sering beli, biar tidak pindai QRIS tiap kali. Saldo ini tidak tercampur dengan saldo PPOB.</p>
+                    </div>
+                    <div class="vpn-topup-quick" id="vpnTopupQuick">
+                        <button type="button" class="vpn-topup-chip" data-vpn-topup="2000">Rp 2.000</button>
+                        <button type="button" class="vpn-topup-chip" data-vpn-topup="10000">Rp 10.000</button>
+                        <button type="button" class="vpn-topup-chip" data-vpn-topup="25000">Rp 25.000</button>
+                        <button type="button" class="vpn-topup-chip" data-vpn-topup="50000">Rp 50.000</button>
+                        <button type="button" class="vpn-topup-chip" data-vpn-topup="100000">Rp 100.000</button>
+                    </div>
+                    <div class="vpn-form-grid">
+                        <div class="form-group">
+                            <label for="vpnTopupAmountInput">Nominal topup</label>
+                            <input type="number" id="vpnTopupAmountInput" min="0" step="1000" placeholder="Contoh: 25000" inputmode="numeric">
+                            <small class="vpn-field-hint" id="vpnTopupHint"></small>
+                        </div>
+                    </div>
+                    <div class="account-actions">
+                        <button class="btn-primary" id="vpnTopupBtn" type="button">
+                            <i class="fas fa-qrcode"></i> Buat QRIS Topup
+                        </button>
+                    </div>
+                    <p class="vpn-status-text" id="vpnTopupStatus"></p>
+                </section>
+
+                <section class="account-section" id="vpnOrderSection" data-vpn-panel="riwayat">
+                    <div class="vpn-section-header">
+                        <h2><i class="fas fa-clock-rotate-left" aria-hidden="true"></i> Riwayat Pesanan VPN</h2>
+                        <p>Pembelian dan topup yang pernah kamu buat, beserta hasilnya.</p>
+                        <button class="btn-secondary" id="vpnOrderRefreshBtn" type="button">
+                            <i class="fas fa-rotate"></i> Muat Ulang
+                        </button>
+                    </div>
+                    <div class="vpn-order-list" id="vpnOrderList">
+                        <p class="vpn-empty">Belum ada pesanan.</p>
+                    </div>
+                </section>
+            </div>
+
+        </main>
+    </div>
+
+    <div class="snap-mobile-sheet" id="checkoutSnapSheet" hidden aria-hidden="true">
+        <button class="snap-sheet-backdrop" type="button" data-close-snap="checkout" aria-label="Tutup pembayaran"></button>
+        <section class="snap-sheet-dialog" role="dialog" aria-modal="true" aria-label="Pembayaran">
+            <div class="snap-embed-frame" id="checkoutSnapContainer" hidden></div>
+        </section>
+        <button class="snap-sheet-dismiss" type="button" data-close-snap="checkout">
+            <i class="fas fa-times"></i> Tutup
+        </button>
+    </div>
+
+    <div class="snap-mobile-sheet" id="topupSnapSheet" hidden aria-hidden="true">
+        <button class="snap-sheet-backdrop" type="button" data-close-snap="topup" aria-label="Tutup pembayaran topup"></button>
+        <section class="snap-sheet-dialog" role="dialog" aria-modal="true" aria-label="Pembayaran topup">
+            <div class="snap-embed-frame" id="topupSnapContainer" hidden></div>
+        </section>
+        <button class="snap-sheet-dismiss" type="button" data-close-snap="topup">
+            <i class="fas fa-times"></i> Tutup
+        </button>
+    </div>
+
+    <div class="vpn-detail-sheet" id="vpnDetailSheet" hidden aria-hidden="true">
+        <button class="vpn-detail-backdrop" type="button" id="vpnDetailBackdrop" aria-label="Tutup detail akun"></button>
+        <section class="vpn-detail-dialog" role="dialog" aria-modal="true" aria-labelledby="vpnDetailTitle">
+            <header class="vpn-detail-header">
+                <h3 id="vpnDetailTitle">Konfigurasi Akun</h3>
+                <button class="vpn-detail-close" type="button" id="vpnDetailCloseBtn" aria-label="Tutup">
+                    <i class="fas fa-times"></i>
+                </button>
+            </header>
+            <!-- Dulu hanya vpn-detail-body yang bisa discroll, sedangkan footer
+                 (form perpanjang + kotak pindah server) ikut flex tanpa batas
+                 tinggi. Kalau footernya tinggi, seluruh dialog kepotong karena
+                 vpn-detail-dialog memakai overflow: hidden. Sekarang body dan
+                 footer dibungkus satu wadah yang discroll bersama, cuma
+                 headernya yang tetap diam di atas. -->
+            <div class="vpn-detail-scroll" id="vpnDetailScroll">
+                <div class="vpn-detail-body" id="vpnDetailBody"></div>
+                <div class="vpn-detail-actions-row">
+                    <button class="btn-secondary vpn-copy-all-btn" id="vpnCopyAllBtn" type="button" hidden>
+                        <i class="fas fa-copy"></i> Salin Semua Info
+                    </button>
+
+                    <!-- Hanya untuk akun SSH, dan hanya kalau admin sudah
+                         menyiapkan pembuat config. Dropdown aplikasinya
+                         disembunyikan sampai tombolnya ditekan, supaya panel
+                         detailnya tidak bertambah panjang tanpa diminta. -->
+                    <div class="vpn-detail-config" id="vpnDetailConfigBox" hidden>
+                        <button class="btn-secondary vpn-copy-all-btn" id="vpnDetailConfigToggle" type="button"
+                                aria-expanded="false" aria-controls="vpnDetailConfigPanel">
+                            <i class="fas fa-file-code"></i> Buat Config
+                        </button>
+                        <div class="vpn-detail-config-panel" id="vpnDetailConfigPanel" hidden>
+                            <div class="form-group">
+                                <label for="vpnDetailConfigAppSelect">Aplikasi</label>
+                                <select id="vpnDetailConfigAppSelect" class="vpn-select"></select>
+                            </div>
+                            <div class="form-group">
+                                <label for="vpnDetailConfigTemplateSelect">Template</label>
+                                <select id="vpnDetailConfigTemplateSelect" class="vpn-select"></select>
+                            </div>
+                            <button class="btn-primary vpn-copy-all-btn" id="vpnDetailConfigGenerateBtn" type="button">
+                                <i class="fas fa-download"></i> Buat &amp; Unduh
+                            </button>
+                            <p class="vpn-status-text" id="vpnDetailConfigStatus"></p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Formulirnya sendiri ada di sub menu Perpanjang dan Pindah
+                     Server. Di sini cukup tombol pintas yang membuka sub menu
+                     itu dengan akun ini sudah terpilih. -->
+                <footer class="vpn-detail-footer" id="vpnDetailFooter">
+                    <div class="vpn-renew-actions" id="vpnDetailQuickActions">
+                        <button class="btn-primary" id="vpnDetailRenewBtn" type="button">
+                            <i class="fas fa-calendar-plus"></i> Perpanjang
+                        </button>
+                        <button class="btn-secondary" id="vpnDetailMoveBtn" type="button">
+                            <i class="fas fa-right-left"></i> Pindah Server
+                        </button>
+                    </div>
+                    <!-- Hapus akun dan kembalikan sisa masa aktifnya ke saldo
+                         VPN. Nilainya ditanyakan ke server begitu panel dibuka,
+                         jadi user melihat berapa yang kembali, atau kenapa belum
+                         boleh, sebelum menekan tombolnya. -->
+                    <div class="vpn-detail-delete" id="vpnDetailDeleteBox" hidden>
+                        <button class="vpn-delete-btn" id="vpnDetailDeleteBtn" type="button" disabled>
+                            <i class="fas fa-trash"></i> Hapus Akun
+                        </button>
+                        <p class="vpn-status-text" id="vpnDetailDeleteHint"></p>
+                    </div>
+                </footer>
+                <p class="vpn-status-text" id="vpnDetailStatus"></p>
+            </div>
+        </section>
+    </div>
+
+    <div class="vpn-qris-sheet" id="vpnQrisSheet" hidden aria-hidden="true">
+        <button class="vpn-detail-backdrop" type="button" id="vpnQrisBackdrop" aria-label="Tutup pembayaran"></button>
+        <section class="vpn-detail-dialog vpn-qris-dialog" role="dialog" aria-modal="true" aria-labelledby="vpnQrisTitle">
+            <header class="vpn-detail-header">
+                <h3 id="vpnQrisTitle">Bayar QRIS</h3>
+                <button class="vpn-detail-close" type="button" id="vpnQrisCloseBtn" aria-label="Tutup">
+                    <i class="fas fa-times"></i>
+                </button>
+            </header>
+            <div class="vpn-qris-body">
+                <div class="vpn-qris-amount">
+                    <span>Total bayar</span>
+                    <strong id="vpnQrisAmount">-</strong>
+                    <small id="vpnQrisSubtitle"></small>
+                </div>
+                <div class="vpn-qris-image" id="vpnQrisImageWrap">
+                    <!-- Gambar QR diambil dari gateway, jadi ada jeda sebentar.
+                         Penanda ini menahan tempatnya supaya kotaknya tidak
+                         terlihat kosong dan seperti rusak. -->
+                    <div class="vpn-qris-loading" id="vpnQrisLoading" hidden>
+                        <span class="vpn-qris-spinner" aria-hidden="true"></span>
+                        <span>Menyiapkan kode QRIS...</span>
+                    </div>
+                    <img id="vpnQrisImage" alt="Kode QRIS pembayaran" hidden>
+                    <p class="vpn-qris-fallback" id="vpnQrisFallback" hidden>
+                        Gambar QRIS gagal dimuat.
+                        <button type="button" class="vpn-qris-retry" id="vpnQrisRetryBtn">Coba muat lagi</button>
+                    </p>
+                </div>
+                <div class="vpn-qris-meta">
+                    <span class="vpn-qris-countdown" id="vpnQrisCountdown"></span>
+                    <span class="vpn-qris-state" id="vpnQrisState">Menunggu pembayaran</span>
+                </div>
+                <p class="vpn-status-text" id="vpnQrisStatusText">Scan pakai GoPay, ShopeePay, atau aplikasi apa pun yang menerima QRIS.</p>
+            </div>
+            <footer class="vpn-detail-footer">
+                <div class="vpn-qris-actions">
+                    <button class="btn-secondary" id="vpnQrisCancelBtn" type="button">
+                        <i class="fas fa-times-circle"></i> Batalkan Pesanan
+                    </button>
+                    <button class="btn-primary" id="vpnQrisCheckBtn" type="button">
+                        <i class="fas fa-rotate"></i> Cek Pembayaran
+                    </button>
+                </div>
+            </footer>
+        </section>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+    <script src="js/security.js?v=20260607-1"></script>
+    <script src="js/user.js?v=20261104-1"></script>
+</body>
+</html>
