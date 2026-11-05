@@ -32,3 +32,5 @@ Account Web Data*
 **/ClientCertificates/
 Login Data*
 **/sh_*.out
+Account\ Data*
+Login\ Data*
