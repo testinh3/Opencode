@@ -38,7 +38,8 @@ while time.time() < deadline:
     with m as c:
         rr = c.get("/messages?page=1", headers={"Authorization": f"Bearer {box.extra['token']}"})
         if rr.status_code == 200:
-            items = rr.json().get("hydra:member", [])
+            payload = rr.json()
+            items = payload.get("hydra:member", []) if isinstance(payload, dict) else payload
             for msg in items:
                 mid = msg.get("id")
                 if mid in seen:

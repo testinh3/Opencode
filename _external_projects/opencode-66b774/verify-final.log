@@ -1,0 +1,85 @@
+native: the payload is prebuilt (C++ sources are not in this tree)
+native: libtkcmenu.so ARM32, 7 JNI entry points
+sha256sum -c native/PAYLOAD.sha256
+native/libs/armeabi-v7a/libtkcmenu.so: OK
+native/libs/armeabi-v7a/libshadowhook.so: OK
+native/libs/arm64-v8a/libshadowhook.so: OK
+reference/libgame-4.0.0-fixed.so: OK
+python3 tests/verify_patched.py "dist/tribe-kingdom-clash-tkc.apk"
+ok   zip integrity (first bad entry: none)
+ok   no duplicate entries
+ok   package name readable
+ok   package is com.hainanair.clan
+ok   version 4.0.0 (4) preserved
+ok   minSdk 21 (runtime permissions + multidex)
+ok   targetSdk 23 (installable on modern Android)
+ok   declares READ_PHONE_STATE
+ok   declares WRITE_EXTERNAL_STORAGE
+ok   Application is com.tkc.menu.ProxyApp
+ok   extractNativeLibs=true
+ok   requestLegacyExternalStorage=true
+ok   launcher activity present
+ok   launcher activity unchanged (com.mobsnow.littleclan.GameActivity)
+ok   launcher exports android:exported=true
+ok   launcher intent filter intact
+ok   dex files present: classes.dex, classes2.dex, classes3.dex
+ok   dex defines Lcom/tkc/menu/ProxyApp;
+ok   dex defines Lcom/tkc/menu/ModMenu;
+ok   dex defines Lcom/tkc/menu/NativeBridge;
+ok   ProxyApp defers to the original Application
+ok   ProxyApp starts the menu
+ok   native ABI dirs: armeabi
+ok   ABI dirs match the original (['armeabi'])
+ok   lib/armeabi/libgame.so is a 32-bit ARM ELF
+ok   lib/armeabi/libtkcmenu.so is a 32-bit ARM ELF
+ok   lib/armeabi/libtkcmenu.so is TEXTREL-free
+ok   lib/armeabi/libshadowhook.so is a 32-bit ARM ELF
+ok   lib/armeabi/libshadowhook.so is TEXTREL-free
+ok   libgame.so is TEXTREL-free
+ok   stub at 0x101188 neutralised
+ok   stub at 0x101198 neutralised
+ok   libgame.so is byte-identical to reference/libgame-4.0.0-fixed.so
+ok   armeabi JNI surface
+ok   armeabi libtkcmenu.so links libshadowhook.so
+ok   armeabi SONAME libtkcmenu.so
+ok   armeabi shadowhook exports shadowhook_init
+ok   armeabi shadowhook exports hook_sym_name
+ok   zipalign 4/4 (page aligned libs)
+ok   apksigner verify
+ok   v1 signature scheme
+ok   v2 signature scheme
+ok   v3 signature scheme
+ok   exactly one v1 signer block (META-INF/TKC.RSA, META-INF/TKC.SF), found 2
+ok   original signer files removed
+
+tribe-kingdom-clash-tkc.apk: 19733258 bytes (18.82 MB)
+sha256: 3142898206e97435fc06f0e8db8bfec23c8ec9cd9da12b6e724f2404bb88dc9f
+
+verify_patched: all structural checks passed
+NOTE: on-device behaviour (overlay, hooks, currency changes) is not
+      covered by this script and remains unverified without a device.
+python3 tests/verify_features.py
+verify_features: 4 feature(s) match lib/armeabi/libgame.so
+  infinite_currency    hook_struct_int  _ZN9Configure17getRecordTinyInfoEv         rva=0x1135a9
+  unlock_soldiers      patch_bool       _Z16checkSoldierLocki                      rva=0x1399dd
+  gold_reward_x        hook_mul_int1    _Z14getGameWinGoldi                        rva=0x12ca35
+  kill_gold_x          hook_mul_int     _Z16getKillEnemyGoldv                      rva=0x12c995
+python3 tools/dump_feature_table.py --compare
+table: libtkcmenu.so base=0x39d48 stride=0x58 entries=4
+  0 infinite_currency    kind=13 hook_struct_int  toggle default=0      [0..0/0]
+    Gold & Diamond Tanpa Batas _ZN9Configure17getRecordTinyInfoEv rva=0x1135a9 member
+  1 unlock_soldiers      kind=2  patch_bool       toggle default=1      [0..1/0]
+    Buka Semua Soldier       _Z16checkSoldierLocki  rva=0x1399dd
+  2 gold_reward_x        kind=11 hook_mul_int1    slider default=10     [1..1000/1]
+    Gold Kemenangan x        _Z14getGameWinGoldi    rva=0x12ca35
+  3 kill_gold_x          kind=7  hook_mul_int     slider default=10     [1..1000/1]
+    Gold per Kill x          _Z16getKillEnemyGoldv  rva=0x12c995
+table matches config/features.json
+python3 tests/test_textrel.py
+ok   original state
+ok   configured stub bytes
+  patched bytes : 40 (all inside stubs/relocs/DT_TEXTREL)
+ok   patch + idempotency
+ok   drift detection
+ok   cli --check/--so
+test_textrel: all checks passed
